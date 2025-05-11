@@ -1,0 +1,174 @@
+@use 'variables' as *;
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: $font-base;
+    padding: $btn-padding;
+    font-weight: 600;
+    border: 2px solid transparent;
+    max-width: none;
+    text-decoration: none;
+    color: $color-primary;
+    transition-duration: $tran-duration;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &--primary {
+
+    }
+
+    &--secondary {
+
+    }
+
+    &--tertiary {
+
+    }
+
+    &--lg {
+
+    }
+
+    &--md {
+
+    }
+
+    &--sm {
+        padding: 2px;
+        font-size: 8px;
+    }
+
+
+//   Accent
+        &--accent {
+            background-color: $color-accent;
+            
+        
+                &:hover {
+                background-color: $color-border-focus;
+            }
+            
+            &:focus {
+                background-color: $color-accent;
+            }
+
+            &:focus-visible {
+                outline: solid $color-border-focus;
+            }
+
+            &:active {
+                background-color: $color-active;
+                outline: none;
+            }
+
+            &:disabled {
+                background-color: $color-separator;
+                color: $color-disabled;
+            }
+        }
+    
+    /* secondary */
+        &--secondary {
+            background-color: transparent;
+            outline: 2px solid $color-separator;
+            padding: $btn-padding;
+
+            &:hover {
+            background-color: $color-border;
+            /* border: 2px solid $color-border; */
+        }
+        
+        &:focus{
+            background-color: $color-border;
+        }
+
+        &:focus-visible {
+            outline: 4px solid $color-border-focus;
+            border-color: $color-border-focus;
+        }
+
+        &:active{
+            background-color: $color-border;
+            /* border: 2px solid $color-border; */
+        }
+
+        &:disabled {
+        color: $color-disabled;
+        background-color: $color-separator;
+        border: 2px solid $color-disabled;
+        }
+    }
+    
+    /* tag */
+    &--tag {
+        background-color: transparent;
+        outline: 1px solid $color-separator;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 20px;
+    
+            &:hover {
+            background-color: $color-border;
+            /* border: 2px solid $color-border; */
+    }
+        
+        &:focus {
+            background-color: $color-border;
+        }
+
+        &:focus-visible  {
+            outline: 4px solid $color-border-focus;
+            border-color: $color-border-focus;
+        }
+        
+        &:active {
+            background-color: $color-border;
+        }
+
+        &:disabled {
+            color: $color-disabled;
+            background-color: $color-separator;
+            border: 2px solid $color-disabled;
+        }
+    }
+
+    &--alt {
+        background-color: $BaseIcon;
+         color:$bg-main;
+     
+           &:hover {
+            background-color: $Alternative2-Invert;
+           }
+
+           &:focus {
+
+           }
+
+           &:focus-visible {
+            outline: 2px solid $color-border-focus;
+            border-color: $color-border-focus;
+           }
+
+           &:active {
+             color:$color-primary;
+             background-color: $color-disabled;
+           }
+
+           &:disabled {
+            color:$color-disabled;
+            background-color:$color-separator ;
+          }
+    }
+
+    &--icon {
+        padding: 12px;
+        background-color: transparent;
+            outline: 2px solid $color-separator;
+}
+}
