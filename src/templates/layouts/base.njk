@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{# <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,4 +23,49 @@
       {% endblock %}
     </main>
   </body>
+</html> #}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="/src/styles/style.scss" />
+  <title>Pixmart</title>
+  <script>
+        window.addEventListener("load", (event) => {
+        const burgerOpener = document.querySelector(".js-burger");
+        const filterOpener = document.querySelector(".js-filter");
+        burgerOpener.addEventListener("click", () => {
+          document.body.classList.remove("filter--active");
+          document.body.classList.toggle("side-menu--active");
+        });
+        filterOpener.addEventListener("click", () => {
+          document.body.classList.remove("side-menu--active");
+          document.body.classList.toggle("filter--active");
+        });
+        window.addEventListener("resize", () => {
+          document.body.classList.remove("side-menu--active");
+          document.body.classList.remove("filter--active");
+        });
+      });
+    </script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+{% include "src/templates/partials/header.njk" %}
+{% block content %}
+<button  class="js-filter"type="button">Filter</button>
+<div class="filter"></div>
+default content{% endblock %}
+</div>
+{% include "src/templates/partials/footer.njk" %}
+</div>
+</body>
 </html>

@@ -1,5 +1,78 @@
-@use 'ui/button';
+@use './base/variables' as *;
+@use './components/button' as *;
+@use './components/layout/header' as *;
 
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  background: blue;
+    height: 100%;
+    // background-color: var( --color-base);
+  }
+
+  body {
+    margin: 0 auto;
+    background-color: red;
+  }
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  background-color: var(--color-base);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+// .footer {
+//   color: white;
+//   background-color: red;
+// }
+
+// .header {
+//   position: relative;
+//   min-height: 80px;
+//   background-color: aquamarine;
+// }
+
+.nav {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 360px;
+  background: salmon;
+  z-index: 2;
+   transform: translateX(-100%);
+}
+
+.side-menu--active  .nav{
+  transform: translateX(0);
+}
+
+.filter {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: bisque;
+  z-index: 2;
+}
+
+.container {
+  max-width: 1728px;
+  padding-inline: 16px;
+  margin-inline: auto;
 }
