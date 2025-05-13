@@ -1,6 +1,7 @@
 :root {
-    --font-base: 'Poppins', 'Arial', sans-serif;
-    --font-accent: 'Bakbak One', 'Impact', 'Arial Black', sans-serif;
+
+    --font-base: 'Plus Jakarta Sans', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    --font-accent: 'Libre Franklin', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     
     --color-primary: rgba(13, 13, 21, 1);
     --color-secondary: rgba(42, 53, 65, 0.85);
@@ -83,5 +84,6 @@
     --color-white-invert: rgba(32, 38, 49, 1);
 
     --tran-duration: 0.25s;
-    --btn-padding: 10px 22px;
+    --btn-padding: 18px 32px;
+    --btn-icon-padding :8px;
 }
