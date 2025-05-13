@@ -26,12 +26,15 @@
  }
 
  &__list-link {
+    font-size: 14px;
+    line-height: 20px;
     padding: 6px 12px;
  }
 
-//  &__button {
-//     padding: 8px;
-//  }
+ &__button {
+    font-size: 14px;
+    line-height: 20px;
+ }
 
  &__search-input{
     padding: 10px 22px;
