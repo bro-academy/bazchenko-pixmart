@@ -1,15 +1,18 @@
 <header class="header">
-    <button type="button" class="js-burger">Button</button>
-      {# <nav class="nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-           <li><a href="#">Contact</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Home</a></li>
-        </ul>
-      </nav> #}
+    {# <button type="button" class="js-burger">Button</button> #}
+        <nav class="burger-menu">
+             <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Creators</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+             </ul>
+        </nav>
           <div class="header__wrapper">
+             <a href="#" class="menu-button js-burger" aria-label="Open menu">
+              <span class="burger-icon"></span>
+           </a>
         <div class="header__nav-wrapper">
             <a href="#" class="header__logo-link">
         <img alt="Pixtart logo" class="header__logo logo" src="src/assets/images/static/logo.png" width="107" height="24">
@@ -28,7 +31,7 @@
         <form class="header__search-form" action="/search" method="get">
               <input type="text" class="header__search-input" name="query" placeholder="Search for Digital Assets" aria-label="Search">
           </form>
-          <a class="header__button button" href="#" target="_blank">
+          <a class="header__button button button--primary-icon" href="#" target="_blank">
             <svg class="header__icon" width="24" height="24"><use href="src/assets/image/sprite/sprite.svg#shopping-bag"></use></svg>
          </a>
     </div>

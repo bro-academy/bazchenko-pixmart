@@ -29,13 +29,26 @@
     padding: 6px 12px;
  }
 
- &__button {
-    padding: 8px;
- }
+//  &__button {
+//     padding: 8px;
+//  }
 
  &__search-input{
     padding: 10px 22px;
     border-radius: 8px;
     border-color: var(--color-separator-bold);
  }
+}
+
+.burger-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  z-index: 1000;
+
+  &.is-open {
+    display: block;
+  }
 }

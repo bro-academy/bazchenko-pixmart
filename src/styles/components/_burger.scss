@@ -1,0 +1,69 @@
+@use '../base/variables' as *;
+
+.menu-button {
+  // display: none;
+  padding: 8px;
+  background-color: var(--color-accent-link);
+  border: 2px solid transparent;
+  border-radius: 8px;
+   transition: transform 0.3s ease-in-out;
+   width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  // @include m.tab {
+  //   display: inline-block;
+  // }
+}
+
+.burger-icon {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .burger-icon, .burger-icon::before, .burger-icon::after {
+     border-radius: 2px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var( --color-primary-invert);
+    outline: 1px solid transparent;
+    -webkit-transition-property: background-color, -webkit-transform;
+    -moz-transition-property: background-color, -moz-transform;
+    -o-transition-property: background-color, -o-transform;
+    transition-property: background-color, transform;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+  .burger-icon::before, .burger-icon::after {
+    position: absolute;
+    content: ""; }
+  .burger-icon::before {
+    top: -8px; }
+  .burger-icon::after {
+    top: 8px; }
+
+.menu-button.is-active .burger-icon {
+  background-color: transparent;
+  height: 0;
+}
+
+.menu-button.is-active .burger-icon::before {
+  -webkit-transform: translateY(8px) rotate(45deg);
+  -moz-transform: translateY(8px) rotate(45deg);
+  -ms-transform: translateY(8px) rotate(45deg);
+  -o-transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg); }
+
+.menu-button.is-active .burger-icon::after {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -moz-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg); }

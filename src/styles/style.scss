@@ -1,5 +1,6 @@
 @use './base/variables' as *;
 @use './components/button' as *;
+@use './components/burger' as *;
 @use './components/layout/header' as *;
 
 
@@ -16,6 +17,7 @@ body {
   body {
     margin: 0 auto;
     background-color: red;
+    font-family: var( --font-accent);
   }
 
 .wrapper {
