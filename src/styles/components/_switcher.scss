@@ -29,7 +29,6 @@
   }
 
   .switcher__label:focus-visible {
-    // outline: 2px solid $bg-main;
     box-shadow: 0 0 0 2px var(--color-base) , 0 0 0 4px var(--color-focus);
   }
 
@@ -77,7 +76,6 @@
   }
 
   .switcher__input:checked + .switcher__label:focus-visible {
-    // outline: 2px solid $bg-main;
     box-shadow: 0 0 0 2px var(--color-base) , 0 0 0 4px var(--color-focus);
   }
 
