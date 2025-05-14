@@ -1,0 +1,99 @@
+@use '../base/variables' as *;
+
+.visually-hidden {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  
+  .switcher {
+    display: flex;
+    align-items: center;
+  }
+  
+  //   Normal
+  .switcher__label {
+    width: 40px;
+    height: 20px;
+    background-color: var( --color-disabled); 
+    border-radius: 999px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color var(--tran-duration) ease, box-shadow var(--tran-duration) ease;
+    outline: none;
+  }
+
+  .switcher__label:hover {
+    background-color: var(--color-line);
+  }
+
+  .switcher__label:focus-visible {
+    // outline: 2px solid $bg-main;
+    box-shadow: 0 0 0 2px var(--color-base) , 0 0 0 4px var(--color-focus);
+  }
+
+  .switcher__label:active {
+    background-color: var( --color-secondary);
+  }
+
+.switcher__label:target {
+    background-color: var(--color-separator-bold);
+}
+
+  .switcher__label::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-base);
+    border-radius: 50%;
+    transition: 
+    transform var(--tran-duration) ease,
+    background-color var(--tran-duration) ease,
+    box-shadow var(--tran-duration) ease;
+  }
+
+    .switcher__input:disabled + .switcher__label::after {
+  background-color: var(--color-alternative);
+}
+
+ .switcher__input:active + .switcher__label::after {
+  background-color: var(--color-alternative2-invert);
+}
+
+ .switcher__input:checked:active + .switcher__label::after {
+  background-color: var(--color-base);
+}
+  
+  .switcher__input:checked + .switcher__label {
+    background-color: var( --color-accent-link);
+  }
+
+  .switcher__input:checked + .switcher__label:hover {
+    background-color: var(--color-focus)
+  }
+
+  .switcher__input:checked + .switcher__label:focus-visible {
+    // outline: 2px solid $bg-main;
+    box-shadow: 0 0 0 2px var(--color-base) , 0 0 0 4px var(--color-focus);
+  }
+
+  .switcher__input:checked + .switcher__label:focus {
+
+  }
+
+.switcher__input:checked + .switcher__label:active {
+    background-color: var( --color-focus);
+  }
+
+.switcher__input:checked + .switcher__label:target {
+    background-color: var(--color-separator-bold);
+}
+
+.switcher__input:checked + .switcher__label::after {
+    transform: translateX(20px);
+    transition: transform 0.3s ease;
+  }

@@ -48,7 +48,7 @@
   position: absolute;
   top: 100%;
   right: 0;
-  background: white;
+  background: var( --color-base);
   z-index: 1000;
 
   &.is-open {
