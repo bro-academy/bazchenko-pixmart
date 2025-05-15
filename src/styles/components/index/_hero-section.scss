@@ -1,0 +1,50 @@
+@use '../../base/variables' as *;
+
+.main-banner {
+    margin-bottom: 64px;
+
+&__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+&__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 408 / 248;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__title {
+    font-family: var(--font-accent) ;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 62px;
+    color: var(--color-primary);
+    
+  }
+
+  &__accent {
+    color:var(--color-accent-link);
+  }
+
+  &__subtitle {
+    font-size: 20xp;
+    font-weight: 500;
+    line-height: 28px;
+    color: var( --color-secondary);
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    gap: 24px;
+  }
+}

@@ -2,10 +2,16 @@
 
 .header {
 
+   &__logo-wrapper {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+   }
+
 &__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 24px 80px;
+    padding: 16px 24px;
  }
 
  &__nav-wrapper {
@@ -15,8 +21,11 @@
  }
 
  &__list {
-    display: flex;
+    display: none;
     gap: 8px;
+
+
+
  }
 
  &__actions {
@@ -39,6 +48,7 @@
  &__search-input{
     padding: 10px 12px;
     border-radius: 8px;
+    display: none;
    //  border-color: var(--color-separator-bold);
  }
 }

@@ -10,6 +10,7 @@
              </ul>
         </nav>
           <div class="header__wrapper">
+            <div class="header__logo-wrapper">
              <a href="#" class="menu-button js-burger" aria-label="Open menu">
               <span class="burger-icon"></span>
            </a>
@@ -17,6 +18,7 @@
             <a href="#" class="header__logo-link">
         <img alt="Pixtart logo" class="header__logo logo" src="src/assets/images/static/logo.png" width="107" height="24">
         </a>
+        </div>
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__list-item"><a  href="about.html" class="header__list-link link link--primary">About</a></li>
@@ -31,19 +33,20 @@
   <input type="checkbox" id="switch" class="switcher__input visually-hidden">
   <label for="switch" class="switcher__label"></label>
 </div>  #}
-{# <label class="checkbox-wrapper">
-    <input type="checkbox" id="green" name="clothing" value="green" class="checkbox-input"/>
-    <span class="custom-checkbox"></span>
-    Green
-  </label> #}
-  <div class="contact-form__item">
-    <label class="contact-form__label" for="message">Message</label>
-    <textarea class="textarea" name="Welcome" id="message" cols="20" rows="0" required></textarea>
-</div>
+{# <form action="url" method="get">
+        <select class="dropdown" name="sort">
+          <option value="" disabled selected>Sort by</option>
+          <option value="newest">Newest</option>
+          <option value="most-popular">Most popular</option>
+          <option value="increasing-in-price">Increasing in price</option>
+          <option value="lowering-the-price">Lowering the price</option>
+        </select>
+      </form> #}
     <div class="header__actions">
         <form class="header__search-form" action="/search" method="get">
               <input type="text" class="header__search-input input input--secondary" name="query" placeholder="Search for Digital Assets" aria-label="Search">
           </form>
+          <button class="header__search-button button button--secondary-icon"><svg class="header__search-icon" width="24" height="24" ><use href="#"></use></svg></button>
           <a class="header__button button button--primary-icon" href="#" target="_blank">
             <svg class="header__icon" width="24" height="24"><use href="src/assets/image/sprite/sprite.svg#shopping-bag"></use></svg>
          </a>

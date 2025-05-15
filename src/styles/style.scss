@@ -7,7 +7,12 @@
 @use './components/radio' as *;
 @use './components/input' as *;
 @use './components/textarea' as *;
+@use './components/dropdown' as *;
+@use './components/index/hero-section' as *;
+@use './components/index/category-slider' as *;
 @use './components/layout/header' as *;
+@use './components/layout/footer' as *;
+
 
 
 *, *::after, *::before {
@@ -23,13 +28,19 @@ body {
   body {
     margin: 0 auto;
     background-color: red;
-    font-family: var( --font-accent);
+    font-family: var( --font-base);
+    min-width: 440px;
   }
+
+  h1, h2, h3, p, ul, ol {
+  margin: 0;
+}
 
 .wrapper {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-inline: 16px;
 }
 
 .content {
