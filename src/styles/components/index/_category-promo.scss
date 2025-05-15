@@ -1,0 +1,51 @@
+@use '../../base/variables' as *;
+
+.category-promo {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-bottom: 64px;
+
+ &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+ }
+
+     &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-height: 420px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+
+
+  &__title {
+    color: var(--color-marina-600);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  &__subtitle {
+    font-family: var(--font-accent);
+    color:var( --color-primary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+  } 
+
+  &__description{
+     color:var( --color-primary);
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+    
+}

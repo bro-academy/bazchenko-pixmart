@@ -10,6 +10,8 @@
 @use './components/dropdown' as *;
 @use './components/index/hero-section' as *;
 @use './components/index/category-slider' as *;
+@use './components/index/category-promo' as *;
+@use './components/index/popular-products' as *;
 @use './components/layout/header' as *;
 @use './components/layout/footer' as *;
 
@@ -29,6 +31,7 @@ body {
     margin: 0 auto;
     background-color: red;
     font-family: var( --font-base);
+    font-weight: 400;
     min-width: 440px;
   }
 
@@ -37,14 +40,14 @@ body {
 }
 
 .wrapper {
-  height: 100vh;
+   min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding-inline: 16px;
 }
 
 .content {
-  flex: 1;
+  // flex: 1;
   background-color: var(--color-base);
 }
 
