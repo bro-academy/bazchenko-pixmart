@@ -1,0 +1,108 @@
+@use '../../base/variables' as *;
+
+.faq {
+    margin-bottom: 64px;
+
+    &__wrapper{
+        padding-inline: 16px;
+    }
+
+    &__info-wrapper {
+        margin-bottom: 64px;
+    }
+
+    &__title {
+        color: var(--color-marina-600);
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        font-family: var(--font-accent);
+        color:var( --color-primary);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 36px;
+    }
+
+    &__link {
+        width: 100%;
+    }
+
+    &__question-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 0;
+    }
+    
+    &__details {
+        padding: 24px;
+        border-radius: 10px;
+        box-shadow: 0 0 40px 0 var(--color-secondary2-invert)
+    }
+
+
+  &__details {
+    padding: 24px;
+    border-radius: 16px;
+    background-color: var(--color-base);
+    box-shadow: 0 0 40px 0 var(--color-secondary2-invert);
+    transition: border 0.3s, box-shadow 0.3s;
+
+    &[open] {
+      border: 2px solid var(--color-accent-link);
+    }
+  }
+
+//  &__summary-wrapper {
+//     position: relative;
+//  }
+
+  &__summary {
+    position: relative;
+    list-style: none;
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer;
+    white-space: normal;
+    word-wrap: break-word;
+     padding-right: 48px;
+
+    &::marker {
+      display: none;
+    }
+
+    &::after {
+    content: '↓ ';
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background: url('/src/assets/images/arrow-down.svg') no-repeat center;
+    background-size: 14px 14px;
+    border: 2px solid var(--color-separator-bold);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    }
+
+    details[open] &::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &__answer {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-primary);
+  }
+
+}
