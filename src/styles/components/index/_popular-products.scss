@@ -3,6 +3,10 @@
 .popular-products {
     padding-inline: 16px;
     margin-bottom: 36px;
+       overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+     padding-bottom: 20px;
 
   &__top {
     display: flex;
@@ -45,12 +49,29 @@
   }
 }
 
-.product-card{
+.product-card {
 
   &__link {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+
+  &__image-wrapper {
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    background-color: var(--color-accent-link);
+  }
+
+  &__label-icon {
+      display: block;
   }
 
   &__header-wrapper {
@@ -70,6 +91,13 @@
 
   &__price {
     color: var(--color-accent-link);
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 24px;
   }
 
 

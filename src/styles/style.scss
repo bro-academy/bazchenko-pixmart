@@ -10,6 +10,7 @@
 @use './components/dropdown' as *;
 @use './components/index/hero-section' as *;
 @use './components/index/category-slider' as *;
+
 @use './components/index/category-promo' as *;
 @use './components/index/popular-products' as *;
 @use './components/layout/header' as *;
@@ -97,4 +98,11 @@ a {
   max-width: 1728px;
   padding-inline: 16px;
   margin-inline: auto;
+}
+
+.element {
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
