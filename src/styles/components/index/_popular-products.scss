@@ -3,10 +3,6 @@
 .popular-products {
     padding-inline: 16px;
     margin-bottom: 36px;
-       overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-     padding-bottom: 20px;
 
   &__top {
     display: flex;
@@ -46,6 +42,10 @@
   &__main {
     display: flex;
     gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 20px;
   }
 }
 

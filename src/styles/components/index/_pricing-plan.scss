@@ -4,6 +4,7 @@
   padding-inline: 16px;
   background-color: var(--color-base);
   text-align: center;
+  margin-bottom: 64px;
 
   &__wrapper {
     margin: 0 auto;
@@ -22,7 +23,7 @@
   }
 
   &__subtitle {
-  font-family: var(--font-accent);
+    font-family: var(--font-accent);
     color:var( --color-primary);
     font-weight: 700;
     font-size: 36px;
@@ -43,12 +44,29 @@
   position: relative;
   flex: 1 1 300px;
   background-color: var( --color-base);
-  box-shadow: 0 0 40px 0 var(--color-secondary2-invert); // change colot
-  border-radius: 32px;
+  box-shadow: 0 0 40px 0 var(--color-secondary2-invert); // change color
+  border-radius: 20px;
   padding: 32px;
   display: flex;
   flex-direction: column;
-//   transition: border-color .3s, box-shadow .3s;
+
+   &--accent {
+    border: 2px solid var(--color-accent-link);
+        margin-bottom: 32px;
+   }
+
+   &__label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7px 24px;
+    background-color: var(--color-accent-link);
+    font-family: var(--font-accent);
+    font-family: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--color-base);
+   }
 
 &__title-wrapper{
     display: flex;
@@ -107,7 +125,7 @@
 
       &::before {
         content: '';
-        background-image: url('/images/static/mark.svg');
+        background: url("src/assets/images/list-mark.svg");
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
@@ -126,24 +144,5 @@
   &__button {
     align-self: center;
     width: 100%;
-  }
-
-  &--featured {
-    border-color: var(--color-accent-link);
-    box-shadow: 0 4px 24px rgba(37, 99, 235, 0.16);
-
-    &::before {
-      content: 'Best Seller';
-      position: absolute;
-      top: -12px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: var(--color-accent-link);
-      color: #fff;
-      font-size: 12px;
-      font-weight: 600;
-      padding: 4px 12px;
-      border-radius: 12px;
-    }
   }
 }
