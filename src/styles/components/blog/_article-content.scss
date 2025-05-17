@@ -1,0 +1,223 @@
+@use '../../base/variables' as *;
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__text-wrapper {
+         display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        color: var(--color-secondary);
+    }
+
+    &__title {
+        font-family: var(--font-accent);
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: var(--color-primary);
+    }
+
+    &__figure {
+        margin: 0;
+    }
+
+    &__figure-caption-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__figure-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__figure-caption-text {
+        font-size: 16px;
+        line-height: 24px;
+        font-size: 400;
+        color: var(--color-primary);
+        opacity: 0.7;
+    }
+
+    &__figure-caption-link {
+        font-family: var(--font-base);
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    &__quote {
+            position: relative;
+            padding-left: 80px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            font-family: var(--font-accent);
+            min-height: 64px;
+            margin: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 64px;
+            height: 64px;
+            background: url('/src/assets/images/static/quote-icon.svg') no-repeat center;
+            background-size: contain;
+        }
+    }
+}
+
+
+
+
+
+.article-sidebar {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+
+    &__author {
+        display: flex;
+        gap: 16px;
+    }
+
+      &__author-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__author-name {
+        font-family: var(--font-accent);
+        font-size: 20px;
+        line-height: 26px;
+        color:var(--color-primary);
+        font-weight: 700;
+    }
+
+    &__author-date {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color:var(--color-primary);
+        opacity: 50%;
+    }
+
+    &__categories {
+        border-top: 2px solid var(--color-primary);
+        padding-top: 40px;
+    }
+
+    &__title {
+        font-family: var(--font-accent);
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    &__list {
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+         padding: 0;
+    }
+
+    &__item {
+
+        &--active {
+            color: var(--color-primary);
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color:var(--color-secondary);
+        border: none;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            margin-right: 8px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--color-accent-link);
+        }
+    }
+
+      &__link--active {
+        color: var(--color-primary);
+        font-weight: 600;
+        padding-left: 16px;
+       }
+
+    &__latest {
+         border-top: 2px solid var(--color-primary);
+        padding-top: 40px;
+    }
+
+    &__latest-list {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__latest-item {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+         &:first-child::after {
+            content: "";
+            display: block;
+            margin-top: 24px; // расстояние между текстом и линией
+            width: 100%;
+            height: 1px;
+            background-color: var(--color-primary);
+            opacity: 0.15;
+         }
+
+    }
+
+     &__latest-link {
+        width: fit-content;
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 700;
+        font-family: var(--font-accent);
+    }
+
+    &__latest-date {
+        font-weight: 16px;
+        line-height: 24px;
+        color: var(--color-secondary);
+    }
+}
+
+
+
+

@@ -125,12 +125,12 @@
 
       &::before {
         content: '';
-        background: url("src/assets/images/list-mark.svg");
+        background: url('/src/assets/images/static/list-mark.svg') no-repeat center;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
         left: 0;
-        top: 0;
+        top: 4px;
          display: inline-block;
          width: 16px;
          height: 15px;
