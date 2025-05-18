@@ -1,0 +1,32 @@
+@use '../../base/variables' as *;
+
+.contact-form {
+  box-shadow: 0 4px 40px 0 red;
+
+     &__content {
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+     }
+
+     &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+     }
+
+     &__input {
+        padding: 20px;
+     }
+
+     &__group-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+     }
+
+     &__textarea {
+        padding: 20px;
+     }
+}

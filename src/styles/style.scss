@@ -18,6 +18,8 @@
 @use './components/blog/hero-article' as *;
 @use './components/blog/article-content' as *;
 @use './components/blog/releated-articles' as *;
+@use './components/contact/contact-form' as *;
+@use './components/contact/contact-info' as *;
 @use './components/layout/header' as *;
 @use './components/layout/footer' as *;
 
@@ -46,9 +48,6 @@ body {
 }
 
 .wrapper {
-   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   padding-inline: 16px;
 }
 
