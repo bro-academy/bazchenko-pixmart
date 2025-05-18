@@ -6,10 +6,12 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    border-radius: 8px;
     transition-duration: var(--tran-duration);
     border: 1px solid var(--color-separator-bold);
     background-color: var(--color-base);
     color: var(--color-secondary2);
+    resize: none;
 
     &:hover {
         border: 1px solid var(--color-focus);
