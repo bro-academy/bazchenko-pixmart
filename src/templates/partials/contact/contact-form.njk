@@ -1,0 +1,34 @@
+<form class="contact-form wrapper" action="url" method="post">
+    <div class="contact-form__content">
+  <div class="contact-form__block">
+    <label class="contact-form__label" for="name">Full Name</label>
+    <input class="contact-form__input input input--default" id="name" type="text" name="name" placeholder="Amelia Robert Johnson" required>
+  </div>
+  <div class="contact-form__block">
+    <label class="contact-form__label" for="email">Email Address</label>
+    <input class="contact-form__input input input--default" type="email" id="email" name="user-email"
+      placeholder="amelia.robertjohnson@pixmart.com"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+  </div>
+  <div class="contact-form__block">
+    <label class="contact-form__label" for="phone">Subject</label>
+    <input class="contact-form__input input input--default" type="tel" id="phone" name="user-phone" placeholder="General Inquiry">
+  </div>
+  <div class="contact-form__block">
+    <label class="contact-form__label" for="message">Message</label>
+    <textarea class="contact-form__textarea textarea" name="Welcome" id="message" cols="20" rows="5"  placeholder="Enter your message ..." required></textarea>
+  </div>
+  <div class="contact-form__group-wrapper">
+  <label class="checkbox-wrapper">
+    <input type="checkbox" id="combatant" name="clothing" value="combatant" class="checkbox-input visually-hidden"/>
+    <span class="custom-checkbox"></span>
+    Subscribe me to Newsletter
+  </label>
+  <label class="checkbox-wrapper">
+    <input  type="checkbox" id="ninja" name="clothing" value="ninja" class="checkbox-input visually-hidden"/>
+    <span class="custom-checkbox"></span>
+   I have read the User & Privacy Policy
+  </label>
+  </div>
+  <input class="contact-form__button button button--accent" type="submit" value="Send message">
+  </form>
