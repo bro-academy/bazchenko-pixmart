@@ -1,0 +1,94 @@
+@use '../../base/variables' as *;
+
+.related-articles {
+    padding-top: 32px;
+    background-color: var(--background-card-color);
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    &__title {
+        font-family: var(--font-accent);
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: 700;
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        width: fit-content;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            margin-left: 8px;
+            width: 16px;
+            height: 16px;
+            background: url('/src/assets/images/static/chevron-right.svg') no-repeat center;
+            vertical-align: middle;
+        }
+    }
+
+        &__cards {
+            display: grid;
+            grid-template-columns:  1fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 24px;
+             margin-bottom: 32px;
+        }
+    }
+
+
+    .article-card {
+        padding: 20px;
+        background-color: var(--color-base);
+        box-shadow: 0 4px 30px 0 var(--box-shadow-color);
+        border-radius: 20px;
+
+        &__image-wrapper {
+            position: relative;
+            border-radius: 20px;
+            margin-bottom: 32px;
+        }
+
+        &__label {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+            z-index: 1;
+            transform: translateY(50%);
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            padding: 8px 16px;
+            color: var(--color-primary-white);
+            background-color: var(--color-accent-link);
+            border-radius: 100px;
+        }
+
+        &__info {
+            padding-inline: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        &__title {
+            font-family: var(--font-accent);
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 700;
+        }
+
+        &__date {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+    }
