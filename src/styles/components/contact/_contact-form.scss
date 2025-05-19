@@ -1,7 +1,12 @@
 @use '../../base/variables' as *;
 
 .contact-form {
-  box-shadow: 0 4px 40px 0 red;
+    margin-bottom:10px ;
+
+   &__container {
+      box-shadow: 0 4px 40px 0 var(--box-shadow-color2); //test
+      border-radius: 20px;
+   }
 
      &__content {
         padding: 32px;

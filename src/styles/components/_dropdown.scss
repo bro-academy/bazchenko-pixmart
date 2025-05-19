@@ -1,15 +1,40 @@
 @use '../base/variables' as *;
 
-.dropdown {
-    // color: $color-primary;
-    // background-color: transparent;
-    // border: 2px solid $color-separator;
-    // font-family: $font-base;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px; 
+.contact-form__sort-select {
+    margin-top: 6px;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: url('/src/assets/images/static/chevron-down.svg') no-repeat center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+  }
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: none;
+
+  width: 100%;
+  padding: 20px;
+  padding-right: 44px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 8px;
+  cursor: pointer;
 }

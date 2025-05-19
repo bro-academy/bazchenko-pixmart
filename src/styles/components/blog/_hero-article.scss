@@ -3,8 +3,7 @@
 .hero-article {
  padding-top: 64px;
  margin-bottom: 48px;
- background: linear-gradient(to bottom, rgba(240, 246, 253, 1), rgba(255, 255, 255, 0));
-//  CHANGE COLOR !!!
+    background: linear-gradient(to bottom, var(--background-card-color), var(--background-card-color2));
 
  &__category {
     width: fit-content;
