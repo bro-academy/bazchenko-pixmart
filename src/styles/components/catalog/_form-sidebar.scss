@@ -1,0 +1,48 @@
+@use '../../base/variables' as *;
+
+.form-sidebar {
+
+    &__filter {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__group-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        
+    }
+
+    &__group-title {
+        font-family: var(--font-accent);
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: var( --color-primary);
+        margin-bottom: 24px;
+    }
+
+    &__group {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__checkbox {
+        display: flex;
+        gap: 8px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: var(--color-primary);
+    }
+
+    &__button {
+        width: 100%;
+        padding: 6px 34px;
+        font-size: 16px;
+    }
+}
