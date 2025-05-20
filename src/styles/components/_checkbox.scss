@@ -1,10 +1,15 @@
 @use '../base/variables' as *;
 
 .checkbox-wrapper {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  gap: 4px;
   cursor: pointer;
   position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--color-primary);
+   align-items: center;
 
   .checkbox-input {
     position: absolute;
@@ -19,7 +24,7 @@
     width: 14px;
     height: 14px;
     border-radius: 4px;
-    margin-right: 8px;
+    margin: 5px;
     border: 1px solid var(--color-line);
     background-color:  var(--color-base);
     display: flex;
@@ -27,7 +32,7 @@
     justify-content: center;
     flex-shrink: 0;
     position: relative;
-    padding: 4px 3px;
+    padding: 5px;
 
     &::after {
       content: "";

@@ -20,6 +20,9 @@
 @use './components/blog/releated-articles' as *;
 @use './components/contact/contact-form' as *;
 @use './components/contact/contact-info' as *;
+@use './components/catalog/form-sidebar' as *;
+@use './components/catalog/catalog-content' as *;
+@use './components/catalog/catalog-hero' as *;
 @use './components/layout/header' as *;
 @use './components/layout/footer' as *;
 

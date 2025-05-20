@@ -60,7 +60,8 @@
     }
 
     &--primary-icon {
-        padding: var(--btn-icon-padding);
+        padding: 6px;
+        // padding: var(--btn-icon-padding);
         color: var(--color-primary-white);
         background-color: var(--color-accent-link);
 
@@ -122,7 +123,8 @@
     }
 
     &--secondary-icon {
-        padding: var(--btn-icon-padding);
+        padding: 6px;
+        // padding: var(--btn-icon-padding);
         color: var(--color-primary);
         background-color: var(--color-base);
         border-color: var(--color-separator-bold);
