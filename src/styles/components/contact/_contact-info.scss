@@ -54,7 +54,7 @@
 
         &::before {
             content: "";
-            background: url('/src/assets/images/static/phone.svg') no-repeat center;
+            background: url('/src/assets/icons/phone-blue.svg') no-repeat center;
             background-size: contain;
             margin-right: 8px;
             width: 24px;
@@ -70,7 +70,7 @@
 
         &::before {
             content: "";
-            background: url('/src/assets/images/static/mail.svg') no-repeat center;
+            background: url('/src/assets/icons/mail-blue.svg') no-repeat center;
             margin-right: 8px;
             width: 24px;
             height: 24px;
@@ -86,7 +86,7 @@
 
         &::before {
             content: "";
-            background: url('/src/assets/images/static/clock.svg') no-repeat center;
+            background: url('/src/assets/icons/clock-blue.svg') no-repeat center;
             margin-right: 8px;
             width: 24px;
             height: 24px;

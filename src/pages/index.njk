@@ -1,7 +1,9 @@
 {% extends 'src/templates/layouts/base.njk' %}
 
+{% from 'src/templates/partials/ui/icon.njk' import icon %}
 {% block content %}
   {# <h1>{{ index.title }}</h1> #}
+
   {% include 'src/templates/partials/home/hero-section.njk' %}
   {% include 'src/templates/partials/home/category-slider.njk' %}
   {% include 'src/templates/partials/home/category-promo.njk' %}

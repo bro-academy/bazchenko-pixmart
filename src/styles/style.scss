@@ -8,6 +8,7 @@
 @use './components/input' as *;
 @use './components/textarea' as *;
 @use './components/dropdown' as *;
+@use './components/catalog-card' as *;
 @use './components/index/hero-section' as *;
 @use './components/index/category-slider' as *;
 @use './components/index/pricing-plan' as *;
@@ -121,4 +122,9 @@ a {
   font-weight: 400;
   margin-bottom: 16px;
   text-transform: uppercase;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
 }

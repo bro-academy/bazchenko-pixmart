@@ -82,7 +82,7 @@
         background-color: var(--color-marina-900);
        }
 
-       &:disabled {
+       &:target {
         color: var(--color-disabled);
         background-color: var(--color-separator-bold) ;
        }

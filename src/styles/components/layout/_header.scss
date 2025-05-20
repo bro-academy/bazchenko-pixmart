@@ -23,9 +23,10 @@
  &__list {
     display: none;
     gap: 8px;
+ }
 
-
-
+ &__icon {
+   color: var(--color-primary-invert);
  }
 
  &__actions {

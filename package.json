@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "vite dev",
-    "build": "vite build",
+    "start": "npm run sprite:generate && vite dev",
+    "build": "npm run sprite:generate && vite build",
     "preview": "vite preview",
     "prettier": "npx prettier '**/*.njk'",
     "prettier:write": "npx prettier '**/*.njk' --write",
@@ -32,7 +32,6 @@
     "stylelint-config-standard-scss": "^15.0.0",
     "svg-sprite-generator": "^0.0.7",
     "vite": "^6.3.5",
-    "vite-plugin-svg-sprite": "^0.6.2",
     "vituum": "^1.2.0"
   },
   "lint-staged": {

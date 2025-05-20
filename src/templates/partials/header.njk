@@ -46,9 +46,11 @@
         <form class="header__search-form" action="/search" method="get">
               <input type="text" class="header__search-input input input--secondary" name="query" placeholder="Search for Digital Assets" aria-label="Search">
           </form>
-          <button class="header__search-button button button--secondary-icon"><svg class="header__search-icon" width="24" height="24" ><use href="#"></use></svg></button>
+          <button class="header__search-button button button--secondary-icon">
+            {{ icon('search-md', 'header__search-icon icon') }}
+            </button>
           <a class="header__button button button--primary-icon" href="#" target="_blank">
-            <svg class="header__icon" width="24" height="24"><use href="src/assets/image/sprite/sprite.svg#shopping-bag"></use></svg>
+           {{ icon('shopping-bag', 'header__icon icon') }}
          </a>
     </div>
  </div>
