@@ -1,43 +1,91 @@
 @use '../../base/variables' as *;
 
 .category-promo {
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-    margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin-bottom: 64px;
 
- &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
- }
-
-     &__cards {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    max-height: 420px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-right: 8px; 
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-  }
 
   &__subtitle {
-    font-family: var(--font-accent);
-    color:var( --color-primary);
-    font-weight: 700;
+    color: var(--color-primary);
     font-size: 36px;
     line-height: 48px;
-  } 
+    font-weight: 700;
+  }
 
-  &__description{
-     color:var( --color-primary);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+    &__description{
+    color: var( --color-primary);
+    opacity: 0.7;
     font-size: 18px;
     line-height: 28px;
+  }
+
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 64px;
+
+  }
+}
+
+.category-card {
+  background-color: var(--color-alternative2);
+  border-radius: 20px;
+  padding: 24px;
+  transition: transform var(--tran-duration);
+
+    &:hover {
+      background-color: var(--color-accent-link);
+      color: var(--color-primary-invert);
+
+       .category-card__text {
+      color: var(--color-primary-invert);
+       }
+    }
+
+  &__icon-wrapper {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     margin-bottom: 16px;
   }
 
-    
+  &__title {
+    font-family: var(--font-accent);
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var( --color-secondary2);
+  }
+
+  &:nth-child(even) {
+    transform: translateY(80px);
+  }
+
+  &:nth-child(odd) {
+    transform: translateY(0);
+  }
 }
