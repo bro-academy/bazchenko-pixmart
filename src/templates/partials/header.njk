@@ -15,40 +15,34 @@
               <span class="burger-icon"></span>
            </a>
         <div class="header__nav-wrapper">
-            <a href="#" class="header__logo-link">
-        <img alt="Pixtart logo" class="header__logo logo" src="src/assets/images/static/logo.png" width="107" height="24">
+            <a href="#" class="header__logo-link link link--secondary">
+        <img alt="Pixtart logo" class="header__logo logo" src="src/assets/images/static/logo.png" loading="lazy" width="107" height="24">
         </a>
         </div>
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__list-item"><a  href="about.html" class="header__list-link link link--primary">About</a></li>
+                <li class="header__list-item"><a  href="about.html" class="header__list-link link link--secondary">About</a></li>
                 <li class="header__list-item"><a  href="products.html" class="header__list-link link link--secondary">Products</a></li>
-                <li class="header__list-item"><a  href="creators.html" class="header__list-link">Creators</a></li>
-                <li class="header__list-item"><a  href="blog.html" class="header__list-link">Blog</a></li>
-                <li class="header__list-item"><a  href="contact.html" class="header__list-link">Contact</a></li>
+                <li class="header__list-item"><a  href="creators.html" class="header__list-link link link--secondary">Creators</a></li>
+                <li class="header__list-item"><a  href="blog.html" class="header__list-link link link--secondary">Blog</a></li>
+                <li class="header__list-item"><a  href="contact.html" class="header__list-link link link--secondary">Contact</a></li>
             </ul>
         </nav>
     </div>
-     {# <div class="switcher">
-  <input type="checkbox" id="switch" class="switcher__input visually-hidden">
-  <label for="switch" class="switcher__label"></label>
-</div>  #}
-{# <form action="url" method="get">
-        <select class="dropdown" name="sort">
-          <option value="" disabled selected>Sort by</option>
-          <option value="newest">Newest</option>
-          <option value="most-popular">Most popular</option>
-          <option value="increasing-in-price">Increasing in price</option>
-          <option value="lowering-the-price">Lowering the price</option>
-        </select>
-      </form> #}
     <div class="header__actions">
-        <form class="header__search-form" action="/search" method="get">
-              <input type="text" class="header__search-input input input--secondary" name="query" placeholder="Search for Digital Assets" aria-label="Search">
-          </form>
-          <button class="header__search-button button button--secondary-icon">
-            {{ icon('search-md', 'header__search-icon icon') }}
+          <form class="header__search-form" action="/search" method="get">
+          <div class="header__search-wrapper">
+            <input
+              type="text"
+              class="header__search-input input input--secondary"
+              name="query"
+              placeholder="Search for Digital Assets"
+              aria-label="Search">
+            <button type="submit" class="header__search-button button button--secondary-icon">
+              {{ icon('search-md', 'header__search-icon icon') }}
             </button>
+          </div>
+        </form>
           <a class="header__button button button--primary-icon" href="#" target="_blank">
            {{ icon('shopping-bag', 'header__icon icon') }}
          </a>
