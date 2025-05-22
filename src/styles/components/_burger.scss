@@ -1,7 +1,7 @@
 @use '../base/variables' as *;
 
 .menu-button {
-  // display: none;
+  display: none;
   padding: 8px;
   background-color: var(--color-accent-link);
   border: 2px solid transparent;

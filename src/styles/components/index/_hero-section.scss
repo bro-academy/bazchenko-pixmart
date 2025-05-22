@@ -1,12 +1,19 @@
 @use '../../base/variables' as *;
+@use '../../base/mixins' as m;
 
 .main-banner {
     margin-bottom: 64px;
+   background: linear-gradient(to right, var(--background-card-color), var(--background-card-color2));
 
 &__wrapper {
     display: flex;
     flex-direction: column;
     gap: 36px;
+
+     @include m.laptop {
+      flex-direction: row;
+      gap: 100px;
+     }
 }
 
 &__image {
@@ -15,6 +22,10 @@
     aspect-ratio: 408 / 248;
     object-fit: cover;
     display: block;
+
+    @include m.laptop {
+      order: 2;
+     }
   }
 
   &__info-wrapper {

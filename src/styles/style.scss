@@ -1,4 +1,6 @@
 @use './base/variables' as *;
+@use './base/mixins' as m;
+@use './base/breakpoints' as *;
 @use './components/button' as *;
 @use './components/burger' as *;
 @use './components/link' as *;
@@ -53,6 +55,14 @@ body {
 
 .wrapper {
   padding-inline: 16px;
+
+   @include m.laptop {
+     padding-inline: 40px;
+   }
+
+   @include m.desk {
+     padding-inline: 80px;
+   }
 }
 
 .content {

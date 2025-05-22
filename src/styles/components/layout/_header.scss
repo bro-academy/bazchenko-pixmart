@@ -1,29 +1,61 @@
 @use '../../base/variables' as *;
+@use '../../base/mixins' as m;
 
 .header {
 
+   &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 16px;
+
+    @include m.laptop {
+      padding: 30px 40px;
+    }
+
+     @include m.desk {
+      padding: 30px 80px;
+    }
+ }
+
    &__logo-wrapper {
       display: flex;
-      gap: 8px;
+      gap: 16px;
       align-items: center;
    }
 
-&__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 24px;
+ &__logo-link {
+     display: inline-block;
+     line-height: 0;
+      margin-right: 16px;
  }
 
- &__nav-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 8px;
- }
+//  &__nav-wrapper {
+//     display: flex;
+//     align-items: center;
+//     gap: 8px;
+//  }
 
- &__list {
-    display: none;
+&__list {
+  position: absolute;
+  clip-path: inset(100%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0;
+  
+  @include m.laptop {
+    position: static;
+    clip-path: none;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    white-space: normal;
+    display: flex;
     gap: 8px;
- }
+    border: none;
+  }
+}
 
  &__icon {
    color: var(--color-primary-invert);
@@ -34,6 +66,42 @@
     align-items: center;
     gap: 8px;
  }
+
+&__search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+&__search-input {
+  font-size: 14px;
+  line-height: 20px;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: none;
+  width: 240px;
+
+  @include m.laptop {
+    display: block;
+  }
+}
+
+&__search-button {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  opacity: 1;
+   
+  @include m.laptop {
+   display: none;
+    width: 216px;
+  }
+}
 
  &__list-link {
     font-size: 14px;
@@ -49,8 +117,7 @@
  &__search-input{
     padding: 10px 12px;
     border-radius: 8px;
-    display: none;
-   //  border-color: var(--color-separator-bold);
+
  }
 }
 

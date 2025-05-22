@@ -1,0 +1,14 @@
+@use '../base/variables' as *;
+@use './breakpoints' as *;
+
+@mixin desk {
+  @media screen and (min-width: #{$screen-desk}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: #{$screen-laptop}) {
+    @content;
+  }
+}
