@@ -1,16 +1,16 @@
 <section class="popular-products">
-    <div class="popular-products__wrapper">
+    <div class="popular-products__wrapper wrapper">
         <div class="popular-products__top">
             <div class="popular-products__title-wrapper">
                 <h2 class="popular-products__title text-label">TRENDING</h2>
-                <strong class="popular-products__subtitle">Popular Products</strong>
+                <strong class="popular-products__subtitle subtitle">Popular Products</strong>
             </div>
             <div class="popular-products__buttons-wrapper">
-                <button class="button button--secondary-icon">
-                    <svg class="button__icon" width="24" height="24"><use href="#"></use></svg>
+                <button class="popular-products__button button button--secondary-icon">
+                     {{ icon('chevron-left', 'popular-products__button-icon icon') }}
                 </button>
-                <button class="button button--secondary-icon">
-                    <svg class="button__icon" width="24" height="24"><use href="#"></use></svg>
+               <button class="popular-products__button button button--secondary-icon">
+                    {{ icon('chevron-right', 'popular-products__button-icon icon') }}
                 </button>
             </div>
         </div>
