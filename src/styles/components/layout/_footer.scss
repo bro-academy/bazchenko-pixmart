@@ -1,4 +1,5 @@
 @use '../../base/variables' as *;
+@use '../../base/mixins' as m;
 
 .footer {
   background-color: var(--color-base);
@@ -21,6 +22,11 @@
     flex-direction: column;
     gap: 32px;
     margin-bottom: 72px;
+
+    @include m.laptop {
+      flex-direction: row;
+      gap: 110px;
+    }
   }
 
   &__logo-wrapper {
@@ -44,12 +50,23 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+     @include m.laptop {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 64px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    }
   }
 
   &__nav-block {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+   display: flex;
+  flex-direction: column;
+  gap: 8px;
+  white-space: nowrap;
+  width: fit-content;
+  flex-shrink: 0;
   }
 
   &__nav-title {
@@ -81,6 +98,11 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    justify-content: space-between;
+
+    @include m.laptop {
+      flex-direction: row;
+    }
   }
 
   &__buttons-wrapper {
@@ -110,6 +132,7 @@
   &__input-wrapper {
     display: flex;
     gap: 8px;
+    flex-grow: 1;
   }
 
   &__text {
@@ -117,9 +140,9 @@
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    max-width: 340px;
+    // word-wrap: break-word;
+    // overflow-wrap: break-word;
+    max-width: 216px;
   }
 
   &__form {
@@ -139,6 +162,11 @@
     cursor: pointer;
   }
 
+  &__actions_wrapper {
+    display: flex;
+    gap: 24px;
+  }
+
   &__bottom {
     display: flex;
     flex-direction: column;
@@ -151,6 +179,10 @@
     font-weight: 400;
     padding: 24px 16px;
 
+     @include m.laptop {
+      flex-direction: row;
+     }
+ 
     nav {
       ul {
         padding: 0;

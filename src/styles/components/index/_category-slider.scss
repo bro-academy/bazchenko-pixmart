@@ -1,4 +1,5 @@
 @use '../../base/variables' as *;
+@use '../../base/mixins' as m;
 
 .category-slider {
     padding-inline: 16px;
@@ -13,6 +14,16 @@
     -webkit-overflow-scrolling: touch;
     width: 100%;
      gap: 16px;
+     padding-bottom: 20px;
+      
+
+     @include m.laptop {
+         justify-content: center;
+     }
+
+      @include m.desk {
+         gap: 32px;
+     }
     }
 
     &__link {
@@ -31,6 +42,15 @@
         background-color: var(--color-alternative2);
         display: inline-block;
         border-radius: 20px;
+
+
+        @include m.laptop {
+            padding: 37px 13px;
+        }
+
+         @include m.desk {
+            padding: 37px;
+        }
   }
 
     &__icon {

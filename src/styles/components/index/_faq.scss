@@ -1,28 +1,45 @@
 @use '../../base/variables' as *;
+@use '../../base/mixins' as m;
 
 .faq {
     margin-bottom: 64px;
 
     &__wrapper{
-        padding-inline: 16px;
-    }
+       display: flex;
+       flex-direction: column;
+       gap: 64px;
+       justify-content: center;
+
+       @include m.laptop {
+        flex-direction: row;
+        gap: 40px;
+       }
+     }
 
     &__info-wrapper {
+      display: flex;
+      flex-direction: column;
         margin-bottom: 64px;
+        align-items: flex-start;
+
+         @include m.laptop {
+          margin: auto 0;
+          width: 50%;
+          flex-shrink: 0;
+  }
     }
     
     &__subtitle {
-        font-family: var(--font-accent);
-        color:var( --color-primary);
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 48px;
         margin-bottom: 36px;
     }
 
     &__link {
         width: 100%;
+
+        @include m.laptop {
+          width: fit-content;
     }
+  }
 
     &__question-list {
         display: flex;
@@ -30,23 +47,18 @@
         gap: 16px;
         padding: 0;
     }
-    
-    &__details {
-        padding: 24px;
-        border-radius: 10px;
-        box-shadow: 0 0 40px 0 var(--color-secondary2-invert)
-    }
-
 
   &__details {
+    width: 100%;
     padding: 24px;
-    border-radius: 16px;
+     border-radius: 10px;
     background-color: var(--color-base);
     box-shadow: 0 0 40px 0 var(--color-secondary2-invert);
     transition: border 0.3s, box-shadow 0.3s;
 
     &[open] {
       border: 2px solid var(--color-accent-link);
+       width: 100%;
     }
   }
 
@@ -55,6 +67,8 @@
 //  }
 
   &__summary {
+   display: block;
+   width: 100%;
     position: relative;
     list-style: none;
     font-family: var(--font-accent);

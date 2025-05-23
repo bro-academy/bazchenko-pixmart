@@ -9,10 +9,12 @@
     display: flex;
     flex-direction: column;
     gap: 36px;
+    padding: 32px 16px 64px 16px;
 
      @include m.laptop {
       flex-direction: row;
       gap: 100px;
+      padding:120px 28px 110px 40px;
      }
 }
 

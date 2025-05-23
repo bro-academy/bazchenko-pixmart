@@ -1,8 +1,13 @@
 @use '../../base/variables' as *;
+@use '../../base/mixins' as m;
 
 .popular-products {
     padding-inline: 16px;
-    margin-bottom: 36px;
+    margin-bottom: 64px;
+
+    @include m.laptop {
+      margin-bottom: 120px;
+    }
 
   &__top {
     display: flex;
@@ -13,8 +18,21 @@
 
   &__buttons-wrapper{
     display: none;
-    // display: flex;
     gap: 12px;
+    align-items: end;
+
+    @include m.laptop {
+     display: flex;
+    }
+  }
+
+&__button {
+   padding: 18px;
+  }
+
+  &__button-icon {
+    width: 24px;
+    height: 24px;
   }
 
 
@@ -24,14 +42,6 @@
     gap: 16px;
   }
 
-  &__subtitle {
-    font-family: var(--font-accent);
-    color:var( --color-primary);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
-  }
-
   &__main {
     display: flex;
     gap: 16px;
@@ -39,7 +49,11 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 20px;
-  }
+   
+    @include m.desk {
+     justify-content: center;
+    }
+}
 }
 
 .product-card {

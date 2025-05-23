@@ -1,4 +1,5 @@
 @use '../../base/variables' as *;
+@use '../../base/mixins' as m;
 
 .pricing-plan {
   padding-inline: 16px;
@@ -10,16 +11,12 @@
     margin: 0 auto;
   }
 
-  &__header-wrapper {
-    margin-bottom: 48px;
+  &__title {
+    margin-bottom: 16px;
   }
 
-  &__subtitle {
-    font-family: var(--font-accent);
-    color:var( --color-primary);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
+  &__header-wrapper {
+    margin-bottom: 80px;
   }
 
   &__cards-wrapper {
@@ -28,6 +25,10 @@
     gap: 16px;
     justify-content: center;
     // flex-wrap: wrap;
+
+    @include m.laptop {
+       flex-direction: row;
+    }
   }
 }
 
@@ -45,6 +46,7 @@
    &--accent {
     border: 2px solid var(--color-accent-link);
         margin-bottom: 32px;
+        margin-top: -32px;
    }
 
    &__label {
