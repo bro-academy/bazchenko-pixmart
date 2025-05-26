@@ -32,6 +32,7 @@
     "stylelint-config-standard-scss": "^15.0.0",
     "svg-sprite-generator": "^0.0.7",
     "vite": "^6.3.5",
+    "vite-plugin-imagemin": "^0.6.1",
     "vituum": "^1.2.0"
   },
   "lint-staged": {
