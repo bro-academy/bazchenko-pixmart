@@ -1,0 +1,100 @@
+{
+  "catalog": [
+    {
+      "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Catalog card",
+      "label": "SOLD OUT",
+      "title": "Lens Chronicles",
+      "subtitle": "Photography · Creative",
+      "price": "€20.99"
+    },
+    {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Another card",
+      "label": "NEW",
+      "title": "Another Product",
+      "subtitle": "Category · Style",
+      "price": "€15.50"
+    },
+      {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Another card",
+      "label": "POPULAR",
+      "title": "Another Product",
+      "subtitle": "Category · Style",
+      "price": "€15.50"
+    },
+      {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Another card",
+      "label": "SOLD OUT",
+      "title": "Another Product",
+      "subtitle": "Category · Style",
+      "price": "€15.50"
+    },
+        {
+      "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Catalog card",
+      "label": "SOLD OUT",
+      "title": "Lens Chronicles",
+      "subtitle": "Photography · Creative",
+      "price": "€20.99"
+    },
+        {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Another card",
+      "label": "POPULAR",
+      "title": "Another Product",
+      "subtitle": "Category · Style",
+      "price": "€15.50"
+    },
+       {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Another card",
+      "label": "POPULAR",
+      "title": "Another Product",
+      "subtitle": "Category · Style",
+      "price": "€15.50"
+    },
+       {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Another card",
+      "label": "POPULAR",
+      "title": "Another Product",
+      "subtitle": "Category · Style",
+      "price": "€15.50"
+    },
+       {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Another card",
+      "label": "SOLD OUT",
+      "title": "Another Product",
+      "subtitle": "Category · Style",
+      "price": "€15.50"
+    },
+       {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Another card",
+      "label": "POPULAR",
+      "title": "Another Product",
+      "subtitle": "Category · Style",
+      "price": "€15.50"
+    },
+       {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Another card",
+      "label": "NEW",
+      "title": "Another Product",
+      "subtitle": "Category · Style",
+      "price": "€15.50"
+    },
+       {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Another card",
+      "label": "SOLD OUT",
+      "title": "Another Product",
+      "subtitle": "Category · Style",
+      "price": "€15.50"
+    }
+  ]
+}
