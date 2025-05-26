@@ -34,18 +34,12 @@
             </button>
         </div>
     </div>
-    <div class="catalog-content__cards">
-        {% include "src/templates/partials/catalog-card.njk" %}
-        {% include "src/templates/partials/catalog-card.njk" %}
-        {% include "src/templates/partials/catalog-card.njk" %}
-        {% include "src/templates/partials/catalog-card.njk" %}
-        {% include "src/templates/partials/catalog-card.njk" %}
-        {% include "src/templates/partials/catalog-card.njk" %}
-        {% include "src/templates/partials/catalog-card.njk" %}
-        {% include "src/templates/partials/catalog-card.njk" %}
-        {% include "src/templates/partials/catalog-card.njk" %}
-        {% include "src/templates/partials/catalog-card.njk" %}
-        {% include "src/templates/partials/catalog-card.njk" %}
-        {% include "src/templates/partials/catalog-card.njk" %}
-    </div>
+   <div class="catalog-content__cards">
+    {% for product in catalog%}
+      {% include "src/templates/partials/catalog-card.njk" %}
+    {% endfor %}
+  </div>
+  <button class="catalog-content__button-load button button--secondary">
+    Load more
+    </button> 
 </section>

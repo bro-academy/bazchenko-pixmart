@@ -1,7 +1,38 @@
+{# {% for card in promo_cards %}
   <article class="category-card">
-            <div class="category-card__icon-wrapper">
-            <img class="category-card__icon" loading="lazy" alt="Icon" src="src/assets/images/static/monitor.svg" width="48" height="48">
-            </div>
-            <h3 class="category-card__title">Templates</h3>
-            <span class="category-card__text">For all needs • Modern</span>
-        </article>
+    <div class="category-card__icon-wrapper">
+      <img class="category-card__icon" loading="lazy" alt="{{ card.alt }}" src="{{ card.image }}" width="48" height="48">
+    </div>
+    <h3 class="category-card__title">{{ card.title }}</h3>
+    <span class="category-card__text">{{ card.text }}</span>
+  </article>
+{% endfor %} #}
+
+<article class="category-card">
+    <div class="category-card__icon-wrapper">
+      <img class="category-card__icon" loading="lazy" alt="Templates" src="src/assets/images/static/monitor.svg" width="48" height="48">
+    </div>
+    <h3 class="category-card__title">Templates</h3>
+    <span class="category-card__text">For all needs • Modern</span>
+  </article>
+  <article class="category-card category-card--top-decor">
+    <div class="category-card__icon-wrapper">
+      <img class="category-card__icon" loading="lazy" alt="App Icons" src="src/assets/images/static/mobile-white.svg" width="48" height="48">
+    </div>
+    <h3 class="category-card__title">App Icons</h3>
+    <span class="category-card__text category-card__text--top-decor">High-quality • Elegant</span>
+  </article>
+  <article class="category-card category-card--bottom-decor">
+    <div class="category-card__icon-wrapper">
+      <img class="category-card__icon" loading="lazy" alt="Slides" src="src/assets/images/static/presentation.svg" width="48" height="48">
+    </div>
+    <h3 class="category-card__title">Slides</h3>
+    <span class="category-card__text">For all needs • Modern</span>
+  </article>
+  <article class="category-card">
+    <div class="category-card__icon-wrapper">
+      <img class="category-card__icon" loading="lazy" alt="Design Tools" src="src/assets/images/static/illustration.svg" width="48" height="48">
+    </div>
+    <h3 class="category-card__title">Design Tools</h3>
+    <span class="category-card__text">For all needs • Modern</span>
+  </article>

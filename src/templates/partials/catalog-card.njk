@@ -1,23 +1,49 @@
 <article class="catalog-card">
-            <div class="catalog-card__banner-wrapper">
-                <a class="catalog-card__link" href="#">
-            <img class="catalog-card__banner" alt="Catalog card"  loading="lazy" src="src/assets/images/static/catalog-card4x.png" alt="Catalog card" width="408" height="260">
-                       </a>
-            <span class="catalog-card__label">NEW</span>
-            </div>
-            <div class="catalog-card__info">
-              <h2 class="catalog-card__title">Lens Chronicles</h2>
-              <span class="catalog-card__subtitle">Photography · Creative</span>
-           </div>
-           <div class="catalog-card__price-info">
-            <span class="catalog-card__price">€20.99</span>
-            <div class="catalog-card__buttons-wrapper">
-                <button class="catalog-card__button button button--secondary-icon">
-            {{ icon('heart', 'icon') }}
-            </button>
-              <button class="catalog-card__button button button--primary-icon">
-            {{ icon('shopping-bag', 'icon') }}
-            </button>
-           </div>
-           </div>
-        </article>
+  <div class="catalog-card__banner-wrapper" style="position: relative;">
+    <a class="catalog-card__link" href="#">
+      <div class="catalog-card__image-wrapper">
+      <img 
+        class="catalog-card__banner" 
+        src="{{ product.image }}" 
+        alt="{{ product.alt }}" 
+        loading="lazy" 
+        width="408" 
+        height="260">
+        </div>
+    </a>
+    <span class="catalog-card__label
+      {% if product.label == 'NEW' %} catalog-card__label--new
+      {% elif product.label == 'POPULAR' %} catalog-card__label--popular
+      {% endif %}">
+      {{ product.label }}
+    </span>
+    {% if product.label == 'SOLD OUT' %}
+      <div class="catalog-card__image-overlay"></div>
+    {% endif %}
+  </div>
+  <div class="catalog-card__info">
+    <h2 class="catalog-card__title
+      {% if product.label == 'SOLD OUT' %} catalog-card__title--sold
+      {% endif %}">{{ product.title }}</h2>
+    <span class="catalog-card__subtitle
+     {% if product.label == 'SOLD OUT' %} catalog-card__subtitle--sold
+      {% endif %}">{{ product.subtitle }}</span>
+  </div>
+  <div class="catalog-card__price-info">
+    <span class="catalog-card__price
+      {% if product.label == 'SOLD OUT' %} catalog-card__price--sold
+       {% endif %}">
+      {% if product.label == 'SOLD OUT' %}€00.00{% else %}{{ product.price }}{% endif %}
+    </span>
+    {% if product.label != 'SOLD OUT' %}
+    <div class="catalog-card__buttons-wrapper">
+      <button class="catalog-card__button button button--secondary-icon">
+        {{ icon('heart', 'icon') }}
+      </button>
+      <button class="catalog-card__button button button--primary-icon">
+        {{ icon('shopping-bag', 'icon') }}
+      </button>
+    </div>
+    {% endif %}
+  </div>
+</article>
