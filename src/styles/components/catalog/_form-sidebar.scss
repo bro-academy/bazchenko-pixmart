@@ -1,6 +1,21 @@
 @use '../../base/variables' as *;
+@use '../../base/mixins' as m;
 
 .form-sidebar {
+       position: absolute;
+       width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        width: 216px;
+
+        @include m.desk {
+         position: static;
+         width: auto;
+         height: auto;
+         overflow: visible;
+         clip-path: none;
+        }
 
     &__filter {
         display: flex;
@@ -11,8 +26,7 @@
     &__group-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 12px;
-        
+        gap: 12px; 
     }
 
     &__group-title {
@@ -55,7 +69,6 @@
   font-family: var(--font-accent);
   margin-bottom: 24px;
 }
-
 
 &__slider {
   position: relative;

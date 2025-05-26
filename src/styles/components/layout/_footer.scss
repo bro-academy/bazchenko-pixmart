@@ -160,18 +160,29 @@
     padding: 20px 40px;
     font-size: 14px;
     cursor: pointer;
+    
   }
 
-  &__actions_wrapper {
+  &__actions-wrapper {
     display: flex;
+    flex-direction: column;
     gap: 24px;
+
+    @include m.laptop {
+      flex-direction: row;
+    }
   }
 
   &__bottom {
+    background-color: var(--color-primary);
+     width: 100%;
+    max-width: none;
+  }
+
+  &__bottom-content {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    background-color: var(--color-primary);
     color: var(--color-secondary2-invert);
     font-size: 16px;
     line-height: 24px;

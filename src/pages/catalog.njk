@@ -4,6 +4,8 @@
 {% block content %}
   {# <h1>{{ index.title }}</h1> #}
 {% include 'src/templates/partials/catalog/catalog-hero.njk' %}
-{% include 'src/templates/partials/catalog/catalog-content.njk' %}
+<section class="catalog__main-content wrapper">
 {% include 'src/templates/partials/catalog/form-sidebar.njk' %}
+{% include 'src/templates/partials/catalog/catalog-content.njk' %}
+</section>
 {% endblock %}s

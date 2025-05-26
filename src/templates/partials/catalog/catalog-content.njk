@@ -1,15 +1,15 @@
-<section class="catalog-content wrapper">
+<section class="catalog-content">
     <div class="catalog-content__actions">
         <div class="catalog-content__filter">
             <div class="catalog-content__sort">
                 <div class="catalog-content__dropdown dropdown-wrapper">
-                    <select class="catalog-content__sort-select input input--default" name="Best sellers">
-                    <option value="disabled selected">Best sellers</option>
+                    <select class="catalog-content__sort-select input input--default" name="Best Sellers">
+                    <option value="disabled selected">Best Seller</option>
                     <option value="newest">Best sellers</option>
                     <option value="most-popular">Best sellers</option>
                     </select>
                 </div>
-                <button class="catalog-content__button button button--primary-icon">
+                <button class="catalog-content__filter-button button button--primary-icon">
                     {{ icon('filter-lines', 'icon') }}
                 </button>
                 </div>
@@ -35,6 +35,13 @@
         </div>
     </div>
     <div class="catalog-content__cards">
+        {% include "src/templates/partials/catalog-card.njk" %}
+        {% include "src/templates/partials/catalog-card.njk" %}
+        {% include "src/templates/partials/catalog-card.njk" %}
+        {% include "src/templates/partials/catalog-card.njk" %}
+        {% include "src/templates/partials/catalog-card.njk" %}
+        {% include "src/templates/partials/catalog-card.njk" %}
+        {% include "src/templates/partials/catalog-card.njk" %}
         {% include "src/templates/partials/catalog-card.njk" %}
         {% include "src/templates/partials/catalog-card.njk" %}
         {% include "src/templates/partials/catalog-card.njk" %}

@@ -68,6 +68,46 @@
     position: relative;
   }
 
+  &__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-secondary2-invert);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+  padding-inline: 16px;
+}
+
+&__overlay-button {
+  padding: 18px 78px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+&__image-wrapper:hover &__overlay {
+  opacity: 1;
+}
+
+.product-card__image-wrapper:hover .product-card__label {
+  opacity: 0.66;
+  transition: opacity 0.3s ease;
+}
+
+  // &:hover .product-card__label-icon {
+  //   color: var(--color-accent);
+  //   transition: color 0.3s ease;
+  // }
+
+
   &__label {
     position: absolute;
     display: flex;

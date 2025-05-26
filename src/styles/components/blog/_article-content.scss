@@ -1,10 +1,16 @@
 @use '../../base/variables' as *;
+@use '../../base/mixins' as m;
 
 .article-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
     margin-bottom: 64px;
+
+        @include m.laptop {
+            flex-direction: row;
+        }
+        
 
     &__article {
         display: flex;
@@ -23,6 +29,14 @@
         line-height: 28px;
         font-weight: 400;
         color: var(--color-secondary);
+
+        &:last-child {
+              display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
     &__title {
@@ -89,13 +103,14 @@
 }
 
 
-
-
-
 .article-sidebar {
    display: flex;
    flex-direction: column;
    gap: 40px;
+
+   @include m.laptop {
+    width: 260px;
+   }
 
     &__author {
         display: flex;

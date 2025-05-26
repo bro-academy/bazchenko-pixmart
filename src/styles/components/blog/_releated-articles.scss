@@ -1,14 +1,21 @@
 @use '../../base/variables' as *;
+@use '../../base/mixins' as m;
 
 .related-articles {
     padding-top: 32px;
     background-color: var(--background-card-color);
+    margin-bottom: 32px;
 
     &__heading {
         display: flex;
         flex-direction: column;
         gap: 16px;
         margin-bottom: 32px;
+
+        @include m.laptop {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__title {
@@ -23,6 +30,9 @@
         line-height: 24px;
         font-weight: 600;
         width: fit-content;
+        margin-top: auto;
+        
+       
 
         &::after {
             content: "";
@@ -37,19 +47,65 @@
 
         &__cards {
             display: grid;
-            grid-template-columns:  1fr;
+            grid-template-columns: 1fr;
             grid-template-rows: repeat(3, 1fr);
             gap: 24px;
              margin-bottom: 32px;
+
+             @include m.laptop {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+             }
+
+            @include m.desk {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+            }
         }
     }
 
 
-    .article-card {
-        padding: 20px;
-        background-color: var(--color-base);
-        box-shadow: 0 4px 30px 0 var(--box-shadow-color);
-        border-radius: 20px;
+.article-card {
+  padding: 20px;
+  background-color: var(--color-base);
+  box-shadow: 0 4px 30px 0 var(--box-shadow-color);
+  border-radius: 20px;
+
+  @include m.laptop {
+    &:last-of-type {
+      grid-column: 1 / 3;
+    }
+  }
+
+  @include m.desk {
+    &:last-of-type {
+      grid-column: auto;
+    }
+  }
+
+  &__image {
+    aspect-ratio: 386 / 272;
+
+    @include m.laptop {
+      aspect-ratio: 402 / 272;
+    }
+  }
+
+  &:last-of-type &__image {
+    @include m.laptop {
+      aspect-ratio: 904 / 272;
+    }
+
+        @include m.desk {
+      aspect-ratio: 370 / 272;
+    }
+  }
+  
+  &:last-of-type &__image {
+    @include m.desk {
+      aspect-ratio: 370 / 272;
+    }
+  }
 
         &__image-wrapper {
             position: relative;
