@@ -2,7 +2,6 @@
 @use '../../base/mixins' as m;
 
 .popular-products {
-    padding-inline: 16px;
     margin-bottom: 64px;
 
     @include m.laptop {
@@ -51,7 +50,6 @@
     padding-bottom: 20px;
    
     @include m.desk {
-     justify-content: center;
     }
 }
 }
@@ -66,6 +64,10 @@
 
   &__image-wrapper {
     position: relative;
+  }
+
+  &__image {
+    aspect-ratio: 305/272;
   }
 
   &__overlay {
@@ -101,11 +103,6 @@
   opacity: 0.66;
   transition: opacity 0.3s ease;
 }
-
-  // &:hover .product-card__label-icon {
-  //   color: var(--color-accent);
-  //   transition: color 0.3s ease;
-  // }
 
 
   &__label {
@@ -149,13 +146,6 @@
   &__subtitle {
     font-size: 16px;
     line-height: 24px;
+    color:var(--color-secondary2);
   }
-
-
-
-
-
-
-
-
 }

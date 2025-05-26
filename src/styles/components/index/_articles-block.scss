@@ -61,15 +61,14 @@
   &__link {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
   }
 
   &__image {
     display: block;
     width: 100%;
     height: auto;
+     aspect-ratio: 408 / 272;
     border-radius: 12px;
-    aspect-ratio: 408 / 290;
     object-fit: cover;
     background-color: var(--color-secondary2-invert);
     margin-bottom: 24px;

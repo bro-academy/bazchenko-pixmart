@@ -66,8 +66,9 @@ body {
 }
 
 .content {
-  // flex: 1;
+  max-width: 1440px;
   background-color: var(--color-base);
+  margin: 0 auto;
 }
 
 li {

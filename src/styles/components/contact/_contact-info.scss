@@ -116,10 +116,55 @@
         }
     }
 
-    &__map-frame {
+    // &__map-frame {
+    //     border-radius: 20px;
+    //     width: 100%;
+    //     //  pointer-events: none;
+    // }
+
+    &__label {
+        background-color: var(--color-base);
+        padding: 12px 16px;
+        width: fit-content;
+        display: flex;
+        gap: 16px;
+    }
+    &__map-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+    &__image {
         border-radius: 20px;
-        width: 100%;
-        //  pointer-events: none;
+        object-fit: cover;
+          width: 100%;
     }
 
+    &__label {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    &__label-info {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
+    &__label-address {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: var( --color-secondary);
+        font-style: normal;
+
+    }
+
+    &__icon {
+        color:var(--color-accent-link);
+         align-items: center;
+    }
 }
