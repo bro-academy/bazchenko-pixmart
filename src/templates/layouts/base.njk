@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="/src/styles/style.scss" />
-  <title>Pixmart</title>
+  <title>{{ title }}</title>
      <script>
         window.addEventListener("load", (event) => {
         const burgerOpener = document.querySelector(".js-burger");
@@ -53,5 +53,24 @@ default content{% endblock %}
 </script>
 {% include "src/templates/partials/footer.njk" %}
 {# </div> #}
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const openBtn = document.querySelector('.js-filter');
+    const closeBtns = document.querySelectorAll('.filter-close');
+    const filter = document.querySelector('.filter');
+
+    if (openBtn && filter) {
+      openBtn.addEventListener('click', () => {
+        filter.classList.add('is-active');
+      });
+    }
+
+    closeBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filter.classList.remove('is-active');
+      });
+    });
+  });
+</script>
 </body>
 </html>

@@ -20,6 +20,10 @@
     margin-bottom:  0;
   }
 
+  &__button {
+    padding: 18px 30px;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -36,6 +40,7 @@
     opacity: 0.7;
     font-size: 18px;
     line-height: 28px;
+    margin-bottom: 16px;
   }
 
 

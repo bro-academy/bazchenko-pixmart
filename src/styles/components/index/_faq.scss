@@ -19,7 +19,6 @@
     &__info-wrapper {
       display: flex;
       flex-direction: column;
-        margin-bottom: 64px;
         align-items: flex-start;
 
          @include m.laptop {
@@ -28,9 +27,13 @@
           flex-shrink: 0;
   }
     }
+
+    &__title {
+      margin-bottom: 16px;
+    }
     
     &__subtitle {
-        margin-bottom: 36px;
+        margin-bottom: 32px;
     }
 
     &__link {

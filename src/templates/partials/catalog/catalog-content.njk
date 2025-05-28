@@ -3,17 +3,19 @@
         <div class="catalog-content__filter">
             <div class="catalog-content__sort">
                 <div class="catalog-content__dropdown dropdown-wrapper">
-                    <select class="catalog-content__sort-select input input--default" name="Best Sellers">
-                    <option value="disabled selected">Best Seller</option>
-                    <option value="newest">Best sellers</option>
-                    <option value="most-popular">Best sellers</option>
-                    </select>
-                </div>
-                <button class="catalog-content__filter-button button button--primary-icon">
+                       <label for="sort-select" class="catalog-content__label visually-hidden">Sort By</label>
+                        <select id="sort-select" class="catalog-content__sort-select input input--default" name="sort">
+                        <option value="" disabled selected>Best Seller</option>
+                        <option value="newest">Newest</option>
+                        <option value="most-popular">Most Popular</option>
+                        </select>
+                 </div>
+                   <button class="catalog-content__filter-button js-filter button button--primary-icon">
                     {{ icon('filter-lines', 'icon') }}
+                    </div>
                 </button>
-                </div>
-                <div class="catalog-content__data">
+             {% include "src/templates/partials/filter.njk" %}
+                        <div class="catalog-content__data">
                     <span class="catalog-content__info">Showing 12 out of 120 results.</span>
                     <div class="catalog-content__buttons-wrapper">
                  <button class="catalog-content__button button button--primary-icon">
@@ -27,10 +29,10 @@
         </div>
         <div class="catalog-content__filters">
             <button class="catalog-content__button-ui button button--secondary">UI Kit 
-            {{ icon('x-close2', 'icon catalog-content__icon-ui') }}
+            {{ icon('x-close', 'icon catalog-content__icon-ui ') }}
             </button>
               <button class="catalog-content__button-ui button button--secondary">UI Kit 
-            {{ icon('x-close2', 'icon catalog-content__icon-ui') }}
+            {{ icon('x-close', 'icon catalog-content__icon-ui') }}
             </button>
         </div>
     </div>

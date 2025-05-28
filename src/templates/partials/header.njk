@@ -2,11 +2,11 @@
     {# <button type="button" class="js-burger">Button</button> #}
         <nav class="burger-menu">
              <ul class="burger-menu__list">
-                <li class="burger-menu__list-item"><a class="burger-menu__link link link--secondary" href="#">About</a></li>
-                <li class="burger-menu__list-item"><a class="burger-menu__link link link--secondary " href="#">Products</a></li>
+                <li class="burger-menu__list-item"><a class="burger-menu__link link link--secondary" href="blog.html">About</a></li>
+                <li class="burger-menu__list-item"><a class="burger-menu__link link link--secondary " href="catalog.html">Products</a></li>
                 <li class="burger-menu__list-item"><a class="burger-menu__link link link--secondary" href="#">Creators</a></li>
-                <li class="burger-menu__list-item"><a class="burger-menu__link link link--secondary" href="#">Blog</a></li>
-                <li class="burger-menu__list-item"><a class="burger-menu__link link link--secondary" href="#">Contact</a></li>
+                <li class="burger-menu__list-item"><a class="burger-menu__link link link--secondary" href="blog.html">Blog</a></li>
+                <li class="burger-menu__list-item"><a class="burger-menu__link link link--secondary" href="contact.html">Contact</a></li>
              </ul>
         </nav>
           <div class="header__wrapper">
@@ -15,14 +15,14 @@
               <span class="burger-icon"></span>
            </a>
         <div class="header__nav-wrapper">
-            <a href="#" class="header__logo-link link link--secondary">
+            <a href="index.html" class="header__logo-link link link--secondary">
         <img alt="Pixtart logo" class="header__logo logo" src="src/assets/images/static/logo.png" loading="lazy" width="107" height="24">
         </a>
         </div>
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__list-item"><a  href="about.html" class="header__list-link link link--secondary">About</a></li>
-                <li class="header__list-item"><a  href="products.html" class="header__list-link link link--secondary">Products</a></li>
+                <li class="header__list-item"><a  href="blog.html" class="header__list-link link link--secondary">About</a></li>
+                <li class="header__list-item"><a  href="catalog.html" class="header__list-link link link--secondary">Products</a></li>
                 <li class="header__list-item"><a  href="creators.html" class="header__list-link link link--secondary">Creators</a></li>
                 <li class="header__list-item"><a  href="blog.html" class="header__list-link link link--secondary">Blog</a></li>
                 <li class="header__list-item"><a  href="contact.html" class="header__list-link link link--secondary">Contact</a></li>
@@ -32,6 +32,7 @@
     <div class="header__actions">
           <form class="header__search-form" action="/search" method="get">
           <div class="header__search-wrapper">
+            <label for="header-search" class="visually-hidden">Search for Digital Assets</label>
             <input
               type="text"
               class="header__search-input input input--secondary"

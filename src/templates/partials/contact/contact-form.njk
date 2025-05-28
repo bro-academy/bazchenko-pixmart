@@ -1,45 +1,81 @@
 <form class="contact-form" action="url" method="post">
-    <div class="contact-form__container">
+  <div class="contact-form__container">
     <div class="contact-form__content">
-  <div class="contact-form__block">
-    <label class="contact-form__label" for="name">Full Name</label>
-    <input class="contact-form__input input input--default" id="name" type="text" name="name" placeholder="Amelia Robert Johnson" required>
+      <div class="contact-form__block">
+        <label class="contact-form__label" for="name">Full Name</label>
+        <input
+          class="contact-form__input input input--default"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Amelia Robert Johnson"
+          required>
+      </div>
+      <div class="contact-form__block">
+        <label class="contact-form__label" for="email">Email Address</label>
+        <input
+          class="contact-form__input input input--default"
+          id="email"
+          type="email"
+          name="user-email"
+          placeholder="amelia.robertjohnson@pixmart.com"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required>
+      </div>
+      <div class="contact-form__block">
+        <label class="contact-form__sort-label" for="subject">Subject</label>
+        <div class="dropdown-wrapper">
+          <select
+            class="contact-form__sort-select input input--default"
+            id="subject"
+            name="sort"
+            required>
+            <option value="" disabled selected>General Inquiry</option>
+            <option value="newest">Newest</option>
+            <option value="most-popular">Most Popular</option>
+            <option value="increasing-in-price">Increasing Price</option>
+            <option value="lowering-the-price">Lowering Price</option>
+          </select>
+        </div>
+      </div>
+      <div class="contact-form__block">
+        <label class="contact-form__label" for="message">Message</label>
+        <textarea
+          class="contact-form__textarea textarea"
+          id="message"
+          name="message"
+          cols="20"
+          rows="5"
+          placeholder="Enter your message ..."
+          required></textarea>
+      </div>
+      <div class="contact-form__group-wrapper">
+        <label class="checkbox-wrapper" for="subscribe-newsletter">
+          <input
+            type="checkbox"
+            id="subscribe-newsletter"
+            name="newsletter"
+            value="yes"
+            class="checkbox-input visually-hidden"/>
+          <span class="custom-checkbox"></span>
+          Subscribe me to Newsletter
+        </label>
+        <label class="checkbox-wrapper" for="user-policy">
+          <input
+            type="checkbox"
+            id="user-policy"
+            name="user-policy"
+            value="agree"
+            class="checkbox-input visually-hidden"
+            required/>
+          <span class="custom-checkbox"></span>
+          I have read the User & Privacy Policy
+        </label>
+      </div>
+      <input
+        class="contact-form__button button button--primary"
+        type="submit"
+        value="Send message">
+    </div>
   </div>
-  <div class="contact-form__block">
-    <label class="contact-form__label" for="email">Email Address</label>
-    <input class="contact-form__input input input--default" type="email" id="email" name="user-email"
-      placeholder="amelia.robertjohnson@pixmart.com"
-      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-  </div>
-  <div class="contact-form__block">
-  <label class="contact-form__sort-label" for="email">Subject</label>
-  <div class="dropdown-wrapper">
-    <select class="contact-form__sort-select input input--default" name="sort">
-      <option value="disabled selected">General Inquiry</option>
-      <option value="newest">General Inquiry</option>
-      <option value="most-popular">General Inquiry</option>
-      <option value="increasing-in-price">General Inquiry</option>
-      <option value="lowering-the-price">General Inquiry</option>
-    </select>
-  </div>
-  </div>
-  <div class="contact-form__block">
-    <label class="contact-form__label" for="message">Message</label>
-    <textarea class="contact-form__textarea textarea" name="Welcome" id="message" cols="20" rows="5"  placeholder="Enter your message ..." required></textarea>
-  </div>
-  <div class="contact-form__group-wrapper">
-  <label class="checkbox-wrapper">
-    <input type="checkbox" id="combatant" name="clothing" value="combatant" class="checkbox-input visually-hidden"/>
-    <span class="custom-checkbox"></span>
-    Subscribe me to Newsletter
-  </label>
-  <label class="checkbox-wrapper">
-    <input  type="checkbox" id="ninja" name="clothing" value="ninja" class="checkbox-input visually-hidden"/>
-    <span class="custom-checkbox"></span>
-   I have read the User & Privacy Policy
-  </label>
-  </div>
-  <input class="contact-form__button button button--primary" type="submit" value="Send message">
-  </div>
-  </div>
-  </form>
+</form>

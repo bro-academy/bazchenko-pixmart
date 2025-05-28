@@ -6,95 +6,95 @@
       "label": "SOLD OUT",
       "title": "Lens Chronicles",
       "subtitle": "Photography · Creative",
-      "price": "€20.99"
+      "price": "€00.00"
     },
     {
     "image": "src/assets/images/static/catalog-card4x.png",
-      "alt": "Another card",
+      "alt": "Career Success",
       "label": "NEW",
-      "title": "Another Product",
-      "subtitle": "Category · Style",
-      "price": "€15.50"
+      "title": "Career Success",
+      "subtitle": "Guidance · Jobs",
+      "price": "€20.99"
     },
       {
     "image": "src/assets/images/static/catalog-card4x.png",
-      "alt": "Another card",
+      "alt": "Dream Homes",
       "label": "POPULAR",
-      "title": "Another Product",
-      "subtitle": "Category · Style",
-      "price": "€15.50"
+      "title": "Dream Homes",
+      "subtitle": "Real Estate · Modern",
+      "price": "€45.99"
     },
       {
     "image": "src/assets/images/static/catalog-card4x.png",
-      "alt": "Another card",
-      "label": "SOLD OUT",
-      "title": "Another Product",
-      "subtitle": "Category · Style",
-      "price": "€15.50"
+      "alt": "Foodish Catering",
+      "label": "POPULAR",
+      "title": "Foodish Catering",
+      "subtitle": "Food · Events",
+      "price": "€15.99"
     },
         {
       "image": "src/assets/images/static/catalog-card4x.png",
-      "alt": "Catalog card",
-      "label": "SOLD OUT",
-      "title": "Lens Chronicles",
-      "subtitle": "Photography · Creative",
-      "price": "€20.99"
+      "alt": "Caring Hearts",
+      "label": "NEW",
+      "title": "Caring Hearts",
+      "subtitle": "Healthcare · Support",
+      "price": "€19.99"
     },
         {
     "image": "src/assets/images/static/catalog-card4x.png",
-      "alt": "Another card",
-      "label": "POPULAR",
-      "title": "Another Product",
-      "subtitle": "Category · Style",
-      "price": "€15.50"
-    },
-       {
-    "image": "src/assets/images/static/catalog-card4x.png",
-      "alt": "Another card",
-      "label": "POPULAR",
-      "title": "Another Product",
-      "subtitle": "Category · Style",
-      "price": "€15.50"
-    },
-       {
-    "image": "src/assets/images/static/catalog-card4x.png",
-      "alt": "Another card",
-      "label": "POPULAR",
-      "title": "Another Product",
-      "subtitle": "Category · Style",
-      "price": "€15.50"
-    },
-       {
-    "image": "src/assets/images/static/catalog-card4x.png",
-      "alt": "Another card",
+      "alt": "Gaming Rise",
       "label": "SOLD OUT",
-      "title": "Another Product",
-      "subtitle": "Category · Style",
-      "price": "€15.50"
+      "title": "Gaming Rise",
+      "subtitle": "eSports · Trends",
+      "price": "€00.00"
     },
        {
     "image": "src/assets/images/static/catalog-card4x.png",
-      "alt": "Another card",
-      "label": "POPULAR",
-      "title": "Another Product",
-      "subtitle": "Category · Style",
-      "price": "€15.50"
+      "alt": "Edit Pro",
+      "label": "SOLD OUT",
+      "title": "Edit Pro",
+      "subtitle": "Design · Tools",
+      "price": "€00.00"
     },
        {
     "image": "src/assets/images/static/catalog-card4x.png",
-      "alt": "Another card",
+      "alt": "Banking Redefined",
       "label": "NEW",
-      "title": "Another Product",
-      "subtitle": "Category · Style",
-      "price": "€15.50"
+      "title": "Banking Redefined",
+      "subtitle": "Finance · Secure",
+      "price": "€25.99"
     },
        {
     "image": "src/assets/images/static/catalog-card4x.png",
-      "alt": "Another card",
+      "alt": "Exploring Fun",
+      "label": "POPULAR",
+      "title": "Exploring Fun",
+      "subtitle": "Travel · Adventure",
+      "price": "€41.99"
+    },
+       {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Admin Dashboard",
+      "label": "POPULAR",
+      "title": "Admin Dashboard",
+      "subtitle": "Data · Tools",
+      "price": "€15.99"
+    },
+       {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Analytical Dashboard",
+      "label": "NEW",
+      "title": "Analytical Dashboard",
+      "subtitle": "Data · Tools",
+      "price": "€10.99"
+    },
+       {
+    "image": "src/assets/images/static/catalog-card4x.png",
+      "alt": "Kindergarten",
       "label": "SOLD OUT",
-      "title": "Another Product",
-      "subtitle": "Category · Style",
-      "price": "€15.50"
+      "title": "Kindergarten",
+      "subtitle": "Education · Kids",
+      "price": "€00.00"
     }
   ]
 }

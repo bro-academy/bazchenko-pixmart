@@ -35,6 +35,8 @@
     }
 
     &__subtitle {
+        display: flex;
+        flex-direction: column;
         font-family: var(--font-accent);
         font-size: 52px;
         font-weight: 700;
@@ -129,10 +131,10 @@
         display: flex;
         gap: 16px;
     }
-    &__map-wrapper {
-  position: relative;
-  width: 100%;
-}
+         &__map-wrapper {
+        position: relative;
+        width: 100%;
+    }
 
     &__image {
         border-radius: 20px;

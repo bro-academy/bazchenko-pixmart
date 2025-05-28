@@ -8,13 +8,13 @@
    
     &__wrapper {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     width: 100%;
      gap: 16px;
-     padding-bottom: 20px;
+     padding-bottom: 2px;
       
 
      @include m.laptop {

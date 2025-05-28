@@ -1,0 +1,100 @@
+
+<div class="filter">
+   <div class="filter__header">
+      <h2 class="filter__header-title">Filters</h2>
+        <button class="filter__header-button filter-close button button--secondary-icon">
+           {{ icon('x-close', 'icon') }}
+         </button>
+    </div>
+    <div class="filter__body">
+        <button class="filter__button  filter-close button button--secondary">
+            {{ icon('x-close', 'filter__button-icon icon') }}
+          <span class="filter__button-text">Clear all filters</span>
+        </button>
+    <form class="form-sidebar__filter" action="url" method="get">
+    <fieldset class="form-sidebar__group">
+      <legend class="form-sidebar__group-title">Categories</legend>
+      <div class="form-sidebar__group-wrapper">
+        <label class="checkbox-wrapper">
+          <input type="checkbox" id="all-categories" name="clothing" value="all-categories" class="checkbox-input"/>
+          <span class="custom-checkbox"></span>
+          All Categories
+        </label>
+        <label class="checkbox-wrapper">
+          <input type="checkbox" id="technology" name="clothing" value="technology" class="checkbox-input"/>
+          <span class="custom-checkbox"></span>
+          Technology
+        </label>
+        <label class="checkbox-wrapper">
+          <input type="checkbox" id="travel" name="clothing" value="travel" class="checkbox-input"/>
+          <span class="custom-checkbox"></span>
+          Travel & Tourism
+        </label>
+        <label class="checkbox-wrapper">
+          <input type="checkbox" id="health" name="clothing" value="health" class="checkbox-input"/>
+          <span class="custom-checkbox"></span>
+          Health & Fitness
+        </label>
+        <label class="checkbox-wrapper">
+          <input type="checkbox" id="ecommerce" name="clothing" value="ecommerce" class="checkbox-input"/>
+          <span class="custom-checkbox"></span>
+          E-Commerce
+        </label>
+        <label class="checkbox-wrapper">
+          <input type="checkbox" id="education" name="clothing" value="education" class="checkbox-input"/>
+          <span class="custom-checkbox"></span>
+          Education
+        </label>
+        <label class="checkbox-wrapper">
+          <input type="checkbox" id="entertainment" name="clothing" value="entertainment" class="checkbox-input"/>
+          <span class="custom-checkbox"></span>
+          Entertainment
+        </label>
+        <label class="checkbox-wrapper">
+          <input type="checkbox" id="others" name="clothing" value="others" class="checkbox-input"/>
+          <span class="custom-checkbox"></span>
+          Others
+        </label>
+        <label class="checkbox-wrapper">
+          <input type="checkbox" id="sto" name="clothing" value="sto" class="checkbox-input"/>
+          <span class="custom-checkbox"></span>
+          Sto to tam
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="form-sidebar__group">
+  <legend class="form-sidebar__group-title">Format Type</legend>
+  <div class="form-sidebar__group-wrapper">
+    <label class="checkbox-wrapper">
+      <input type="checkbox" id="figma" name="format-type" value="figma" class="checkbox-input" />
+      <span class="custom-checkbox"></span>
+      Figma
+    </label>
+    <label class="checkbox-wrapper">
+      <input type="checkbox" id="sketch" name="format-type" value="sketch" class="checkbox-input" />
+      <span class="custom-checkbox"></span>
+      Sketch
+    </label>
+    <label class="checkbox-wrapper">
+      <input type="checkbox" id="adobe-xd" name="format-type" value="adobe-xd" class="checkbox-input" />
+      <span class="custom-checkbox"></span>
+      Adobe XD
+    </label>
+    <label class="checkbox-wrapper">
+      <input type="checkbox" id="adobe-photoshop" name="format-type" value="adobe-photoshop" class="checkbox-input" />
+      <span class="custom-checkbox"></span>
+      Adobe Photoshop
+    </label>
+    <label class="checkbox-wrapper">
+      <input type="checkbox" id="adobe-illustration" name="format-type" value="adobe-illustration" class="checkbox-input" />
+      <span class="custom-checkbox"></span>
+      Adobe Illustration
+    </label>
+  </div>
+</fieldset>
+</form>
+</div>
+<div class="filter__bottom-wrapper">
+<button class="filter__bottom-button button button--primary filter-close">Save</button>
+</div>
+</div>

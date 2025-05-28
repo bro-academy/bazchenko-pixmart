@@ -19,13 +19,16 @@
  }
 
  &__title {
+   display: flex;
+   flex-direction: column;
     font-family: var(--font-accent);
     color: var(--color-primary);
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 52px;
+    line-height: 62px;
     font-weight: 700;
     margin-bottom: 64px;
   }
+
 
   &__banner {
   border-radius: 20px;

@@ -16,7 +16,7 @@
   }
 
   &__header-wrapper {
-    margin-bottom: 80px;
+    margin-bottom: 48px;
   }
 
   &__cards-wrapper {
@@ -39,14 +39,13 @@
   background-color: var( --color-base);
   box-shadow: 0 0 40px 0 var(--color-secondary2-invert); // change color
   border-radius: 20px;
-  padding: 32px;
+  padding: 31px;
   display: flex;
   flex-direction: column;
 
    &--accent {
     border: 2px solid var(--color-accent-link);
         margin-bottom: 32px;
-        margin-top: -32px;
    }
 
    &__label {
@@ -83,7 +82,7 @@
     line-height: 24px;
     font-weight: 400;
     color: var(--color-disabled);
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 
     & .pricing-card__highlight {
        font-family:var(--font-accent);

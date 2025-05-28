@@ -1,0 +1,66 @@
+@use '../base/variables' as *;
+
+.filter {
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+   background-color: var(--color-base);
+  flex: 1 1 auto;
+  overflow-y: auto;
+
+    &__body {
+        position: relative;
+        padding: 40px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        height: 824px;
+
+          &__body {
+  }
+    }
+
+    &__header {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 29px 16px;
+    align-items: center;
+    background-color: var(--color-base);
+    box-shadow: 0 4px 40px 0 var(--shadow--filter--color);
+    }
+
+    &__header-title {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        font-family: var(--font-accent);
+    }
+
+  &__button {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 8px;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  &__bottom-button {
+    width: 100%;
+    padding-inline: 16px;
+  }
+
+  &__bottom-wrapper {
+    margin-bottom: -70px;
+    width: 100%;
+    background-color: var(--color-base);
+    padding: 16px;
+  }
+}

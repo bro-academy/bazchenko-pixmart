@@ -47,7 +47,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 20px;
+    padding-bottom: 1px;
    
     @include m.desk {
     }
@@ -63,11 +63,15 @@
   }
 
   &__image-wrapper {
-    position: relative;
+     position: relative;
+      aspect-ratio: 305 / 272;
+      overflow: hidden;
   }
 
   &__image {
-    aspect-ratio: 305/272;
+aspect-ratio: 305 / 272;
+  object-fit: cover;
+  display: block;
   }
 
   &__overlay {
@@ -135,6 +139,7 @@
     line-height: 36px;
     font-weight: 700;
     color: var(--color-primary);
+    margin-bottom: 4px;
   }
 
   &__price {
