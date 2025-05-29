@@ -86,6 +86,15 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+
+    @include m.laptop {
+        aspect-ratio: 293/260;
+        border-radius: 20px;
+    }
+
+    @include m.desk {
+        aspect-ratio: 325/260;
+    }
 }
 
 &__price {

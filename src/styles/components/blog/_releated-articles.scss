@@ -26,6 +26,7 @@
     }
 
     &__link {
+      padding: 4px;
         font-size: 16px;
         line-height: 24px;
         font-weight: 600;
@@ -50,7 +51,7 @@
             grid-template-columns: 1fr;
             grid-template-rows: repeat(3, 1fr);
             gap: 24px;
-             margin-bottom: 32px;
+             padding-bottom: 32px;
 
              @include m.laptop {
                 grid-template-columns: repeat(2, 1fr);
@@ -66,10 +67,11 @@
 
 
 .article-card {
-  padding: 20px;
+  padding: 18px 20px;
   background-color: var(--color-base);
   box-shadow: 0 4px 30px 0 var(--box-shadow-color);
   border-radius: 20px;
+  
 
   @include m.laptop {
     &:last-of-type {
@@ -84,28 +86,30 @@
   }
 
   &__image {
-    aspect-ratio: 386 / 272;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 
-    @include m.laptop {
-      aspect-ratio: 402 / 272;
-    }
+    // @include m.laptop {
+    //   aspect-ratio: 402 / 272;
+    // }
   }
 
-  &:last-of-type &__image {
-    @include m.laptop {
-      aspect-ratio: 904 / 272;
-    }
+  // &:last-of-type &__image {
+  //   @include m.laptop {
+  //     aspect-ratio: 904 / 272;
+  //   }
 
-        @include m.desk {
-      aspect-ratio: 370 / 272;
-    }
-  }
+  //       @include m.desk {
+  //     aspect-ratio: 370 / 272;
+  //   }
+  // }
   
-  &:last-of-type &__image {
-    @include m.desk {
-      aspect-ratio: 370 / 272;
-    }
-  }
+  // &:last-of-type &__image {
+  //   @include m.desk {
+  //     aspect-ratio: 370 / 272;
+  //   }
+  // }
 
         &__image-wrapper {
             position: relative;
@@ -115,7 +119,7 @@
 
         &__label {
             position: absolute;
-            bottom: 0;
+            bottom: 5px;
             left: 16px;
             z-index: 1;
             transform: translateY(50%);
