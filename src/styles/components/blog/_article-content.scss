@@ -5,10 +5,11 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 64px;
+    
 
         @include m.laptop {
             flex-direction: row;
+            margin-bottom: 64px;
         }
         
 
@@ -22,6 +23,15 @@
          display: flex;
         flex-direction: column;
         gap: 16px;
+
+
+        &--hidden {
+           display: none;
+
+            @include m.laptop {
+               display: block;
+            }
+        }
     }
 
     &__text {
@@ -30,12 +40,16 @@
         font-weight: 400;
         color: var(--color-secondary);
 
-        &:last-child {
-              display: -webkit-box;
+        &--clamped {
+            display: none;
+
+            @include m.laptop {
+            display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
+            }
         }
     }
 
@@ -61,25 +75,57 @@
         height: auto;
         display: block;
         border-radius: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+        aspect-ratio: 408/300;
+
+        @include m.laptop {
+            margin-bottom: 10px;
+        }
     }
 
     &__figure-caption-text {
+        display: none;
         font-size: 16px;
         line-height: 24px;
         font-size: 400;
         color: var(--color-primary);
         opacity: 0.7;
+
+        @include m.laptop {
+            display: block;
+        }
     }
 
     &__figure-caption-link {
-        font-family: var(--font-base);
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 600;
+        // font-family: var(--font-base);
+        // font-size: 16px;
+        // line-height: 24px;
+        // font-weight: 600;
+
+        position: absolute;
+        clip-path: inset(100%);
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 0;
+
+        @include m.laptop {
+            position: static;
+            clip-path: none;
+            width: auto;
+            height: auto;
+            overflow: visible;
+            white-space: normal;
+            font-family: var(--font-base);
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+        }
     }
 
     &__quote {
+        display: none;
             position: relative;
             padding-left: 80px;
             font-weight: 700;
@@ -88,6 +134,11 @@
             font-family: var(--font-accent);
             min-height: 64px;
             margin: 0;
+
+            @include m.laptop {
+                display: block;
+            }
+
 
         &::before {
             content: "";
@@ -210,7 +261,7 @@
          &:first-child::after {
             content: "";
             display: block;
-            margin-top: 24px; // расстояние между текстом и линией
+            margin-top: 12px;
             width: 100%;
             height: 1px;
             background-color: var(--color-primary);

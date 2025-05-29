@@ -2,7 +2,7 @@
 @use '../../base/mixins' as m;
 
 .catalog-hero {
-    padding: 64px 64px 64px 16px;
+    padding: 64px 16px 96px 16px;
      background: url('/src/assets/images/static/catalog-background.png') no-repeat center;
      background-size: cover;
 
@@ -13,8 +13,8 @@
      &__header {
         display: flex;
         flex-direction: column;
-        font-size: 52px;
-        line-height: 62px;
+        font-size: 36px;
+        line-height: 48px;
         font-weight: 700;
         font-family: var(--font-accent);
      }
