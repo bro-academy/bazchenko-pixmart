@@ -1,0 +1,19 @@
+{
+"blogs":[
+  {
+    "imagePath": "/src/assets/images/static/best-dishes-card.png",
+    "title": "Best Dishes",
+    "dateTime": "15 APRIL 2024"
+  },
+  {
+    "imagePath": "/src/assets/images/static/contact-us-banner.jpg",
+    "title": "Delicious Desserts",
+    "dateTime": "5 MAY 2024"
+  },
+  {
+    "imagePath": "/src/assets/images/static/creative-blog-banner.png",
+    "title": "Healthy Salads",
+    "dateTime": "20 JUNE 2024"
+  }
+]
+}
