@@ -2,16 +2,19 @@
   "name": "pixmart",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "start": "npm run sprite:generate && vite dev",
-    "build": "npm run sprite:generate && vite build",
+"scripts": {
+    "start": "vite dev",
+    "build": "vite build",
     "preview": "vite preview",
-    "prettier": "npx prettier '**/*.njk'",
-    "prettier:write": "npx prettier '**/*.njk' --write",
-    "sprite:generate": "svg-sprite-generate -d src/assets/icons -o src/assets/sprite.svg",
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint . --fix",
     "stylelint": "npx stylelint '**/*.scss'",
     "stylelint:fix": "npx stylelint '**/*.scss' --fix",
     "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.njk": "eslint --fix",
+    "*.scss": "stylelint --fix"
   },
   "author": "",
   "license": "ISC",
