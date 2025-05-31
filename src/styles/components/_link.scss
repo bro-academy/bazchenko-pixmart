@@ -7,6 +7,9 @@
   line-height: 16px;
   border: none;
   border-radius: 5px;
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: var(--tran-duration);
+  transition-timing-function: ease;
 
   &--primary {
     color: var(--color-accent-link);

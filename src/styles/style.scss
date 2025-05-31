@@ -8,6 +8,7 @@
 @use './components/checkbox' as *;
 @use './components/radio' as *;
 @use './components/filter' as *;
+@use './components/main-banner' as *;
 @use './components/input' as *;
 @use './components/textarea' as *;
 @use './components/dropdown' as *;
@@ -125,6 +126,7 @@ a {
   border-bottom-right-radius: 0;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+   font-family: 20px;
 }
 
 .text-label {
@@ -146,6 +148,7 @@ a {
   font-weight: 700;
   color:var(--subtitle-color);
   font-family: var( --font-accent);
+  letter-spacing: -0.5px;
 }
 
 .filter {

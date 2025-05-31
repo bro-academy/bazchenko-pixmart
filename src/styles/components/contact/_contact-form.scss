@@ -27,16 +27,18 @@
      }
 
      &__input {
-        padding: 20px;
+        padding: 19px 20px;
      }
 
      &__group-wrapper {
         display: flex;
         flex-direction: column;
         gap: 6px;
+        margin-bottom: 12px;
      }
 
      &__textarea {
         padding: 20px;
+        margin-bottom: 4px;
      }
 }

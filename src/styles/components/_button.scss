@@ -15,7 +15,9 @@
     text-decoration: none;
     color: var(--color-primary-white);
     background-color: var( --color-accent-link);
+    transition-property: background-color, color, border-color, box-shadow;
     transition-duration: var(--tran-duration);
+    transition-timing-function: ease;
     cursor: pointer;
     white-space: nowrap;
     border-radius: 8px;

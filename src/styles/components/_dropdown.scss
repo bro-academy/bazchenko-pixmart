@@ -8,6 +8,9 @@
   position: relative;
   display: inline-block;
   width: 100%;
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: var(--tran-duration);
+    transition-timing-function: ease;
 
   &::after {
     content: "";
@@ -27,9 +30,7 @@ select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-
   background-image: none;
-
   width: 100%;
   padding: 20px;
   padding-right: 44px;

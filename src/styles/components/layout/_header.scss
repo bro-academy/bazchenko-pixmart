@@ -10,7 +10,7 @@
     padding: 24px 16px;
 
     @include m.laptop {
-      padding: 30px 40px;
+      padding: 24px 40px;
     }
 
      @include m.desk {
@@ -21,20 +21,22 @@
    &__logo-wrapper {
       display: flex;
       gap: 16px;
-      align-items: center;
+      align-items: end;
+      max-height: 32px;
    }
 
  &__logo-link {
-     display: inline-block;
-     line-height: 0;
-      margin-right: 16px;
+    display: inline-block;
+    line-height: 0;
+    margin-right: 16px;
+    align-items: end;
  }
 
-//  &__nav-wrapper {
-//     display: flex;
-//     align-items: center;
-//     gap: 8px;
-//  }
+ &__nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+ }
 
 &__list {
   position: absolute;
@@ -66,7 +68,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 2px 0;
+    // padding: 2px 0;
  }
 
 &__search-wrapper {
@@ -81,7 +83,7 @@
   line-height: 20px;
   flex: 1 1 auto;
   min-width: 0;
-  padding: 10px 12px;
+  padding: 9px 12px;
   border-radius: 8px;
   display: none;
   width: 240px;

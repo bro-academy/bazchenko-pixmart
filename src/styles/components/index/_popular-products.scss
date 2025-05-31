@@ -85,6 +85,9 @@ aspect-ratio: 305 / 272;
   transition: opacity 0.3s ease;
   border-radius: 20px;
   padding-inline: 16px;
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: var(--tran-duration);
+  transition-timing-function: ease;
 }
 
 &__overlay-button {
@@ -101,6 +104,9 @@ aspect-ratio: 305 / 272;
 
 &__image-wrapper:hover &__overlay {
   opacity: 1;
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: var(--tran-duration);
+  transition-timing-function: ease;
 }
 
 .product-card__image-wrapper:hover .product-card__label {
