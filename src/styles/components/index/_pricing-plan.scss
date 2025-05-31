@@ -2,7 +2,6 @@
 @use '../../base/mixins' as m;
 
 .pricing-plan {
-  padding-inline: 16px;
   background-color: var(--color-base);
   text-align: center;
   margin-bottom: 64px;
@@ -13,6 +12,12 @@
 
   &__title {
     margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    @include m.laptop {
+      margin-bottom: 88px;
+    }
   }
 
   &__header-wrapper {
@@ -39,13 +44,18 @@
   background-color: var( --color-base);
   box-shadow: 0 0 40px 0 var(--color-secondary2-invert); // change color
   border-radius: 20px;
-  padding: 31px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
 
    &--accent {
     border: 2px solid var(--color-accent-link);
         margin-bottom: 32px;
+
+        @include m.laptop {
+          padding-top: 56px;
+          margin-top: -56px;
+        }
    }
 
    &__label {
@@ -55,7 +65,7 @@
     padding: 7px 24px;
     background-color: var(--color-accent-link);
     font-family: var(--font-accent);
-    font-family: 20px;
+    font-size: 20px;
     line-height: 26px;
     font-weight: 700;
     color: var(--color-base);
@@ -83,6 +93,7 @@
     font-weight: 400;
     color: var(--color-disabled);
     margin-bottom: 32px;
+    
 
     & .pricing-card__highlight {
        font-family:var(--font-accent);
@@ -90,6 +101,7 @@
        line-height: 48px;
        font-weight: 700;
        color: var(--color-primary);
+       letter-spacing: -0.5px;
     }
   }
 
@@ -115,6 +127,7 @@
       font-weight: 400;
       line-height: 24px;
       color: var(--color-primary);
+      text-align: left;
 
       &::before {
         content: '';

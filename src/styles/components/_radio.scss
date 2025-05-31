@@ -10,6 +10,9 @@
   line-height: 20px;
   font-weight: 400;
   color: var(--color-primary);
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: var(--tran-duration);
+  transition-timing-function: ease;
 
   
   
@@ -33,6 +36,9 @@
     flex-shrink: 0;
     position: relative;
     margin-right: 8px;
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: var(--tran-duration);
+    transition-timing-function: ease;
   }
 
   .radio-input:hover + .custom-radio {

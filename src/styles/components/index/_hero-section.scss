@@ -4,6 +4,8 @@
 .main-banner {
     margin-bottom: 64px;
    background: linear-gradient(to right, var(--background-card-color), var(--background-card-color2));
+   width: 100%;
+   max-width: none;
 
 &__wrapper {
     display: flex;
@@ -12,28 +14,39 @@
     padding: 32px 16px 64px 16px;
 
      @include m.laptop {
-      flex-direction: row;
+      flex-direction: row-reverse;
+      gap: 150px;
+      padding: 120px 46px 110px 40px;
+     }
+
+      @include m.desk {
+      flex-direction: row-reverse;
       gap: 100px;
-      padding:120px 28px 110px 40px;
+      padding: 47px 40px 47px 80px;
      }
 }
 
-&__image {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 408 / 248;
-    object-fit: cover;
-    display: block;
+// &__image {
+//     width: 100%;
+//     height: auto;
+//     aspect-ratio: 408 / 248;
+//     object-fit: cover;
+//     display: block;
 
-    @include m.laptop {
-      order: 2;
-     }
-  }
+//     @include m.laptop {
+//       order: 2;
+//      }
+//   }
 
   &__info-wrapper {
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @include m.desk {
+      justify-content: center;
+    }
+
   }
 
   &__title {
@@ -42,7 +55,7 @@
     font-weight: 700;
     line-height: 62px;
     color: var(--color-primary);
-    
+    letter-spacing: -0.5px;
   }
 
   &__accent {
@@ -64,7 +77,11 @@
 
   &__button {
     font-size: 18px;
-    padding: 18px 32px;
+    padding: 18px 30px;
+
+    &--play {
+      border-color: var(--color-base);
+    }
   }
 
   &__button-icon {

@@ -7,13 +7,17 @@
 
   &__wrapper {
     padding-inline: 16px;
+    margin: 0 auto;
+      margin: 0 auto;
+   max-width: 1440px;
   }
 
   &__main {
     display: flex;
     flex-direction: column;
     gap: 32px;
-     padding: 64px 0 64px 0;
+     padding: 32px 0 56px 0;
+      max-width: 1280px;
   }
 
   &__info-wrapper {
@@ -21,7 +25,6 @@
     flex-direction: column;
     gap: 32px;
     margin-bottom: 40px;
-        max-width: 1280px;
 
     @include m.laptop {
       flex-direction: row;
@@ -46,6 +49,8 @@
   }
 
   &__nav-wrapper {
+     justify-content: flex-start;
+     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -98,6 +103,7 @@
     flex-direction: column;
     gap: 24px;
     justify-content: space-between;
+    max-width: 1280px;
 
     @include m.laptop {
       flex-direction: row;
@@ -151,14 +157,18 @@
 
   &__input {
     flex-grow: 1;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
     padding: 20px;
+    font-weight: 400;
   }
 
   &__button {
-    padding: 20px 40px;
-    font-size: 14px;
+    padding: 19px 39px;
+    font-size: 16px;
+    line-height: 20px;
     cursor: pointer;
+    font-weight: 600;
     
   }
 
@@ -187,9 +197,12 @@
     line-height: 24px;
     font-weight: 400;
     padding: 24px 16px;
+    margin: 0 auto;
+    max-width: 1440px;
 
      @include m.laptop {
       flex-direction: row;
+      justify-content: space-between;
      }
  
     nav {

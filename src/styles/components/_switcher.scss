@@ -9,7 +9,10 @@
   
   .switcher {
     display: flex;
-    align-items: center;
+    align-items: center; 
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: var(--tran-duration);
+    transition-timing-function: ease;
   }
   
   //   Normal

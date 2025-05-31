@@ -1,16 +1,14 @@
 @use '../../base/variables' as *;
 
 .hero-article {
+   background: linear-gradient(to bottom, var(--background-card-color), var(--background-card-color2));
+     width: 100%;
 
     &__content-wrapper {
       padding-top: 64px;
       margin-bottom: 48px;
     }
 
-    &__background {
-      background: linear-gradient(to bottom, var(--background-card-color), var(--background-card-color2));
-     width: 100%;
-    }
 
  &__category {
     width: fit-content;
