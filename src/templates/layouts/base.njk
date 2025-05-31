@@ -1,76 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="/src/styles/style.scss" />
-  <title>{{ title }}</title>
-     <script>
-        window.addEventListener("load", (event) => {
-        const burgerOpener = document.querySelector(".js-burger");
-        const filterOpener = document.querySelector(".js-filter");
-        burgerOpener.addEventListener("click", () => {
-          document.body.classList.remove("filter--active");
-          document.body.classList.toggle("side-menu--active");
-        });
-        filterOpener.addEventListener("click", () => {
-          document.body.classList.remove("side-menu--active");
-          document.body.classList.toggle("filter--active");
-        });
-        window.addEventListener("resize", () => {
-          document.body.classList.remove("side-menu--active");
-          document.body.classList.remove("filter--active");
-        });
-      });
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="/src/styles/style.scss" />
+    <title>
+      {{ title }}
+    </title>
+    <script>
+      window.addEventListener("load", (event) => { const burgerOpener =
+      document.querySelector(".js-burger"); const filterOpener =
+      document.querySelector(".js-filter");
+      burgerOpener.addEventListener("click", () => {
+      document.body.classList.remove("filter--active");
+      document.body.classList.toggle("side-menu--active"); });
+      filterOpener.addEventListener("click", () => {
+      document.body.classList.remove("side-menu--active");
+      document.body.classList.toggle("filter--active"); });
+      window.addEventListener("resize", () => {
+      document.body.classList.remove("side-menu--active");
+      document.body.classList.remove("filter--active"); }); });
     </script>
-</head>
-<body>
-  {# <div class="wrapper"> #}
+  </head>
+  <body>
+    {# <div class="wrapper"> #}
     <div class="content">
-{% include "src/templates/partials/header.njk" %}
-{% block content %}
-<button  class="js-filter"type="button">Filter</button>
-<div class="filter"></div>
-default content{% endblock %}
-</div>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const burgerOpener = document.querySelector('.js-burger');
-    const menu = document.querySelector('.burger-menu');
+      {% include 'src/templates/partials/header.njk' %}
+      {% block content %}
+        <button class="js-filter" type="button">Filter</button>
+        <div class="filter"></div>default content
+      {% endblock %}
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () { const
+      burgerOpener = document.querySelector('.js-burger'); const menu =
+      document.querySelector('.burger-menu');
 
-    if (burgerOpener && menu) {
-      burgerOpener.addEventListener('click', function () {
-        this.classList.toggle('is-active');
-        menu.classList.toggle('is-open');
-      });
-    }
-  });
-</script>
-{% include "src/templates/partials/footer.njk" %}
-{# </div> #}
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const openBtn = document.querySelector('.js-filter');
-    const closeBtns = document.querySelectorAll('.filter-close');
-    const filter = document.querySelector('.filter');
+      if (burgerOpener && menu) { burgerOpener.addEventListener('click',
+      function () { this.classList.toggle('is-active');
+      menu.classList.toggle('is-open'); }); } });
+    </script>
+    {% include 'src/templates/partials/footer.njk' %}
+    {# </div> #}
+    <script>
+      document.addEventListener('DOMContentLoaded', () => { const openBtn =
+      document.querySelector('.js-filter'); const closeBtns =
+      document.querySelectorAll('.filter-close'); const filter =
+      document.querySelector('.filter');
 
-    if (openBtn && filter) {
-      openBtn.addEventListener('click', () => {
-        filter.classList.add('is-active');
-      });
-    }
+      if (openBtn && filter) { openBtn.addEventListener('click', () => {
+      filter.classList.add('is-active'); }); }
 
-    closeBtns.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        filter.classList.remove('is-active');
-      });
-    });
-  });
-</script>
-</body>
+      closeBtns.forEach((btn) => { btn.addEventListener('click', () => {
+      filter.classList.remove('is-active'); }); }); });
+    </script>
+  </body>
 </html>
