@@ -1,7 +1,7 @@
 {
   "catalog": [
     {
-      "image": "src/assets/images/static/catalog-card4x.png",
+      "image": "src/assets/images/static/catalog-product1.png",
       "alt": "Catalog card",
       "label": "SOLD OUT",
       "title": "Lens Chronicles",
@@ -9,7 +9,7 @@
       "price": "€00.00"
     },
     {
-    "image": "src/assets/images/static/catalog-card4x.png",
+    "image": "src/assets/images/static/catalog-product2.png",
       "alt": "Career Success",
       "label": "NEW",
       "title": "Career Success",
@@ -17,7 +17,7 @@
       "price": "€20.99"
     },
       {
-    "image": "src/assets/images/static/catalog-card4x.png",
+    "image": "src/assets/images/static/catalog-product3.png",
       "alt": "Dream Homes",
       "label": "POPULAR",
       "title": "Dream Homes",
@@ -25,7 +25,7 @@
       "price": "€45.99"
     },
       {
-    "image": "src/assets/images/static/catalog-card4x.png",
+    "image": "src/assets/images/static/catalog-product4.png",
       "alt": "Foodish Catering",
       "label": "POPULAR",
       "title": "Foodish Catering",
@@ -33,7 +33,7 @@
       "price": "€15.99"
     },
         {
-      "image": "src/assets/images/static/catalog-card4x.png",
+      "image": "src/assets/images/static/catalog-product5.png",
       "alt": "Caring Hearts",
       "label": "NEW",
       "title": "Caring Hearts",
@@ -41,7 +41,7 @@
       "price": "€19.99"
     },
         {
-    "image": "src/assets/images/static/catalog-card4x.png",
+    "image": "src/assets/images/static/catalog-product6.png",
       "alt": "Gaming Rise",
       "label": "SOLD OUT",
       "title": "Gaming Rise",
@@ -49,7 +49,7 @@
       "price": "€00.00"
     },
        {
-    "image": "src/assets/images/static/catalog-card4x.png",
+    "image": "src/assets/images/static/catalog-product7.png",
       "alt": "Edit Pro",
       "label": "SOLD OUT",
       "title": "Edit Pro",
@@ -57,7 +57,7 @@
       "price": "€00.00"
     },
        {
-    "image": "src/assets/images/static/catalog-card4x.png",
+    "image": "src/assets/images/static/catalog-product8.png",
       "alt": "Banking Redefined",
       "label": "NEW",
       "title": "Banking Redefined",
@@ -65,7 +65,7 @@
       "price": "€25.99"
     },
        {
-    "image": "src/assets/images/static/catalog-card4x.png",
+    "image": "src/assets/images/static/catalog-product9.png",
       "alt": "Exploring Fun",
       "label": "POPULAR",
       "title": "Exploring Fun",
@@ -73,7 +73,7 @@
       "price": "€41.99"
     },
        {
-    "image": "src/assets/images/static/catalog-card4x.png",
+    "image": "src/assets/images/static/catalog-product10.png",
       "alt": "Admin Dashboard",
       "label": "POPULAR",
       "title": "Admin Dashboard",
@@ -81,7 +81,7 @@
       "price": "€15.99"
     },
        {
-    "image": "src/assets/images/static/catalog-card4x.png",
+    "image": "src/assets/images/static/catalog-product11.png",
       "alt": "Analytical Dashboard",
       "label": "NEW",
       "title": "Analytical Dashboard",
@@ -89,7 +89,7 @@
       "price": "€10.99"
     },
        {
-    "image": "src/assets/images/static/catalog-card4x.png",
+    "image": "src/assets/images/static/catalog-product12.png",
       "alt": "Kindergarten",
       "label": "SOLD OUT",
       "title": "Kindergarten",
