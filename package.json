@@ -2,10 +2,13 @@
   "name": "pixmart",
   "version": "1.0.0",
   "main": "index.js",
-"scripts": {
+  "scripts": {
     "start": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
+    "prettier": "npx prettier '**/*.njk'",
+    "prettier:write": "npx prettier '**/*.njk' --write",
+    "sprite:generate": "node tools/generate-sprite.js",
     "lint": "npx eslint .",
     "lint:fix": "npx eslint . --fix",
     "stylelint": "npx stylelint '**/*.scss'",
@@ -13,13 +16,14 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.njk": "eslint --fix",
-    "*.scss": "stylelint --fix"
+    "**/*.njk": "prettier --write --ignore-unknown"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@bro-academy/vite-plugin-image-optimizer": "^0.0.1",
+    "@bro-academy/vite-plugin-svg-sprite": "^0.0.2",
     "@html-eslint/eslint-plugin": "^0.40.3",
     "@html-eslint/parser": "^0.40.0",
     "@shopify/prettier-plugin-liquid": "^1.9.3",
@@ -37,9 +41,6 @@
     "vite": "^6.3.5",
     "vite-plugin-imagemin": "^0.6.1",
     "vituum": "^1.2.0"
-  },
-  "lint-staged": {
-    "**/*.njk": "prettier --write --ignore-unknown"
   },
   "volta": {
     "node": "22.14.0"
