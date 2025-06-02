@@ -3,16 +3,50 @@
 
 .faq {
     margin-bottom: 64px;
+     position: relative;
+      z-index: 0;
+
+    @include m.laptop {
+        margin-bottom: 120px;
+    }
+
+    &__gradient {
+      display: none;
+
+      @include m.laptop {
+   display: block;
+    position: absolute;
+    right: -77px;
+    bottom: 42px;
+    width: 689px;
+    height: 498px;
+    background: radial-gradient(ellipse at center, var(--icon-color) 0%, transparent 70%);
+    filter: blur(200px);
+    border-radius: 50%;
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: -1;
+      }
+
+      @include m.desk {
+        right: 339px;
+        bottom: -86px;
+      }
+     }
 
     &__wrapper{
+      position: relative;
        display: flex;
        flex-direction: column;
        gap: 64px;
        justify-content: center;
+       padding-inline: 16px;
+       z-index: 1;
 
        @include m.laptop {
         flex-direction: row;
-        gap: 40px;
+        padding-inline: 80px;
+        gap: 20px;
        }
      }
 
@@ -49,6 +83,7 @@
         flex-direction: column;
         gap: 16px;
         padding: 0;
+        z-index: 2;
     }
 
   &__details {
@@ -57,7 +92,11 @@
      border-radius: 10px;
     background-color: var(--color-base);
     box-shadow: 0 0 40px 0 var(--color-secondary2-invert);
-    transition: border 0.3s, box-shadow 0.3s;
+    transition: border var(--tran-duration), box-shadow var(--tran-duration);
+
+    @include m.desk {
+       padding: 27px 24px;
+    }
 
     &[open] {
       border: 2px solid var(--color-accent-link);
