@@ -14,24 +14,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="/src/styles/style.scss" />
+    <link rel="stylesheet" href="src/styles/style.scss" />
     <title>
       {{ title }}
     </title>
-    <script>
-      window.addEventListener("load", (event) => { const burgerOpener =
-      document.querySelector(".js-burger"); const filterOpener =
-      document.querySelector(".js-filter");
-      burgerOpener.addEventListener("click", () => {
-      document.body.classList.remove("filter--active");
-      document.body.classList.toggle("side-menu--active"); });
-      filterOpener.addEventListener("click", () => {
-      document.body.classList.remove("side-menu--active");
-      document.body.classList.toggle("filter--active"); });
-      window.addEventListener("resize", () => {
-      document.body.classList.remove("side-menu--active");
-      document.body.classList.remove("filter--active"); }); });
-    </script>
   </head>
   <body>
     {# <div class="wrapper"> #}
@@ -42,28 +28,26 @@
         <div class="filter"></div>default content
       {% endblock %}
     </div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () { const
-      burgerOpener = document.querySelector('.js-burger'); const menu =
-      document.querySelector('.burger-menu');
-
-      if (burgerOpener && menu) { burgerOpener.addEventListener('click',
-      function () { this.classList.toggle('is-active');
-      menu.classList.toggle('is-open'); }); } });
-    </script>
     {% include 'src/templates/partials/footer.njk' %}
-    {# </div> #}
     <script>
-      document.addEventListener('DOMContentLoaded', () => { const openBtn =
-      document.querySelector('.js-filter'); const closeBtns =
-      document.querySelectorAll('.filter-close'); const filter =
-      document.querySelector('.filter');
+      document.addEventListener("DOMContentLoaded", function() { const
+      burgerOpener = document.querySelector(".js-burger");
 
-      if (openBtn && filter) { openBtn.addEventListener('click', () => {
-      filter.classList.add('is-active'); }); }
+      const menu = document.querySelector(".burger-menu");
 
-      closeBtns.forEach((btn) => { btn.addEventListener('click', () => {
-      filter.classList.remove('is-active'); }); }); });
+      if (burgerOpener && menu) { burgerOpener.addEventListener("click",
+      function() { this.classList.toggle("is-active");
+      menu.classList.toggle("is-open"); }); }
+
+      const openBtn = document.querySelector(".js-filter"); const closeBtns =
+      document.querySelectorAll(".filter-close"); const filter =
+      document.querySelector(".filter");
+
+      if (openBtn && filter) { openBtn.addEventListener("click", () => {
+      filter.classList.add("is-active"); }); }
+
+      closeBtns.forEach((btn) => { btn.addEventListener("click", () => {
+      filter.classList.remove("is-active"); }); }); });
     </script>
   </body>
 </html>
