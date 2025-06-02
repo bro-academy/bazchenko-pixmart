@@ -2,12 +2,17 @@
 @use '../../base/mixins' as m;
 
 .catalog-hero {
-    padding: 64px 16px 96px 16px;
      background: url('/src/assets/images/static/catalog-background.png') no-repeat center;
      background-size: cover;
 
-     @include m.laptop {
+     &__container {
+      padding: 64px 16px 96px 16px;
+      max-width: 1440px;
+      margin: 0 auto;
+
+       @include m.laptop {
         padding: 64px 80px 100px 80px;
+     }
      }
 
      &__header {
@@ -17,6 +22,7 @@
         line-height: 48px;
         font-weight: 700;
         font-family: var(--font-accent);
+        letter-spacing: -0.5px;
      }
 
      &__highlight {

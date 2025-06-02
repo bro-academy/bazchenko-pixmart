@@ -4,6 +4,10 @@
 .articles-block {
   margin-bottom: 64px;
 
+  @include m.laptop {
+     margin-bottom: 120px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;

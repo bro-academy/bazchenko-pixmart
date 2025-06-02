@@ -9,7 +9,7 @@
 
         @include m.laptop {
             flex-direction: row;
-            margin-bottom: 64px;
+            margin-bottom: 120px;
         }
         
 
@@ -29,7 +29,9 @@
            display: none;
 
             @include m.laptop {
-               display: block;
+               display: flex;
+               flex-direction: column;
+               gap: 16px;
             }
         }
     }
@@ -49,6 +51,7 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
+            margin-bottom: 16px;
             }
         }
     }
@@ -76,10 +79,16 @@
         display: block;
         border-radius: 20px;
         margin-bottom: 0;
-        aspect-ratio: 408/300;
+        aspect-ratio: 408/360;
 
         @include m.laptop {
-            margin-bottom: 10px;
+        margin-bottom: 12px;
+        aspect-ratio: 644/462;
+        }
+
+          @include m.laptop {
+        margin-bottom: 12px;
+        aspect-ratio: 980/462;
         }
     }
 
@@ -97,11 +106,6 @@
     }
 
     &__figure-caption-link {
-        // font-family: var(--font-base);
-        // font-size: 16px;
-        // line-height: 24px;
-        // font-weight: 600;
-
         position: absolute;
         clip-path: inset(100%);
         width: 1px;
@@ -137,13 +141,14 @@
 
             @include m.laptop {
                 display: block;
+                padding-top: 8px;
             }
 
 
         &::before {
             content: "";
             position: absolute;
-            top: -10px;
+            top: -2px;
             left: 0;
             width: 64px;
             height: 64px;
@@ -192,7 +197,7 @@
 
     &__categories {
         border-top: 2px solid var(--color-primary);
-        padding-top: 40px;
+        padding-top: 38px;
     }
 
     &__title {
@@ -218,6 +223,8 @@
     }
 
     &__link {
+        display: inline-flex;
+        align-items: center;
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
@@ -232,6 +239,7 @@
             height: 8px;
             border-radius: 50%;
             background-color: var(--color-accent-link);
+            flex-shrink: 0;
         }
     }
 
@@ -243,7 +251,7 @@
 
     &__latest {
          border-top: 2px solid var(--color-primary);
-        padding-top: 40px;
+        padding-top: 38px;
     }
 
     &__latest-list {

@@ -5,24 +5,27 @@
   position: relative;
 
    &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 16px;
+  margin: 0 auto;
+   max-width: 1440px;
 
     @include m.laptop {
       padding: 24px 40px;
     }
 
      @include m.desk {
-      padding: 30px 80px;
+      padding: 24px 80px;
     }
  }
 
    &__logo-wrapper {
       display: flex;
       gap: 16px;
-      align-items: end;
-      max-height: 32px;
+      align-items: center;
+      // max-height: 32px;
    }
 
  &__logo-link {
@@ -68,7 +71,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    // padding: 2px 0;
+    padding: 2px 0;
  }
 
 &__search-wrapper {
