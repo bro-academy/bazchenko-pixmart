@@ -63,36 +63,38 @@
           required
         ></textarea>
       </div>
-      <div class="contact-form__group-wrapper">
-        <label class="checkbox-wrapper" for="subscribe-newsletter">
-          <input
-            type="checkbox"
-            id="subscribe-newsletter"
-            name="newsletter"
-            value="yes"
-            class="checkbox-input visually-hidden"
-          />
-          <span class="custom-checkbox"></span>
-          Subscribe me to Newsletter
-        </label>
-        <label class="checkbox-wrapper" for="user-policy">
-          <input
-            type="checkbox"
-            id="user-policy"
-            name="user-policy"
-            value="agree"
-            class="checkbox-input visually-hidden"
-            required
-          />
-          <span class="custom-checkbox"></span>
-          I have read the User & Privacy Policy
-        </label>
+      <div class="contact-form__actions">
+        <div class="contact-form__group-wrapper">
+          <label class="checkbox-wrapper" for="subscribe-newsletter">
+            <input
+              type="checkbox"
+              id="subscribe-newsletter"
+              name="newsletter"
+              value="yes"
+              class="checkbox-input visually-hidden"
+            />
+            <span class="custom-checkbox"></span>
+            Subscribe me to Newsletter
+          </label>
+          <label class="checkbox-wrapper" for="user-policy">
+            <input
+              type="checkbox"
+              id="user-policy"
+              name="user-policy"
+              value="agree"
+              class="checkbox-input visually-hidden"
+              required
+            />
+            <span class="custom-checkbox"></span>
+            I have read the User & Privacy Policy
+          </label>
+        </div>
+        <input
+          class="contact-form__button button button--primary"
+          type="submit"
+          value="Send Message"
+        />
       </div>
-      <input
-        class="contact-form__button button button--primary"
-        type="submit"
-        value="Send Message"
-      />
     </div>
   </div>
 </form>
