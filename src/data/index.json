@@ -2,27 +2,27 @@
   "categories": [
     {
       "title": "UI Kits",
-      "image": "src/assets/images/static/monitor.svg",
+      "image": "/src/assets/images/static/monitor.svg",
       "alt": "UI Kits"
     },
      {
       "title": "Social Media",
-      "image": "src/assets/images/static/mobile.svg",
+      "image": "/src/assets/images/static/mobile.svg",
       "alt": "Social Media"
     },
      {
       "title": "Presentation",
-      "image": "src/assets/images/static/presentation.svg",
+      "image": "/src/assets/images/static/presentation.svg",
       "alt": "Presentation"
     },
      {
       "title": "Fonts",
-      "image": "src/assets/images/static/fonts.svg",
+      "image": "/src/assets/images/static/fonts.svg",
       "alt": "Fonts"
     },
     {
       "title": "Illustrations",
-      "image": "src/assets/images/static/illustration.svg",
+      "image": "/src/assets/images/static/illustration.svg",
       "alt": "Illustrations"
     }
   ],
@@ -30,25 +30,25 @@
   "promo_cards": [
     {
       "alt": "Templates",
-      "image": "src/assets/images/static/monitor.svg",
+      "image": "/src/assets/images/static/monitor.svg",
       "title": "Templates",
       "text": "For all needs • Modern"
     },
      {
       "alt": "App Icons",
-      "image": "src/assets/images/static/mobile.svg",
+      "image": "/src/assets/images/static/mobile.svg",
       "title": "App Icons",
       "text": "High-quality • Elegant"
     },
      {
       "alt": "Slides",
-      "image": "src/assets/images/static/presentation.svg",
+      "image": "/src/assets/images/static/presentation.svg",
       "title": "Slides",
       "text": "Pitch-ready • Creative"
     },
      {
       "alt": "Design Tools",
-      "image": "src/assets/images/static/illustration.svg",
+      "image": "/src/assets/images/static/illustration.svg",
       "title": "Design Tools",
       "text": "Easy to use • Unique"
     }
@@ -58,15 +58,15 @@
     {
       "label": "new",
       "title": "Travel Hero",
-      "image": "src/assets/images/static/product-card.png",
+      "image": "/src/assets/images/static/product-card.png?format=webp",
       "alt": "Travel Hero",
       "price": "€29.99",
-      "subtitle": "Adventure • Journey"
+      "subtitle": "Adventure  •  Journey"
     },
     {
       "label": "New",
       "title": "Healthcare Pro",
-      "image": "src/assets/images/static/product-card-2.png",
+      "image": "/src/assets/images/static/product-card-2.png?format=webp",
       "alt": "Healthcare Pro",
       "price": "€15.99",
       "subtitle": "Medical • Wellness"
@@ -74,16 +74,16 @@
     {
       "label": "Hot",
       "title": "Foodish Delight",
-      "image": "src/assets/images/static/product-card_3.png",
+      "image": "/src/assets/images/static/product-card_3.png?format=webp",
       "alt": "Foodish Delight",
         "price": "€31.99",
       "subtitle": "Catering • Food"
     },
        {
       "label": "Hot",
-      "title": "Foodish Delight",
-      "image": "src/assets/images/static/product-card_4.png",
-      "alt": "Foodish Delight",
+      "title": "Real Estate",
+      "image": "/src/assets/images/static/product-card_4.png?format=webp",
+      "alt": "Real Estate",
         "price": "€40.99",
       "subtitle": "Modern • Homes"
     }
