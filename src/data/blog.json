@@ -1,19 +1,19 @@
 {
 "blogs":[
   {
-    "imagePath": "/src/assets/images/static/best-dishes-card.png",
+    "imagePath": "/src/assets/images/static/best-dishes-card.png?format=webp",
     "title": "Best Dishes",
-    "dateTime": "15 APRIL 2024"
+    "dateTime": "2024-04-15"
   },
   {
     "imagePath": "/src/assets/images/static/contact-us-banner.jpg",
-    "title": "Delicious Desserts",
-    "dateTime": "5 MAY 2024"
+    "title": "Contact Us Lotus Spa",
+    "dateTime": "2024-05-05"
   },
   {
-    "imagePath": "/src/assets/images/static/creative-blog-banner.png",
-    "title": "Healthy Salads",
-    "dateTime": "20 JUNE 2024"
+    "imagePath": "/src/assets/images/static/creative-blog-banner.png?format=webp",
+    "title": "Creative Blog",
+    "dateTime": "2024-06-20"
   }
 ]
 }
