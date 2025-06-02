@@ -1,11 +1,13 @@
-{% set title = "Contact" %}
+{% set title = 'Contact' %}
 {% extends 'src/templates/layouts/base.njk' %}
 
 {% from 'src/templates/partials/ui/icon.njk' import icon %}
 
 {% block content %}
-<section class="contact-page">
-  {% include 'src/templates/partials/contact/contact-info.njk' %}
-  {% include 'src/templates/partials/contact/contact-form.njk' %}
-</section>
+  <section class="contact-page">
+    <div class="contact-page__wrapper wrapper">
+      {% include 'src/templates/partials/contact/contact-info.njk' %}
+      {% include 'src/templates/partials/contact/contact-form.njk' %}
+    </div>
+  </section>
 {% endblock %}
