@@ -2,22 +2,34 @@
 @use '../../base/mixins' as m;
 
 .category-promo {
-  display: flex;
+  margin-bottom: 64px;
+
+  @include m.laptop {
+  margin-bottom: 120px;
+  }
+
+  &__wrapper {
+      display: flex;
   flex-direction: column;
   gap: 64px;
-  margin-bottom: 64px;
 
   @include m.laptop {
     flex-direction: row;
     justify-content: center;
   }
-
+    
   & > * {
   flex: 1;
   }
+}
 
   &__title {
     margin-bottom:  0;
+  }
+
+  &__subtitle-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 
   &__button {

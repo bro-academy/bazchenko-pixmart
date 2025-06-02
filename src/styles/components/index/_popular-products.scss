@@ -8,9 +8,12 @@
       margin-bottom: 120px;
     }
 
-  &__top {
+    &__top {
     display: flex;
     justify-content: space-between;
+    }
+
+  &__top {
     margin-bottom: 48px;
   }
 
@@ -146,6 +149,7 @@ aspect-ratio: 305 / 272;
     font-weight: 700;
     color: var(--color-primary);
     margin-bottom: 4px;
+    font-family: var(--font-accent);
   }
 
   &__price {

@@ -1,4 +1,6 @@
 @use '../../base/variables' as *;
+@use '../../base/mixins' as m;
+
 
 .hero-article {
    background: linear-gradient(to bottom, var(--background-card-color), var(--background-card-color2));
@@ -32,6 +34,12 @@
     line-height: 48px;
     font-weight: 700;
     margin-bottom: 64px;
+    letter-spacing: -0.5px;
+    
+    @include m.laptop {
+      font-size: 52px;
+      line-height: 62px;
+    }
   }
 
 
@@ -40,5 +48,6 @@
   width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 48px;
 }
 }

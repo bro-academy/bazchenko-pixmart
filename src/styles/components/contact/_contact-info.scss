@@ -8,20 +8,25 @@
 
 .contact-page {
     background: linear-gradient(to bottom, var(--background-card-color), var(--background-card-color2));
+
+&__wrapper {
     display: flex;
     flex-direction: column;
     gap: 24px;
     padding-inline: 16px;
+    margin-bottom: 64px;
 
-    @include m.laptop {
+       @include m.laptop {
         flex-direction: row;
          padding-inline: 40px;
          gap: 40px;
+         margin-bottom: 120px;
     }
 
       @include m.desk {
          padding-inline: 80px;
     }
+}
 }
 
 .contact-info {
@@ -43,6 +48,7 @@
         font-weight: 700;
         line-height: 62px;
         color: var(--color-primary);
+        letter-spacing: -0.5px;
     }
 
     &__description {
@@ -63,17 +69,19 @@
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 2px;
+        gap: 4px;
         margin-bottom: 48px;
         padding: 0;
         font-size: 18px;
         line-height: 28px;
+
     }
 
     &__item {
         font-size: 18px;
         font-weight: 600;
         color: var( --color-primary);
+        align-items: end;
     }
 
     &__phone {
@@ -139,6 +147,9 @@
          &__map-wrapper {
         position: relative;
         width: 100%;
+
+        @include m.laptop {
+        }
     }
 
     &__image {
@@ -149,7 +160,7 @@
 
     &__label {
         position: absolute;
-        bottom: 16px;
+        bottom: 24px;
         right: 16px;
         border-radius: 10px;
         align-items: center;
