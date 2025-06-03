@@ -69,6 +69,7 @@
   transform: translateY(-6px) rotate(-45deg); }
 
 .burger-menu {
+  position: fixed;
   display: none;
   flex-direction: column;
   gap: 8px;
@@ -80,12 +81,18 @@
   width: 100%;
 
   &.is-open {
-    display: block;
-     overflow: hidden;
+    display: flex;
+    position: fixed;
+    top: 92px;
+    right: 0;
     height: 100vh;
-      flex: 1 1 auto;
-  overflow-y: auto;
-  
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+
+  @include m.laptop {
+    display: none;
+  }
   }
 
   &__list {
