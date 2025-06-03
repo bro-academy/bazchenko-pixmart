@@ -6,7 +6,6 @@ import sharp from 'sharp';
 const formats = ['webp', 'avif'];
 
 async function addDimensionsToImages(html, assetDir) {
-  // Match <img ...> and <source ...>
   const tagRegex = /<(img|source)\b[^>]*?>/gi;
 
   let result = '';
