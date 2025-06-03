@@ -1,9 +1,10 @@
 @use '../../base/variables' as *;
 @use '../../base/mixins' as m;
 
-.catalog__main-content {
+.catalog-main-content {
     display: flex;
     gap: 26px;
+    margin-bottom: 64px;
 }
 
 .catalog-content {

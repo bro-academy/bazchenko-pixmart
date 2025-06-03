@@ -15,6 +15,23 @@
    background-color: var(--color-base);
   flex: 1 1 auto;
   overflow-y: auto;
+
+  &__group {
+    border: 0;
+    padding: 0;
+  }
+
+  &__group-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
   
 
     &__body {
@@ -36,11 +53,12 @@
     box-shadow: 0 4px 40px 0 var(--shadow--filter--color);
     }
 
-    &__header-title {
+    &__group-title {
         font-size: 24px;
         line-height: 32px;
         font-weight: 700;
         font-family: var(--font-accent);
+        margin-bottom: 24px;
     }
 
   &__button {

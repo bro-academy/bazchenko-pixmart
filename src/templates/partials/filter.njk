@@ -2,23 +2,26 @@
   <div class="filter__header">
     <h2 class="filter__header-title">Filters</h2>
     <button
-      class="filter__header-button filter-close button button--secondary-icon"
+      class="filter__header-button filter__close-button filter-close button button--secondary-icon"
     >
       {{ icon('x-close', 'icon') }}
     </button>
   </div>
+
   <div class="filter__body">
-    <button class="filter__button filter-close button button--secondary">
+    <button
+      class="filter__clear-button filter__button filter-close button button--secondary"
+    >
       {{ icon('x-close', 'filter__button-icon icon') }}
       <span class="filter__button-text">Clear all filters</span>
     </button>
-    <form class="form-sidebar__filter" action="url" method="get">
-      <fieldset class="form-sidebar__group">
-        <legend class="form-sidebar__group-title">
+    <form class="filter__form" action="url" method="get">
+      <fieldset class="filter__group">
+        <legend class="filter__group-title">
           Categories
         </legend>
-        <div class="form-sidebar__group-wrapper">
-          <label class="checkbox-wrapper">
+        <div class="filter__group-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="all-categories1"
@@ -29,7 +32,7 @@
             <span class="custom-checkbox"></span>
             All Categories
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="technology1"
@@ -40,7 +43,7 @@
             <span class="custom-checkbox"></span>
             Technology
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="travel1"
@@ -51,7 +54,7 @@
             <span class="custom-checkbox"></span>
             Travel & Tourism
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="health1"
@@ -62,7 +65,7 @@
             <span class="custom-checkbox"></span>
             Health & Fitness
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="ecommerce1"
@@ -73,7 +76,7 @@
             <span class="custom-checkbox"></span>
             E-Commerce
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="education1"
@@ -84,7 +87,7 @@
             <span class="custom-checkbox"></span>
             Education
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="entertainment1"
@@ -95,7 +98,7 @@
             <span class="custom-checkbox"></span>
             Entertainment
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="others1"
@@ -106,7 +109,7 @@
             <span class="custom-checkbox"></span>
             Others
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="stoa1"
@@ -119,12 +122,13 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="form-sidebar__group">
-        <legend class="form-sidebar__group-title">
+
+      <fieldset class="filter__group">
+        <legend class="filter__group-title">
           Format Type
         </legend>
-        <div class="form-sidebar__group-wrapper">
-          <label class="checkbox-wrapper">
+        <div class="filter__group-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="figma1"
@@ -135,7 +139,7 @@
             <span class="custom-checkbox"></span>
             Figma
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="sketch1"
@@ -146,7 +150,7 @@
             <span class="custom-checkbox"></span>
             Sketch
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="adobe-xd1"
@@ -157,7 +161,7 @@
             <span class="custom-checkbox"></span>
             Adobe XD
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="adobe-photoshop1"
@@ -168,7 +172,7 @@
             <span class="custom-checkbox"></span>
             Adobe Photoshop
           </label>
-          <label class="checkbox-wrapper">
+          <label class="checkbox-wrapper filter__checkbox">
             <input
               type="checkbox"
               id="adobe-illustration1"
@@ -183,6 +187,7 @@
       </fieldset>
     </form>
   </div>
+
   <div class="filter__bottom-wrapper">
     <button class="filter__bottom-button button button--primary filter-close">
       Save
