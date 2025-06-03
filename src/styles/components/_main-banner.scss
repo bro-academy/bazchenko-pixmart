@@ -12,6 +12,7 @@
     width: 100%;
     max-width: none;
     height: auto;
+    max-height: 544;
 
   @include m.laptop {
     aspect-ratio: 443 / 386;
