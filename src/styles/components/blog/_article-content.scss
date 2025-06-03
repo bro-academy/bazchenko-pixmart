@@ -76,10 +76,14 @@
     }
 
     &__figure-caption-inner{
+        display: none;
+
+        @include m.laptop {
         display: flex;
         justify-content: space-between;
         padding: 4px 0;
     }
+}
 
     &__figure-image {
         width: 100%;
