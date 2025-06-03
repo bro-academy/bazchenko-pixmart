@@ -107,7 +107,7 @@ a {
   border-bottom-right-radius: 0;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-   font-family: 20px;
+   font-size: 20px;
 }
 
 .text-label {
@@ -137,5 +137,9 @@ a {
 
   &.is-active {
     display: block;
+
+    @include m.desk {
+    display: none;
   }
-}
+    }
+  }
