@@ -1,4 +1,6 @@
 {
+  "logoLink": "index.html",
+  
   "catalog": [
     {
       "image": "/src/assets/images/static/catalog-product1.png?format=webp",

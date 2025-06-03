@@ -1,5 +1,10 @@
 {
   "common": {
-    "siteTitle": "Pixmart Website"
+    "logoLink": {
+      "home": "/",
+      "blog": "index.html",
+      "contact": "index.html",
+      "catalog": "index.html"
+    }
   }
 }
