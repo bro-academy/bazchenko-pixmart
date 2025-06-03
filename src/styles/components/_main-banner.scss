@@ -5,20 +5,24 @@
 .main-banner {
 
   &__illustration {
+    display: block;
     position: relative;
     aspect-ratio: 408 / 276;
     overflow: hidden;
     width: 100%;
     max-width: none;
+    height: auto;
 
   @include m.laptop {
     aspect-ratio: 443 / 386;
-    width: 100%;
+    width: 43%;
+    margin-top: 32px;
+    margin-bottom: 42px;
   }
 
     @include m.desk {
     aspect-ratio: 624 / 544;
-    //  max-height: 544px;
+   margin: 0;
   }
 
   &::after {
@@ -50,15 +54,15 @@
        object-fit: cover;
 
        @include m.laptop {
-         transform: translate(-44%,11%);
+         transform: translate(-24%,-1%);
          width: 45%;
         aspect-ratio: 199/300;
         border-radius: 0 10px 10px 0;
        }
        
          @include m.desk {
-         transform: translate(14%,0%);
-         width: 42%;
+         transform: translate(0%,0%);
+         width: 45%;
         aspect-ratio: 281/422;
         border-radius: 10px;
        }
@@ -72,14 +76,14 @@
 
       @include m.laptop {
       aspect-ratio: 365/212;
-      width: 96%;
-      transform: translate(10%, 99%);
+      width: 82%;
+      transform: translate(26%, 81%);
        }
 
         @include m.desk {
-        width: 78%;
+        width: 82%;
         aspect-ratio: 365/212;
-        transform: translate(28%, 77%);
+        transform: translate(22%, 83%);
        }
     }
 
@@ -95,14 +99,14 @@
 
       @include m.laptop {
        aspect-ratio: 206/116;
-       width: 56%;
-       transform: translate(79%, 66%);
+       width: 46%;
+       transform: translate(109%, 28%);
        }
 
        @include m.desk {
-       width: 44%;
+       width: 46%;
        aspect-ratio: 291/164;
-       transform: translate(122%, 29%);
+       transform: translate(111%, 31%);
        }
     }
 
@@ -116,8 +120,6 @@
       box-shadow: 0 2px 25px var(--box-shadow-color2);
 
       @include m.laptop {
-        height: 56px;
-       width: 56px;
         padding: 12px;
       }
     }
@@ -132,27 +134,32 @@
        width: 36px;
 
          @include m.laptop {
-        transform: translate(-80%, 85%);
+        transform: translate(38%, 16%);
         border-radius: 10px;
+        height: 56px;
+        width: 56px;
+        padding: 12px;
        }
           @include m.desk {
-        transform: translate(104%, 60%);
+        transform: translate(35%, 60%);
         border-radius: 10px;
        }
     }
 
      &--fifth {
      top: -10px;
-      right: 12px;
-      transform: translate(-159%, 45%);
-      z-index: 3;
-       border-radius: 4px;
-        height: 35px;
-       width: 35px;
+     right: 12px;
+     transform: translate(-159%, 45%);
+     z-index: 3;
+     border-radius: 4px;
+     height: 35px;
+     width: 35px;
 
        @include m.laptop {
-        transform: translate(-80%, 95%);
+        transform: translate(-111%, 27%);
         border-radius: 5px;
+        height: 56px;
+        width: 56px;
        }
           @include m.desk {
         transform: translate(-112%, 36%);
