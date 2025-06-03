@@ -5,6 +5,10 @@
   background-color: var(--color-base);
   color: var(--color-primary);
 
+  @include m.laptop {
+    padding-top: 110px;
+  }
+
   &__wrapper {
     padding-inline: 16px;
     margin: 0 auto;
@@ -16,7 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-     padding: 32px 0 64px 0;
+     padding: 118px 0 64px 0;
       max-width: 1280px;
 
       @include m.laptop {
@@ -116,7 +120,7 @@
 
     @include m.laptop {
       flex-direction: row;
-      gap: 78px;
+      gap: 93px;
     }
      @include m.desk {
       gap: 395px;
@@ -127,7 +131,7 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding-right: 32px;
+    // padding-right: 32px;
   }
 
   &__icons-list {
@@ -172,7 +176,7 @@
     flex-grow: 1;
     font-size: 16px;
     line-height: 24px;
-    padding: 20px;
+    padding: 19px;
     font-weight: 400;
 
     @include m.desk {
@@ -181,7 +185,7 @@
   }
 
   &__button {
-    padding: 19px 39px;
+    padding: 18px 38px;
     font-size: 16px;
     line-height: 20px;
     cursor: pointer;
@@ -197,7 +201,6 @@
 
     @include m.laptop {
       flex-direction: row;
-      gap: 20px;
     }
   }
 

@@ -2,15 +2,22 @@
 @use '../../base/mixins' as m;
 
 .article-content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+
+    @include m.laptop {
+     margin-bottom: 112px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     
 
         @include m.laptop {
             flex-direction: row;
-            margin-bottom: 120px;
+         
         }
+    }
         
 
     &__article {
@@ -71,6 +78,7 @@
     &__figure-caption-inner{
         display: flex;
         justify-content: space-between;
+        padding: 4px 0;
     }
 
     &__figure-image {
@@ -79,11 +87,12 @@
         display: block;
         border-radius: 20px;
         margin-bottom: 0;
-        aspect-ratio: 408/360;
+        aspect-ratio: 408/362;
 
         @include m.laptop {
         margin-bottom: 12px;
         aspect-ratio: 644/462;
+        height: 462px;
         }
 
           @include m.laptop {

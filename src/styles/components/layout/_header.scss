@@ -2,7 +2,7 @@
 @use '../../base/mixins' as m;
 
 .header {
-  position: relative;
+  position: static;
 
    &__wrapper {
   display: flex;
@@ -58,7 +58,7 @@
     overflow: visible;
     white-space: normal;
     display: flex;
-    gap: 8px;
+    gap: 9px;
     border: none;
   }
 }
@@ -72,6 +72,10 @@
     align-items: center;
     gap: 8px;
     padding: 2px 0;
+
+    @include m.laptop {
+     padding: 1px 0;
+    }
  }
 
 &__search-wrapper {

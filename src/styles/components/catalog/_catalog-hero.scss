@@ -23,6 +23,11 @@
         font-weight: 700;
         font-family: var(--font-accent);
         letter-spacing: -0.5px;
+
+        @include m.laptop {
+          font-size: 52px;
+          line-height: 62px;
+        }
      }
 
      &__highlight {

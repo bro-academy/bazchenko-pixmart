@@ -1,6 +1,8 @@
 @use '../base/variables' as *;
+@use '../base/mixins' as m;
 
 .filter {
+  display: non;
    position: fixed;
   top: 0;
   left: 0;
@@ -13,6 +15,7 @@
    background-color: var(--color-base);
   flex: 1 1 auto;
   overflow-y: auto;
+  
 
     &__body {
         position: relative;
@@ -21,9 +24,6 @@
         flex-direction: column;
         gap: 40px;
         height: 824px;
-
-          &__body {
-  }
     }
 
     &__header {
