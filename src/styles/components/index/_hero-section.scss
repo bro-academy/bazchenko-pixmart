@@ -7,6 +7,10 @@
    width: 100%;
    max-width: none;
 
+   @include m.laptop {
+     margin-bottom: 66px;
+   }
+
    @include m.desk {
     margin-bottom: 120px;
    }
@@ -19,41 +23,29 @@
 
      @include m.laptop {
       flex-direction: row-reverse;
-      gap: 100px;
+      gap: 102px;
       padding: 120px 28px 110px 40px;
      }
 
       @include m.desk {
       flex-direction: row-reverse;
-      gap: 100px;
+      gap: 176px;
       padding: 47px 40px 47px 80px;
      }
 }
-
-// &__image {
-//     width: 100%;
-//     height: auto;
-//     aspect-ratio: 408 / 248;
-//     object-fit: cover;
-//     display: block;
-
-//     @include m.laptop {
-//       order: 2;
-//      }
-//   }
 
   &__info-wrapper {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    flex-shrink: 1;
 
     @include m.laptop {
-      max-width: 410px;
+     max-width: 410px;
     }
 
     @include m.desk {
       justify-content: center;
+      max-width: 520px;
     }
 
   }

@@ -51,7 +51,7 @@
   flex: 1 1 300px;
   background-color: var( --color-base);
   box-shadow: 0 0 40px 0 var(--color-secondary2-invert); // change color
-  border-radius: 20px;
+  border-radius: 22px;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -59,11 +59,12 @@
    &--accent {
     border: 2px solid var(--color-accent-link);
         margin-bottom: 32px;
-        padding: 28px 30px;
+        padding: 30px;
 
         @include m.laptop {
           padding-top: 56px;
           margin-top: -56px;
+           padding: 56px 32px 32px 32px;
         }
 
           @include m.desk {
@@ -125,7 +126,7 @@
 
   &__list-wrapper {
     align-items: start;
-    padding-top: 40px;
+    padding-top: 39px;
     border-top: 1px solid var(--color-line);
   }
 
