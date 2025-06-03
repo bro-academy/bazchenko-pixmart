@@ -2,8 +2,8 @@
 @use '../../base/mixins' as m;
 
 .catalog-hero {
-     background: url('/src/assets/images/static/catalog-background.png') no-repeat center;
-     background-size: cover;
+     background: url('/src/assets/images/static/catalog-background.png?format=webp') no-repeat center;
+     background-size: contain;
 
      &__container {
       padding: 64px 16px 96px 16px;

@@ -4,27 +4,27 @@
   "categories": [
     {
       "title": "UI Kits",
-      "image": "/src/assets/images/static/monitor.svg",
+      "image": "/src/assets/images/static/monitor.svg?format=webp",
       "alt": "UI Kits"
     },
      {
       "title": "Social Media",
-      "image": "/src/assets/images/static/mobile.svg",
+      "image": "/src/assets/images/static/mobile.svg?format=webp",
       "alt": "Social Media"
     },
      {
       "title": "Presentation",
-      "image": "/src/assets/images/static/presentation.svg",
+      "image": "/src/assets/images/static/presentation.svg?format=webp",
       "alt": "Presentation"
     },
      {
       "title": "Fonts",
-      "image": "/src/assets/images/static/fonts.svg",
+      "image": "/src/assets/images/static/fonts.svg?format=webp",
       "alt": "Fonts"
     },
     {
       "title": "Illustrations",
-      "image": "/src/assets/images/static/illustration.svg",
+      "image": "/src/assets/images/static/illustration.svg?format=webp",
       "alt": "Illustrations"
     }
   ],
@@ -32,25 +32,25 @@
   "promo_cards": [
     {
       "alt": "Templates",
-      "image": "/src/assets/images/static/monitor.svg",
+      "image": "/src/assets/images/static/monitor.svg?format=webp",
       "title": "Templates",
       "text": "For all needs • Modern"
     },
      {
       "alt": "App Icons",
-      "image": "/src/assets/images/static/mobile.svg",
+      "image": "/src/assets/images/static/mobile.svg?format=webp",
       "title": "App Icons",
       "text": "High-quality • Elegant"
     },
      {
       "alt": "Slides",
-      "image": "/src/assets/images/static/presentation.svg",
+      "image": "/src/assets/images/static/presentation.svg?format=webp",
       "title": "Slides",
       "text": "Pitch-ready • Creative"
     },
      {
       "alt": "Design Tools",
-      "image": "/src/assets/images/static/illustration.svg",
+      "image": "/src/assets/images/static/illustration.svg?format=webp",
       "title": "Design Tools",
       "text": "Easy to use • Unique"
     }
