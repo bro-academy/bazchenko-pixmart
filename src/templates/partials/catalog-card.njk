@@ -45,7 +45,9 @@
     </span>
     {% if product.label != 'SOLD OUT' %}
       <div class="catalog-card__buttons-wrapper">
-        <button class="catalog-card__button button button--secondary-icon">
+        <button
+          class="catalog-card__button--like button button--secondary-icon"
+        >
           {{ icon('heart', 'icon') }}
         </button>
         <button class="catalog-card__button button button--primary-icon">
