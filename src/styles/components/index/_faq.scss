@@ -42,6 +42,8 @@
        justify-content: center;
        padding-inline: 16px;
        z-index: 1;
+       max-width: 1440px;
+       margin: 0 auto;
 
        @include m.laptop {
         flex-direction: row;
@@ -129,7 +131,7 @@
     &::after {
     content: '';
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 0;
     transform: translateY(-50%);
     width: 32px;

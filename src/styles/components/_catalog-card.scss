@@ -16,6 +16,10 @@
   pointer-events: none;
 }
 
+&__link {
+    max-height: 260px;
+}
+
     &__price-info {
         display: flex;
         justify-content: space-between;

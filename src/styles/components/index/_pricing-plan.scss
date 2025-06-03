@@ -9,6 +9,9 @@
   @include m.laptop {
     margin-bottom: 120px;
   }
+    @include m.desk {
+    margin-bottom: 116px;
+  }
 
   &__wrapper {
     margin: 0 auto;
@@ -64,7 +67,7 @@
         @include m.laptop {
           padding-top: 56px;
           margin-top: -56px;
-           padding: 56px 32px 32px 32px;
+           padding: 56px 30px 32px 30px;
         }
 
           @include m.desk {
