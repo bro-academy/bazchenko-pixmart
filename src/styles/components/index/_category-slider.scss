@@ -10,23 +10,24 @@
 
    
     &__wrapper {
-          padding-inline: 16px;
+    padding-inline: 16px;
     display: flex;
     gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     width: 100%;
-     gap: 16px;
-    //  padding-bottom: 2px;
       
 
      @include m.laptop {
-         justify-content: center;
+         justify-content: space-between;
+          padding-inline: 40px;
      }
 
       @include m.desk {
          gap: 38px;
+         justify-content: center;
+         padding-inline: 80px;
      }
     }
 
