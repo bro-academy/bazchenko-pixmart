@@ -13,6 +13,11 @@
     transition-property: background-color, color, border-color, box-shadow;
     transition-duration: var(--tran-duration);
     transition-timing-function: ease;
+    gap: 8px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;;
   }
   
   //   Normal
