@@ -3,17 +3,20 @@
   {
     "imagePath": "/src/assets/images/static/best-dishes-card.png?format=webp",
     "title": "Best Dishes",
-    "dateTime": "2024-04-15"
+    "dateTime": "2024-04-15",
+    "date": "15 APRIL 2024"
   },
   {
     "imagePath": "/src/assets/images/static/contact-us-banner.jpg",
     "title": "Contact Us Lotus Spa",
-    "dateTime": "2024-05-05"
+    "dateTime": "2024-05-05",
+    "date": "5 MAY 2024"
   },
   {
     "imagePath": "/src/assets/images/static/creative-blog-banner.png?format=webp",
     "title": "Creative Blog",
-    "dateTime": "2024-06-20"
+    "dateTime": "2024-06-20",
+    "date": "20 JUNE 2024"
   }
 ]
 }
