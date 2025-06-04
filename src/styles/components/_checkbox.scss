@@ -88,7 +88,6 @@
         opacity: 1;
       }
 
-      // Когда активен, подправим фильтр иконки
       &:active::after {
         filter: brightness(0) saturate(100%) invert(27%) sepia(100%) saturate(500%) hue-rotate(190deg) brightness(95%) contrast(120%);
       }
@@ -126,4 +125,13 @@
       transform: translate(-50%, -50%);
     }
   }
-}
+
+  .checkbox-input:not(:checked) + .custom-checkbox {
+    background-color: var(--color-base);
+    border-color: var(--color-line);
+
+    &::after {
+      opacity: 0;
+    }
+ } 
+} 
