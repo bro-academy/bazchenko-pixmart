@@ -4,6 +4,15 @@
 .header {
   position: static;
 
+  &--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--color-base);
+}
+
   &__wrapper {
     display: flex;
     justify-content: space-between;

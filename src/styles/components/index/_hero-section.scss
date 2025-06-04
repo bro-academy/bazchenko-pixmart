@@ -85,9 +85,13 @@
   &__button {
     font-size: 18px;
     padding: 18px 30px;
+  }
 
-    &--play {
-      border-color: var(--color-base);
+  &__button--play {
+    border-color: var(--color-base);
+
+    &:hover {
+      border-color: var(--color-separator);
     }
   }
 
