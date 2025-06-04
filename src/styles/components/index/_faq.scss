@@ -4,6 +4,7 @@
 .faq {
     margin-bottom: 64px;
      position: relative;
+      // overflow: hidden;
       z-index: 0;
 
     @include m.laptop {
@@ -16,7 +17,7 @@
       @include m.laptop {
    display: block;
     position: absolute;
-    right: -77px;
+    transform: translateX(77px);
     bottom: 42px;
     width: 689px;
     height: 498px;
@@ -29,7 +30,7 @@
       }
 
       @include m.desk {
-        right: 339px;
+       transform: translateX(-339px);
         bottom: -86px;
       }
      }
