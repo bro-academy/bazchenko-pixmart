@@ -87,10 +87,6 @@
   box-shadow: 0 0 0 2px var(--color-base), 0 0 0 4px var(--color-focus);
 }
 
-.switcher__input:checked + .switcher__label:focus {
-  // Empty, intentional
-}
-
 .switcher__input:checked + .switcher__label:active {
   background-color: var(--color-focus);
 }
