@@ -13,11 +13,12 @@
 
     &__gradient {
       display: none;
+      overflow-x: hidden;
 
       @include m.laptop {
    display: block;
     position: absolute;
-    transform: translateX(77px);
+    transform: translateX(467px);
     bottom: 42px;
     width: 689px;
     height: 498px;
@@ -30,7 +31,7 @@
       }
 
       @include m.desk {
-       transform: translateX(-339px);
+       transform: translateX(400px);
         bottom: -86px;
       }
      }
@@ -106,10 +107,6 @@
        width: 100%;
     }
   }
-
-//  &__summary-wrapper {
-//     position: relative;
-//  }
 
   &__summary {
    display: block;
