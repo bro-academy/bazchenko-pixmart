@@ -3,10 +3,12 @@
 {% extends 'src/templates/layouts/base.njk' %}
 
 {% from 'src/templates/partials/ui/icon.njk' import icon %}
+
 {% block content %}
   {% include 'src/templates/partials/catalog/catalog-hero.njk' %}
+
   <section class="catalog-main-content wrapper">
     {% include 'src/templates/partials/catalog/form-sidebar.njk' %}
     {% include 'src/templates/partials/catalog/catalog-content.njk' %}
   </section>
-{% endblock %}s
+{% endblock %}
