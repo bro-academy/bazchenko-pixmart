@@ -22,23 +22,22 @@
   <body>
     <div class="content">
       {% include 'src/templates/partials/header.njk' %}
-
       {% block content %}
         <button class="js-filter" type="button">Filter</button>
         <div class="filter"></div>default content
       {% endblock %}
     </div>
-
     {% include 'src/templates/partials/footer.njk' %}
-
     <script>
       document.addEventListener("DOMContentLoaded", function () { const
       burgerOpener = document.querySelector(".js-burger"); const menu =
-      document.querySelector(".burger-menu");
+      document.querySelector(".burger-menu"); const header =
+      document.querySelector(".header");
 
-      if (burgerOpener && menu) { burgerOpener.addEventListener("click",
-      function () { this.classList.toggle("is-active");
-      menu.classList.toggle("is-open"); }); }
+      if (burgerOpener && menu && header) {
+      burgerOpener.addEventListener("click", function () {
+      this.classList.toggle("is-active"); menu.classList.toggle("is-open");
+      header.classList.toggle("header--fixed"); }); }
 
       const openBtn = document.querySelector(".js-filter"); const closeBtns =
       document.querySelectorAll(".filter-close"); const filter =
@@ -48,7 +47,7 @@
       filter.classList.add("is-active"); }); }
 
       closeBtns.forEach((btn) => { btn.addEventListener("click", () => {
-      filter.classList.remove("is-active"); }); }); });
+      filter.classList.remove("is-active"); }); });});
     </script>
   </body>
 </html>
