@@ -20,23 +20,24 @@
     </title>
   </head>
   <body>
-    {# <div class="wrapper"> #}
     <div class="content">
       {% include 'src/templates/partials/header.njk' %}
+
       {% block content %}
         <button class="js-filter" type="button">Filter</button>
         <div class="filter"></div>default content
       {% endblock %}
     </div>
-    {% include 'src/templates/partials/footer.njk' %}
-    <script>
-      document.addEventListener("DOMContentLoaded", function() { const
-      burgerOpener = document.querySelector(".js-burger");
 
-      const menu = document.querySelector(".burger-menu");
+    {% include 'src/templates/partials/footer.njk' %}
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () { const
+      burgerOpener = document.querySelector(".js-burger"); const menu =
+      document.querySelector(".burger-menu");
 
       if (burgerOpener && menu) { burgerOpener.addEventListener("click",
-      function() { this.classList.toggle("is-active");
+      function () { this.classList.toggle("is-active");
       menu.classList.toggle("is-open"); }); }
 
       const openBtn = document.querySelector(".js-filter"); const closeBtns =

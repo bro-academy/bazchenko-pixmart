@@ -31,7 +31,9 @@
           {{ icon('filter-lines', 'icon') }}
         </button>
       </div>
+
       {% include 'src/templates/partials/filter.njk' %}
+
       <div class="catalog-content__data">
         <span class="catalog-content__info">
           Showing 12 out of 120 results.
@@ -46,6 +48,7 @@
         </div>
       </div>
     </div>
+
     <div class="catalog-content__filters">
       <button class="catalog-content__button-ui button button--secondary">
         UI Kit
@@ -57,11 +60,13 @@
       </button>
     </div>
   </div>
+
   <div class="catalog-content__cards">
     {% for product in catalog %}
       {% include 'src/templates/partials/catalog-card.njk' %}
     {% endfor %}
   </div>
+
   <button class="catalog-content__button-load button button--secondary">
     Load more
   </button>
