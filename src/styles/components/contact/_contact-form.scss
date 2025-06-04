@@ -2,81 +2,81 @@
 @use '../../base/mixins' as m;
 
 .contact-form {
-    margin-bottom: 8px;
-    flex: 1;
-    margin-top: auto;
+  margin-bottom: 8px;
+  flex: 1;
+  margin-top: auto;
 
-    @include m.laptop {
+  @include m.laptop {
+  }
+
+  &__container {
+    box-shadow: 0 4px 40px 0 var(--box-shadow-color2);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-base);
+    box-shadow: 0 4 40px 0 var(--box-shadow-color);
+
+    @include m.desk {
+      padding: 30px;
     }
+  }
 
-   &__container {
-      box-shadow: 0 4px 40px 0 var(--box-shadow-color2);
-      border-radius: 20px;
-     overflow: hidden;
-   }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
 
-     &__content {
-        padding: 32px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        background-color: var(--color-base);
-        box-shadow: 0 4 40px 0 var(--box-shadow-color);
+  &__input {
+    padding: 19px 20px;
+  }
 
-        @include m.desk {
-         padding: 30px;
-        }
-     }
+  &__label,
+  &__sort-label {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
 
-     &__block {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-     }
+  &__sort-select {
+    margin: 0;
+  }
 
-     &__input {
-        padding: 19px 20px;
-     }
+  &__group-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 32px;
 
-     &__label,&__sort-label {
-      font-size: 14px;
-      line-height: 20px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-     }
+    @include m.desk {
+      margin-bottom: 0;
+      justify-content: center;
+    }
+  }
 
-     &__sort-select {
-      margin: 0;
-     }
+  &__textarea {
+    padding: 17px 20px;
+    margin-bottom: 4px;
+  }
 
-     &__group-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        margin-bottom: 32px;
+  &__actions {
+    @include m.desk {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
-        @include m.desk {
-         margin-bottom: 0;
-         justify-content: center;
-        }
-     }
-
-     &__textarea {
-        padding: 17px 20px;
-        margin-bottom: 4px;
-     }
-
-     &__actions {
-
-       @include m.desk {
-         display: flex;
-         justify-content: space-between;
-       }
-     }
-
-     &__button {
-      font-size: 16px;
-      line-height: 24px;
-      padding: 18px 38px;
-     }
+  &__button {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 18px 38px;
+  }
 }

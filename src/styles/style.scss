@@ -1,6 +1,7 @@
 @use './base/variables' as *;
 @use './base/mixins' as m;
 @use './base/breakpoints' as *;
+
 @use './components/button' as *;
 @use './components/link' as *;
 @use './components/switcher' as *;
@@ -19,6 +20,7 @@
 @use './components/article-item' as *;
 @use './components/category-card' as *;
 @use './components/product-card' as *;
+
 @use './components/index/hero-section' as *;
 @use './components/index/category-slider' as *;
 @use './components/index/pricing-plan' as *;
@@ -26,18 +28,20 @@
 @use './components/index/popular-products' as *;
 @use './components/index/articles-block' as *;
 @use './components/index/faq' as *;
+
 @use './components/blog/hero-article' as *;
 @use './components/blog/article-content' as *;
 @use './components/blog/releated-articles' as *;
+
 @use './components/contact/contact-form' as *;
 @use './components/contact/contact-info' as *;
+
 @use './components/catalog/form-sidebar' as *;
 @use './components/catalog/catalog-content' as *;
 @use './components/catalog/catalog-hero' as *;
+
 @use './components/layout/header' as *;
 @use './components/layout/footer' as *;
-
-
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -45,19 +49,19 @@
 
 html,
 body {
-    height: 100%;
-    // background-color: var( --color-base);
-  }
+  height: 100%;
+  // background-color: var(--color-base);
+}
 
-  body {
-    margin: 0 auto;
-    background-color: var(--color-base);
-    font-family: var( --font-base);
-    font-weight: 400;
-    min-width: 440px;
-  }
+body {
+  margin: 0 auto;
+  background-color: var(--color-base);
+  font-family: var(--font-base);
+  font-weight: 400;
+  min-width: 440px;
+}
 
-  h1, h2, h3, p, ul, ol {
+h1, h2, h3, p, ul, ol {
   margin: 0;
 }
 
@@ -66,13 +70,13 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 
-   @include m.laptop {
-     padding-inline: 40px;
-   }
+  @include m.laptop {
+    padding-inline: 40px;
+  }
 
-   @include m.desk {
-     padding-inline: 80px;
-   }
+  @include m.desk {
+    padding-inline: 80px;
+  }
 }
 
 .content {
@@ -88,7 +92,7 @@ a {
   text-decoration: none;
 }
 
-.side-menu--active  .nav{
+.side-menu--active .nav {
   transform: translateX(0);
 }
 
@@ -103,7 +107,7 @@ a {
   border-bottom-right-radius: 0;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-   font-size: 20px;
+  font-size: 20px;
 }
 
 .text-label {
@@ -123,8 +127,8 @@ a {
   font-size: 36px;
   line-height: 48px;
   font-weight: 700;
-  color:var(--subtitle-color);
-  font-family: var( --font-accent);
+  color: var(--subtitle-color);
+  font-family: var(--font-accent);
   letter-spacing: -0.5px;
 }
 
@@ -135,15 +139,14 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var( --color-alternative2);
+  background-color: var(--color-alternative2);
   z-index: 2;
-
 
   &.is-active {
     display: block;
 
     @include m.desk {
-    display: none;
-  }
+      display: none;
     }
   }
+}

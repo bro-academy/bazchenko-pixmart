@@ -1,33 +1,31 @@
 @use '../../base/variables' as *;
 @use '../../base/mixins' as m;
 
-
 .hero-article {
-   background: linear-gradient(to bottom, var(--background-card-color), var(--background-card-color2));
-     width: 100%;
+  background: linear-gradient(to bottom, var(--background-card-color), var(--background-card-color2));
+  width: 100%;
 
-    &__content-wrapper {
-      padding-top: 64px;
-      margin-bottom: 48px;
-    }
+  &__content-wrapper {
+    padding-top: 64px;
+    margin-bottom: 48px;
+  }
 
-
- &__category {
+  &__category {
     width: fit-content;
     padding: 8px 16px;
-    background-color: var( --color-accent-link);
+    background-color: var(--color-accent-link);
     border-radius: 100px;
     text-transform: uppercase;
     color: var(--color-primary-white);
-    font-family: 16px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     margin-bottom: 24px;
- }
+  }
 
- &__title {
-   display: flex;
-   flex-direction: column;
+  &__title {
+    display: flex;
+    flex-direction: column;
     font-family: var(--font-accent);
     color: var(--color-primary);
     font-size: 36px;
@@ -35,19 +33,18 @@
     font-weight: 700;
     margin-bottom: 64px;
     letter-spacing: -0.5px;
-    
+
     @include m.laptop {
       font-size: 52px;
       line-height: 62px;
     }
   }
 
-
   &__banner {
-  border-radius: 20px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 48px;
-}
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 48px;
+  }
 }

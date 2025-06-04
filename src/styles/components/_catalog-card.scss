@@ -2,131 +2,128 @@
 @use '../base/mixins' as m;
 
 .catalog-card {
-     position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__image-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--color-alternative2);
+    opacity: 0.5;
+    border-radius: 20px;
+    pointer-events: none;
+    display: block;
+  }
+
+  &__link {
+    display: block;
+  }
+
+  &__price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__banner-wrapper {
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 8px 16px;
+    background-color: var(--color-base);
+    color: var(--color-secondary2);
+    z-index: 1;
+    border-radius: 100px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+
+    &--new {
+      background-color: var(--color-label-new);
+      color: var(--color-primary-white);
+    }
+
+    &--popular {
+      background-color: var(--color-accent-link);
+      color: var(--color-primary-white);
+    }
+  }
+
+  &__info {
     display: flex;
     flex-direction: column;
-    // gap: 18px;
-
-&__image-overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: var(--color-alternative2);
-  opacity: 50%;
-  border-radius: 20px;
-  pointer-events: none;
-  display: block;
-}
-
-&__link {
-    display: block;
-}
-
-    &__price-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 40px;
-    }
-
-    &__buttons-wrapper {
-        display: flex;
-        gap: 8px;
-    }
-
-    &__banner-wrapper {
-        position: relative;
-    }
-
-    &__label {
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        padding: 8px 16px;
-        background-color: var(--color-base);
-        color: var(--color-secondary2);
-        z-index: 1;
-        border-radius: 100px;
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 500;
-
-        &--new {
-            background-color: var(--color-label-new);
-            color: var(--color-primary-white);
-        }
-
-        &--popular {
-            background-color: var(--color-accent-link);
-            color: var(--color-primary-white);
-        }
-    }
-
-    &__info {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 12px;
-
-        @include m.laptop {
-            margin-bottom: 12px;
-        }
-    }
-
-    &__title {
-        font-size: 20px;
-        line-height: 26px;
-        font-weight: 700;
-        color: var(--color-primary);
-        font-family :var(--font-accent);
-
-        &--sold {
-            opacity: 0.5;
-        }
-    }
-
-    &__subtitle {
-          font-size: 16px;
-        line-height: 24px;
-        font-weight: 400;
-        color: var( --color-secondary);
-
-        &--sold {
-            opacity: 0.5;
-        }
-    }
-    
-   &__banner {
-     display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px;
-    aspect-ratio: 408/260;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 
     @include m.laptop {
-        aspect-ratio: 293/260;
+      margin-bottom: 12px;
     }
+  }
 
-    @include m.desk {
-        aspect-ratio: 325/260;
-    }
-}
-
-&__price {
+  &__title {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
     color: var(--color-primary);
-    font-family :var(--font-accent);
-    // margin-top: 4px;
-    // margin-bottom: 7px;
+    font-family: var(--font-accent);
 
     &--sold {
-            opacity: 0.5;
-        }
+      opacity: 0.5;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--color-secondary);
+
+    &--sold {
+      opacity: 0.5;
+    }
+  }
+
+  &__banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    aspect-ratio: 408 / 260;
+    margin-bottom: 20px;
+
+    @include m.laptop {
+      aspect-ratio: 293 / 260;
+    }
+
+    @include m.desk {
+      aspect-ratio: 325 / 260;
+    }
+  }
+
+  &__price {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--color-primary);
+    font-family: var(--font-accent);
+
+    &--sold {
+      opacity: 0.5;
+    }
   }
 
   &__button-like {
-    border: 2px solid var(--color-base-icon) ;
+    border: 2px solid var(--color-base-icon);
   }
 }

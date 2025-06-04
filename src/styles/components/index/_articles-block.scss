@@ -2,12 +2,6 @@
 @use '../../base/mixins' as m;
 
 .articles-block {
-  // margin-bottom: 64px;
-
-  @include m.laptop {
-    //  margin-bottom: 120px;
-  }
-
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -37,13 +31,13 @@
     white-space: nowrap;
 
     &::after {
-          content: "";
-            display: inline-block;
-            margin-left: 8px;
-            width: 14px;
-            height: 14px;
-            background: url('/src/assets/icons/chevron-right-blue.svg') no-repeat center;
-            vertical-align: middle;
+      content: "";
+      display: inline-block;
+      margin-left: 8px;
+      width: 14px;
+      height: 14px;
+      background: url('/src/assets/icons/chevron-right-blue.svg') no-repeat center;
+      vertical-align: middle;
     }
   }
 
@@ -53,7 +47,7 @@
     gap: 28px;
 
     @include m.laptop {
-     flex-direction: row;
+      flex-direction: row;
       gap: 32px;
     }
   }
