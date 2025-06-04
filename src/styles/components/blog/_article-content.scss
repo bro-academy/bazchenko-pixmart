@@ -3,155 +3,145 @@
 
 .article-content {
 
-     @include m.laptop {
-     margin-bottom: 52px;
+  @include m.laptop {
+    margin-bottom: 52px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 52px;
+
+    @include m.laptop {
+      flex-direction: row;
     }
-    
-    &__wrapper {
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 64px;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &--hidden {
+      display: none;
+
+      @include m.laptop {
         display: flex;
-        flex-direction: column;
-        gap: 40px;
-         margin-bottom: 52px;
-    
-
-        @include m.laptop {
-            flex-direction: row;
-        }
-    }
-        
-
-    &__article {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        padding-bottom: 64px;
-    }
-
-    &__text-wrapper {
-         display: flex;
         flex-direction: column;
         gap: 16px;
+      }
+    }
+  }
 
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--color-secondary);
 
-        &--hidden {
-           display: none;
+    &--clamped {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 16px;
+    }
+  }
 
-            @include m.laptop {
-               display: flex;
-               flex-direction: column;
-               gap: 16px;
-            }
-        }
+  &__title {
+    font-family: var(--font-accent);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__figure-caption-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+  }
+
+  &__figure-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    aspect-ratio: 408 / 462;
+
+    @include m.laptop {
+      aspect-ratio: 644 / 462;
+      height: 462px;
+      margin-bottom: 10px;
     }
 
-    &__text {
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 400;
-        color: var(--color-secondary);
+    @include m.desk {
+      margin-bottom: 12px;
+      aspect-ratio: 980 / 462;
+      height: auto;
+    }
+  }
 
-        &--clamped {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin-bottom: 16px;
-            }
+  &__figure-caption-text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--color-primary);
+    opacity: 0.7;
+  }
+
+  &__figure-caption-link {
+    position: static;
+    clip-path: none;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    white-space: normal;
+    font-family: var(--font-base);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    padding-right: 4px;
+  }
+
+  &__quote {
+    position: relative;
+    padding-top: 8px;
+    padding-left: 80px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--font-accent);
+    min-height: 64px;
+    margin: 0;
+
+    @include m.laptop {
+      padding-top: 8px;
     }
 
-    &__title {
-        font-family: var(--font-accent);
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 700;
-        color: var(--color-primary);
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 64px;
+      height: 64px;
+      background: url('/src/assets/images/static/quote-icon.svg') no-repeat center;
+      background-size: contain;
     }
-
-    &__figure {
-        margin: 0;
-    }
-
-    &__figure-caption-inner{
-        display: flex;
-        justify-content: space-between;
-        padding: 4px 0;
+  }
 }
-
-    &__figure-image {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 20px;
-        margin-bottom: 12px;
-        aspect-ratio: 408/462;
-
-        @include m.laptop {
-        aspect-ratio: 644/462;
-        height: 462px;
-         margin-bottom: 10px;
-        }
-
-          @include m.desk {
-        margin-bottom: 12px;
-        aspect-ratio: 980/462;
-        }
-    }
-
-    &__figure-caption-text {
-        font-size: 16px;
-        line-height: 24px;
-        font-size: 400;
-        color: var(--color-primary);
-        opacity: 0.7;
-
-        // @include m.laptop {
-        //     display: block;
-        // }
-    }
-
-    &__figure-caption-link {
-            position: static;
-            clip-path: none;
-            width: auto;
-            height: auto;
-            overflow: visible;
-            white-space: normal;
-            font-family: var(--font-base);
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 600;
-            padding-right: 4px;
-        }
-
-    &__quote {
-            position: relative;
-            padding-top: 8px;
-            padding-left: 80px;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 32px;
-            font-family: var(--font-accent);
-            min-height: 64px;
-            margin: 0;
-
-            @include m.laptop {
-                padding-top: 8px;
-            }
-
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0px;
-            left: 0;
-            width: 64px;
-            height: 64px;
-            background: url('/src/assets/images/static/quote-icon.svg') no-repeat center;
-            background-size: contain;
-        }
-    }
-}
-
-
-

@@ -4,31 +4,31 @@
 .pricing-card {
   position: relative;
   flex: 1 1 300px;
-  background-color: var( --color-base);
+  background-color: var(--color-base);
   box-shadow: 0 0 40px 0 var(--color-secondary2-invert); // change color
   border-radius: 22px;
   padding: 32px;
   display: flex;
   flex-direction: column;
 
-   &--accent {
+  &--accent {
     border: 2px solid var(--color-accent-link);
-        margin-bottom: 32px;
-        padding: 30px;
+    margin-bottom: 32px;
+    padding: 30px;
 
-        @include m.laptop {
-          padding-top: 56px;
-          margin-top: -56px;
-           padding: 56px 30px 32px 30px;
-        }
+    @include m.laptop {
+      padding-top: 56px;
+      margin-top: -56px;
+      padding: 56px 30px 32px 30px;
+    }
 
-          @include m.desk {
-          padding-top: 32px;
-          margin-top: -34px;
-        }
-   }
+    @include m.desk {
+      padding-top: 32px;
+      margin-top: -34px;
+    }
+  }
 
-   &__label {
+  &__label {
     position: absolute;
     top: 0;
     right: 0;
@@ -39,18 +39,17 @@
     line-height: 26px;
     font-weight: 700;
     color: var(--color-base);
-   }
+  }
 
-&__title-wrapper{
+  &__title-wrapper {
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: start;
-}
-
+  }
 
   &__title {
-    font-family:var(--font-accent);
+    font-family: var(--font-accent);
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
@@ -65,17 +64,16 @@
     margin-bottom: 32px;
 
     @include m.desk {
-   
+      // Reserved for desk-specific styles
     }
-    
 
     & .pricing-card__highlight {
-       font-family:var(--font-accent);
-       font-size: 36px;
-       line-height: 48px;
-       font-weight: 700;
-       color: var(--color-primary);
-       letter-spacing: -0.5px;
+      font-family: var(--font-accent);
+      font-size: 36px;
+      line-height: 48px;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: -0.5px;
     }
   }
 
@@ -105,19 +103,19 @@
 
       &::before {
         content: '';
-            background: url('/src/assets/images/static/list-mark.svg') no-repeat center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            display: inline-block;
-            width: 16px;
-            height: 15px;
-            color: var(--color-accent-link);
-            font-size: 14px;
-            line-height: 1;
+        background: url('/src/assets/images/static/list-mark.svg') no-repeat center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        color: var(--color-accent-link);
+        font-size: 14px;
+        line-height: 1;
       }
     }
   }

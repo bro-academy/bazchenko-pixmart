@@ -1,16 +1,16 @@
 @use '../base/variables' as *;
 
 .contact-form__sort-select {
-    margin-top: 6px;
+  margin-top: 6px;
 }
 
 .dropdown-wrapper {
   position: relative;
   display: inline-block;
   width: 100%;
-    transition-property: background-color, color, border-color, box-shadow;
-    transition-duration: var(--tran-duration);
-    transition-timing-function: ease;
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: var(--tran-duration);
+  transition-timing-function: ease;
 
   &::after {
     content: "";

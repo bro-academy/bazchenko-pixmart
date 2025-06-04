@@ -1,42 +1,35 @@
 @use '../base/variables' as *;
 
 .textarea {
+  font-family: var(--font-base);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid var(--color-separator-bold);
+  background-color: var(--color-base);
+  color: var(--color-secondary2);
+  resize: none;
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: var(--tran-duration);
+  transition-timing-function: ease;
 
-   font-family: var(--font-base);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    border-radius: 8px;
-    transition-property: background-color, color, border-color, box-shadow;
-    transition-duration: var(--tran-duration);
-    transition-timing-function: ease;
-    border: 1px solid var(--color-separator-bold);
-    background-color: var(--color-base);
-    color: var(--color-secondary2);
-    resize: none;
+  &:hover {
+    border: 1px solid var(--color-focus);
+    box-shadow: 0 0 0 1px var(--color-focus);
+  }
 
-    &:hover {
-        border: 1px solid var(--color-focus);
-        box-shadow: 0 0 0 1px var(--color-focus);
-    }
+  &:focus-visible {
+    border: 1px solid var(--color-focus);
+    box-shadow: 0 0 0 2px var(--color-focus);
+    outline: none;
+  }
 
-    &:focus-visible {
-        border: 1px solid var(--color-focus);
-        box-shadow: 0 0 0 2px var(--color-focus);
-        outline: none;
-    }
+  &:disabled {
+    background-color: var(--color-separator);
+  }
 
-    &:focus {
-    }
-
-    &:valid {
-    }
-    
-     &:disabled{
-            background-color: var(--color-separator);
-        }
-
-    &:user-invalid {
-        border: 1px solid var(--color-negative);
-    }
+  &:user-invalid {
+    border: 1px solid var(--color-negative);
+  }
 }

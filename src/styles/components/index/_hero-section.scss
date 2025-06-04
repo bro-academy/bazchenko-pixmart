@@ -2,20 +2,20 @@
 @use '../../base/mixins' as m;
 
 .main-banner {
-    margin-bottom: 64px;
-   background: linear-gradient(to right, var(--background-card-color), var(--background-card-color2));
-   width: 100%;
-   max-width: none;
+  margin-bottom: 64px;
+  background: linear-gradient(to right, var(--background-card-color), var(--background-card-color2));
+  width: 100%;
+  max-width: none;
 
-   @include m.laptop {
-     margin-bottom: 66px;
-   }
+  @include m.laptop {
+    margin-bottom: 66px;
+  }
 
-   @include m.desk {
+  @include m.desk {
     margin-bottom: 120px;
-   }
+  }
 
-&__wrapper {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     gap: 36px;
@@ -23,18 +23,18 @@
     max-width: 1440px;
     margin: 0 auto;
 
-     @include m.laptop {
+    @include m.laptop {
       flex-direction: row-reverse;
       gap: 102px;
       padding: 120px 28px 110px 40px;
-     }
+    }
 
-      @include m.desk {
+    @include m.desk {
       flex-direction: row-reverse;
       gap: 176px;
       padding: 47px 40px 47px 80px;
-     }
-}
+    }
+  }
 
   &__info-wrapper {
     display: flex;
@@ -42,14 +42,13 @@
     gap: 32px;
 
     @include m.laptop {
-     max-width: 410px;
+      max-width: 410px;
     }
 
     @include m.desk {
       justify-content: center;
       max-width: 520px;
     }
-
   }
 
   &__title {
@@ -60,22 +59,22 @@
     color: var(--color-primary);
     letter-spacing: -0.5px;
 
-    @include m.desk{
+    @include m.desk {
       display: flex;
       flex-direction: column;
     }
   }
 
   &__accent {
-    color:var(--color-accent-link);
+    color: var(--color-accent-link);
   }
 
   &__subtitle {
-        font-family: var(--font-accent);
+    font-family: var(--font-accent);
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
-    color: var( --color-secondary);
+    color: var(--color-secondary);
   }
 
   &__buttons-wrapper {

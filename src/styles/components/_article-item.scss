@@ -4,8 +4,7 @@
 .article-item {
   background-color: var(--color-base);
   border-radius: 12px;
-   padding: 0;
-
+  padding: 0;
 
   @include m.laptop {
     width: 100%;
@@ -26,17 +25,17 @@
     background-color: var(--color-secondary2-invert);
     margin-bottom: 24px;
 
-     @include m.laptop {
+    @include m.laptop {
       aspect-ratio: 456 / 702;
     }
 
-      @include m.desk {
+    @include m.desk {
       aspect-ratio: 624 / 702;
     }
   }
 
   &__title {
-     font-family: var(--font-accent);
+    font-family: var(--font-accent);
     font-size: 28px;
     line-height: 36px;
     font-weight: 700;
