@@ -5,7 +5,7 @@
   position: relative;
   flex: 1 1 300px;
   background-color: var(--color-base);
-  box-shadow: 0 0 40px 0 var(--color-secondary2-invert); // change color
+  box-shadow: 0 0 40px 0 var(--color-secondary2-invert);
   border-radius: 22px;
   padding: 32px;
   display: flex;
@@ -62,10 +62,6 @@
     font-weight: 400;
     color: var(--color-disabled);
     margin-bottom: 32px;
-
-    @include m.desk {
-      // Reserved for desk-specific styles
-    }
 
     & .pricing-card__highlight {
       font-family: var(--font-accent);
