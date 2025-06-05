@@ -37,14 +37,16 @@
       if (burgerOpener && menu && header) {
       burgerOpener.addEventListener("click", function () {
       this.classList.toggle("is-active"); menu.classList.toggle("is-open");
-      header.classList.toggle("header--fixed"); }); }
+      header.classList.toggle("header--fixed");
+      document.body.classList.toggle("lock-scroll"); }); }
 
       const openBtn = document.querySelector(".js-filter"); const closeBtns =
       document.querySelectorAll(".filter-close"); const filter =
       document.querySelector(".filter");
 
       if (openBtn && filter) { openBtn.addEventListener("click", () => {
-      filter.classList.add("is-active"); }); }
+      filter.classList.add("is-active");
+      document.body.classList.toggle("lock-scroll"); }); }
 
       closeBtns.forEach((btn) => { btn.addEventListener("click", () => {
       filter.classList.remove("is-active"); }); });});
