@@ -256,6 +256,10 @@
       line-height: 24px;
       font-weight: 400;
       border: none;
+
+          &:hover {
+      color: var(--color-focus);
+    }
     }
 
     .footer__list-item:not(:last-child) {
