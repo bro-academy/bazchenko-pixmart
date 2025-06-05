@@ -20,13 +20,15 @@
     </title>
   </head>
   <body>
-    <div class="content">
-      {% include 'src/templates/partials/header.njk' %}
-      {% block content %}
-        <button class="js-filter" type="button">Filter</button>
-        <div class="filter"></div>default content
-      {% endblock %}
-    </div>
+    {% include 'src/templates/partials/header.njk' %}
+    <main>
+      <div class="content">
+        {% block content %}
+          <button class="js-filter" type="button">Filter</button>
+          <div class="filter"></div>default content
+        {% endblock %}
+      </div>
+    </main>
     {% include 'src/templates/partials/footer.njk' %}
     <script>
       document.addEventListener("DOMContentLoaded", function () { const
