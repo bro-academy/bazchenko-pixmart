@@ -60,6 +60,11 @@ body {
   min-width: 440px;
 }
 
+body.lock-scroll {
+  overflow: hidden;
+  touch-action: none;
+}
+
 h1, h2, h3, p, ul, ol {
   margin: 0;
 }
