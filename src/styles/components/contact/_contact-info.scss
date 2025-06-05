@@ -97,15 +97,15 @@
   }
 
   &__phone::before {
-    background-image: url('/src/assets/icons/phone-blue.svg');
+    background-image: url('/src/assets/icons/phone-blue.svg?format=webp');
   }
 
   &__mail::before {
-    background-image: url('/src/assets/icons/mail-blue.svg');
+    background-image: url('/src/assets/icons/mail-blue.svg?format=webp');
   }
 
   &__schedule::before {
-    background-image: url('/src/assets/icons/clock-blue.svg');
+    background-image: url('/src/assets/icons/clock-blue.svg?format=webp');
   }
 
   // &__map-frame {

@@ -31,10 +31,13 @@
     opacity: 0;
     border-radius: 20px;
     padding-inline: 16px;
-    transition: opacity 0.3s ease;
-    transition-property: background-color, color, border-color, box-shadow;
-    transition-duration: var(--tran-duration);
-    transition-timing-function: ease;
+    transition:
+    opacity var(--tran-duration) ease,
+    background-color var(--tran-duration) ease,
+    color var(--tran-duration) ease,
+    border-color var(--tran-duration) ease,
+    box-shadow var(--tran-duration) ease;
+
   }
 
   &__overlay-button {
@@ -58,6 +61,7 @@
   .product-card__image-wrapper:hover .product-card__label {
     opacity: 0.66;
     transition: opacity 0.3s ease;
+      transition-duration: var(--tran-duration);
   }
 
   &__label {
