@@ -4,7 +4,7 @@
 .faq {
   margin-bottom: 64px;
   position: relative;
-  // overflow: hidden;
+  overflow-x: clip;
   z-index: 0;
 
   @include m.laptop {
