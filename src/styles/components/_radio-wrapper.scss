@@ -1,0 +1,19 @@
+@use '../base/variables' as *;
+
+.radio-wrapper {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  // height: 24px;
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--color-primary);
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: var(--tran-duration);
+  transition-timing-function: ease;
+}

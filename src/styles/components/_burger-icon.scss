@@ -1,0 +1,34 @@
+.burger-icon {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  user-select: none;
+
+  &, 
+  &::before, 
+  &::after {
+    border-radius: 2px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-primary-invert);
+    outline: 1px solid transparent;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &::before {
+    top: -6px;
+    transform: translateY(0) rotate(0deg);  // Начальное состояние
+  }
+
+  &::after {
+    top: 6px;
+    transform: translateY(0) rotate(0deg);  // Начальное состояние
+  }
+}

@@ -2,31 +2,34 @@
   <div class="catalog-content__actions">
     <div class="catalog-content__filter">
       <div class="catalog-content__sort">
-        <div class="catalog-content__dropdown dropdown-wrapper">
-          <label
-            for="sort-select"
-            class="catalog-content__label visually-hidden"
-          >
-            Sort By
-          </label>
-          <select
-            id="sort-select"
-            class="catalog-content__sort-select input input--default"
-            name="sort"
-          >
-            <option value="" disabled selected>
-              Best Seller
-            </option>
-            <option value="newest">
-              Newest
-            </option>
-            <option value="most-popular">
-              Most Popular
-            </option>
-          </select>
-        </div>
+        <form class="catalog-content__sort-form" method="GET">
+          <div class="catalog-content__dropdown dropdown-wrapper">
+            <label
+              for="sort-select"
+              class="catalog-content__label visually-hidden"
+            >
+              Sort By
+            </label>
+            <select
+              id="sort-select"
+              class="catalog-content__sort-select input input--default"
+              name="sort"
+            >
+              <option value="" disabled selected>
+                Best Seller
+              </option>
+              <option value="newest">
+                Newest
+              </option>
+              <option value="most-popular">
+                Most Popular
+              </option>
+            </select>
+          </div>
+        </form>
         <button
           class="catalog-content__filter-button js-filter button button--primary-icon"
+          type="button"
         >
           {{ icon('filter-lines', 'icon') }}
         </button>
@@ -39,10 +42,16 @@
           Showing 12 out of 120 results.
         </span>
         <div class="catalog-content__buttons-wrapper">
-          <button class="catalog-content__button button button--primary-icon">
+          <button
+            class="catalog-content__button button button--primary-icon"
+            type="button"
+          >
             {{ icon('grid', 'icon') }}
           </button>
-          <button class="catalog-content__button button button--secondary-icon">
+          <button
+            class="catalog-content__button button button--secondary-icon"
+            type="button"
+          >
             {{ icon('list', 'icon') }}
           </button>
         </div>
@@ -50,11 +59,17 @@
     </div>
 
     <div class="catalog-content__filters">
-      <button class="catalog-content__button-ui button button--secondary">
+      <button
+        class="catalog-content__button-ui button button--secondary"
+        type="button"
+      >
         UI Kit
         {{ icon('x-close', 'catalog-content__icon-ui ') }}
       </button>
-      <button class="catalog-content__button-ui button button--secondary">
+      <button
+        class="catalog-content__button-ui button button--secondary"
+        type="button"
+      >
         UI Kit
         {{ icon('x-close', 'catalog-content__icon-ui') }}
       </button>
@@ -67,7 +82,10 @@
     {% endfor %}
   </div>
 
-  <button class="catalog-content__button-load button button--secondary">
+  <button
+    class="catalog-content__button-load button button--secondary"
+    type="button"
+  >
     Load more
   </button>
 </section>

@@ -46,11 +46,15 @@
     {% if product.label != 'SOLD OUT' %}
       <div class="catalog-card__buttons-wrapper">
         <button
-          class="catalog-card__button--like button button--secondary-icon"
+          class="catalog-card__button catalog-card__button--like button button--secondary-icon"
+          type="button"
         >
           {{ icon('heart', 'icon') }}
         </button>
-        <button class="catalog-card__button button button--primary-icon">
+        <button
+          class="catalog-card__button button button--primary-icon"
+          type="button"
+        >
           {{ icon('shopping-bag', 'icon') }}
         </button>
       </div>

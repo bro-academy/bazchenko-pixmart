@@ -1,29 +1,6 @@
 @use '../../base/variables' as *;
 @use '../../base/mixins' as m;
 
-.contact-page {
-  background: linear-gradient(to bottom, var(--background-card-color), var(--background-card-color2));
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding-inline: 16px;
-    margin-bottom: 64px;
-
-    @include m.laptop {
-      flex-direction: row;
-      padding-inline: 40px;
-      gap: 40px;
-      margin-bottom: 120px;
-    }
-
-    @include m.desk {
-      padding-inline: 80px;
-    }
-  }
-}
-
 .contact-info {
   padding-top: 64px;
   flex: 1;

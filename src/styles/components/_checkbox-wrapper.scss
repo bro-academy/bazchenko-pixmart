@@ -1,0 +1,13 @@
+@use '../base/variables' as *;
+
+.checkbox-wrapper {
+  display: flex;
+  gap: 4px;
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--color-primary);
+  align-items: center;
+}

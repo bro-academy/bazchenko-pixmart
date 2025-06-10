@@ -8,10 +8,12 @@
 }
 
 .switcher {
+  padding-top: 1px;
+  padding-bottom: 1px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  height: 24px;
+  gap: 12px;
+  // height: 24px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -20,9 +22,20 @@
   transition-timing-function: ease;
 }
 
+.switcher__text {
+  max-width: 168px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
 // Normal state
 .switcher__label {
+  flex: 0 0 40px; 
   width: 40px;
+  padding: 4px;
   height: 20px;
   background-color: var(--color-disabled);
   border-radius: 999px;

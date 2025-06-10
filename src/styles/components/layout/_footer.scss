@@ -145,6 +145,7 @@
     margin: 0;
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
   }
 
   &__icon-link {

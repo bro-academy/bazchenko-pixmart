@@ -3,6 +3,7 @@
     <h2 class="filter__header-title">Filters</h2>
     <button
       class="filter__header-button filter__close-button filter-close button button--secondary-icon"
+      type="button"
     >
       {{ icon('x-close', 'icon') }}
     </button>
@@ -11,6 +12,7 @@
   <div class="filter__body">
     <button
       class="filter__clear-button filter__button filter-close button button--secondary"
+      type="button"
     >
       {{ icon('x-close', 'filter__button-icon icon') }}
       <span class="filter__button-text">Clear all filters</span>
@@ -189,7 +191,10 @@
   </div>
 
   <div class="filter__bottom-wrapper">
-    <button class="filter__bottom-button button button--primary filter-close">
+    <button
+      class="filter__bottom-button button button--primary filter-close"
+      type="button"
+    >
       Save
     </button>
   </div>
