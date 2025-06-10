@@ -63,7 +63,8 @@
       "image": "/src/assets/images/static/product-card.png?format=webp",
       "alt": "Travel Hero",
       "price": "€29.99",
-      "subtitle": "Adventure  •  Journey"
+      "subtitleFirst": "Adventure",
+      "subtitleSecond": "Journey"
     },
     {
       "label": "New",
@@ -71,23 +72,26 @@
       "image": "/src/assets/images/static/product-card-2.png?format=webp",
       "alt": "Healthcare Pro",
       "price": "€15.99",
-      "subtitle": "Medical • Wellness"
+      "subtitleFirst": "Medical",
+      "subtitleSecond": "Wellness"
     },
     {
       "label": "Hot",
       "title": "Foodish Delight",
       "image": "/src/assets/images/static/product-card_3.png?format=webp",
       "alt": "Foodish Delight",
-        "price": "€31.99",
-      "subtitle": "Catering • Food"
+      "price": "€31.99",
+      "subtitleFirst": "Catering",
+      "subtitleSecond": "Food"
     },
        {
       "label": "Hot",
       "title": "Real Estate",
       "image": "/src/assets/images/static/product-card_4.png?format=webp",
       "alt": "Real Estate",
-        "price": "€40.99",
-      "subtitle": "Modern • Homes"
+      "price": "€40.99",
+      "subtitleFirst": "Modern",
+      "subtitleSecond": "Homes"
     }
   ]
 }
