@@ -77,22 +77,22 @@
   }
 
   .radio-input:checked:hover + .custom-radio {
-    border-color: var(--color-line);
+    border-color: var(--color-marina-700);
     background-color: var(--color-bg);
-    box-shadow: inset 0 0 0 3px var(--color-line);
+    box-shadow: inset 0 0 0 3px var(--color-marina-700);
   }
 
   .radio-input:checked:active + .custom-radio {
-    border-color: var(--color-accent-link);
-    background-color: var(--color-bg);
-    box-shadow: inset 0 0 0 3px var(--color-accent-link);
+    border-color: var(--color-marina-100);
+    background-color: var( --color-accent-link);
+    box-shadow: inset 0 0 0 3px var(--color-marina-100);
   }
 
   .radio-input:checked:focus-visible + .custom-radio {
-    border-color: var(--color-focus);
+    border-color: var(--color-accent-link);
     background-color: var(--color-bg);
     box-shadow: 
-      inset 0 0 0 2px var(--color-focus),
+      inset 0 0 0 2px var(--color-accent-link),
       0 0 0 1px var(--color-base),
       0 0 0 3px var(--color-focus);
   }
