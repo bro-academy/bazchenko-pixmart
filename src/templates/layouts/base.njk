@@ -37,21 +37,23 @@
       document.querySelector(".header");
 
       if (burgerOpener && menu && header) {
-      burgerOpener.addEventListener("click", function () { this .classList
-      .toggle("is-active"); menu .classList .toggle("is-open"); header
-      .classList .toggle("header--fixed"); document .body .classList
-      .toggle("lock-scroll"); }); }
+      burgerOpener.addEventListener("click", function () {
+      this.classList.toggle("is-active"); menu.classList.toggle("is-open");
+      header.classList.toggle("header--fixed");
+      document.body.classList.toggle("lock-scroll"); }); }
 
       const openBtn = document.querySelector(".js-filter"); const closeBtns =
       document.querySelectorAll(".filter-close"); const filter =
-      document.querySelector(".filter");
+      document.querySelector(".form-sidebar");
 
-      if (openBtn && filter) { openBtn.addEventListener("click", () => { filter
-      .classList .add("is-active"); document .body .classList
-      .remove("lock-scroll"); }); }
+      if (openBtn && filter) { openBtn.addEventListener("click", () => {
+      filter.classList.add("is-active");
+      document.body.classList.add("lock-scroll"); // тут должен быть add, чтобы
+      заблокировать скролл при открытом фильтре }); }
 
-      closeBtns.forEach((btn) => { btn.addEventListener("click", () => { filter
-      .classList .remove("is-active"); }); }); });
+      closeBtns.forEach((btn) => { btn.addEventListener("click", () => {
+      filter.classList.remove("is-active");
+      document.body.classList.remove("lock-scroll"); }); }); });
     </script>
   </body>
 </html>

@@ -1,8 +1,9 @@
 @use '../base/variables' as *;
 
 .switcher {
-  padding-top: 1px;
-  padding-bottom: 1px;
+  margin-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   display: flex;
   align-items: center;
   gap: 12px;

@@ -2,19 +2,81 @@
 @use '../../base/mixins' as m;
 
 .form-sidebar {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  width: 216px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  padding: 16px;
+  background: var(--background-card-color);
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 9999;
+  display: none;
+
+  &.is-active {
+    padding: 0;
+    display: block;
+    transform: translateX(0);
+  }
 
   @include m.desk {
     position: static;
     width: auto;
     height: auto;
+    padding: 0;
+    background: transparent;
     overflow: visible;
-    clip-path: none;
+    transform: none;
+    display: flex;
+  }
+
+  &__header {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 24px 16px;
+    align-items: center;
+    background-color: var(--color-base);
+    box-shadow: 0 4px 40px 0 var(--shadow--filter--color);
+
+    @include m.desk {
+      display: none;
+    }
+  }
+
+  &__header-title {
+     font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: var(--font-accent);
+  }
+
+  &__body {
+     position: relative;
+    padding: 40px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    // height: 824px;
+
+    @include m.desk {
+      padding: 0;
+  }
+}
+  
+  &__clear-button {
+    background: var(--background-card-color);
+    width: 100%;
+    padding: 6px 8px;
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+
+      @include m.desk {
+      display: none;
+    }
   }
 
   &__filter {
@@ -54,11 +116,11 @@
   }
 
   &__checkbox {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    // padding-top: 2px;
+    // padding-bottom: 2px;
     // height: 24px;
     display: flex;
-    gap: 8px;
+    gap: 4px;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
@@ -133,11 +195,42 @@
   }
 
 &__button {
+  display: none;
+
+  @include m.desk {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
   width: 100%;
   padding: 6px 34px;
   font-size: 16px;
   white-space: normal;
   word-break: break-word;
   text-align: center;
+}
+}
+
+&__bottom-wrapper {
+     position: sticky;
+    bottom: 0;
+    background-color: var(--color-base);
+    padding: 16px;
+    width: 100%;
+    z-index: 1;
+
+    @include m.desk {
+      display: none;
+    }
+}
+
+&__bottom-button {
+   width: 100%;
+   padding-inline: 16px;
+   white-space: normal;
+   word-break: break-word; 
+
+  @include m.desk {
+    display: none;
+  }
 }
 }
