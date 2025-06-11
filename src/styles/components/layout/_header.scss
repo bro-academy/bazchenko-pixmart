@@ -52,25 +52,51 @@
   }
 
   &__list {
-    position: absolute;
-    clip-path: inset(100%);
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 0;
+    // position: absolute;
+    // clip-path: inset(100%);
+    // width: 1px;
+    // height: 1px;
+    // overflow: hidden;
+    // white-space: nowrap;
+    // padding: 0;
+    padding: 16px;
+    display: flex;
+    gap: 8px;
+    position: fixed;
+    top: 92px;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: var(--background-card-color);
+    z-index: 2;
+    flex-direction: column;
+    transform: translateX(-100%);
+
+    &.is-open {
+      transform: translateX(0);
+    }
 
     @include m.laptop {
+      transform: translateX(0);
       position: static;
-      clip-path: none;
-      width: auto;
-      height: auto;
-      overflow: visible;
-      white-space: normal;
+      // clip-path: none;
+      // width: auto;
+      // height: auto;
+      // overflow: visible;
+      // white-space: normal;
+      padding: 0;
+      overflow-x: unset;
+      overflow-y: unset;
       display: flex;
-      gap: 9px;
-      border: none;
-      flex-wrap: wrap;
+      background: transparent;
+      height: auto;
+      width: 100%;
+      flex-direction: row;
+      // gap: 9px;
+      // border: none;
+      // flex-wrap: wrap;
     }
   }
 
@@ -127,11 +153,24 @@
     }
   }
 
+  &__list-item {
+    padding: 18px 32px;
+
+    @include m.laptop {
+      padding: 6px 12px;
+    }
+  }
+
   &__list-link {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 600;
+
+    @include m.laptop {
     font-size: 14px;
     line-height: 20px;
-    padding: 6px 12px;
   }
+}
 
   &__button {
     font-size: 14px;

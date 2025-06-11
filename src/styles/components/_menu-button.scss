@@ -15,15 +15,15 @@
   cursor: pointer;
 
   &.is-active .burger-icon {
-    background-color: transparent;  // Убираем центральную полосу
-    height: 0;  // Убираем центральную полосу
+    background-color: transparent;
+    height: 0;
 
     &::before {
-      transform: translateY(6px) rotate(45deg);  // Верхняя полоса - крестик
+      transform: translateY(6px) rotate(45deg);
     }
 
     &::after {
-      transform: translateY(-6px) rotate(-45deg);  // Нижняя полоса - крестик
+      transform: translateY(-6px) rotate(-45deg);
     }
   }
 }
