@@ -48,8 +48,7 @@
 
       if (openBtn && filter) { openBtn.addEventListener("click", () => {
       filter.classList.add("is-active");
-      document.body.classList.add("lock-scroll"); // тут должен быть add, чтобы
-      заблокировать скролл при открытом фильтре }); }
+      document.body.classList.add("lock-scroll"); }); }
 
       closeBtns.forEach((btn) => { btn.addEventListener("click", () => {
       filter.classList.remove("is-active");

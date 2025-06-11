@@ -10,15 +10,18 @@
   padding: 16px;
   background: var(--background-card-color);
   overflow-y: auto;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
   z-index: 9999;
-  display: none;
 
   &.is-active {
-    padding: 0;
-    display: block;
     transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    padding: 0;
   }
 
   @include m.desk {
@@ -29,6 +32,8 @@
     background: transparent;
     overflow: visible;
     transform: none;
+    opacity: 1;
+    pointer-events: auto;
     display: flex;
   }
 
@@ -47,25 +52,24 @@
   }
 
   &__header-title {
-     font-size: 24px;
+    font-size: 24px;
     line-height: 32px;
     font-weight: 700;
     font-family: var(--font-accent);
   }
 
   &__body {
-     position: relative;
+    position: relative;
     padding: 40px 16px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    // height: 824px;
 
     @include m.desk {
       padding: 0;
+    }
   }
-}
-  
+
   &__clear-button {
     background: var(--background-card-color);
     width: 100%;
@@ -74,7 +78,7 @@
     word-break: break-word;
     text-align: center;
 
-      @include m.desk {
+    @include m.desk {
       display: none;
     }
   }
@@ -86,10 +90,10 @@
   }
 
   &__group-wrapper {
-   display: flex;
-   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   &__group-title {
@@ -194,24 +198,25 @@
     flex-shrink: 0;
   }
 
-&__button {
-  display: none;
+  &__button {
+    display: none;
 
-  @include m.desk {
-  display: flex;
-  align-items: center; 
-  justify-content: center; 
-  width: 100%;
-  padding: 6px 34px;
-  font-size: 16px;
-  white-space: normal;
-  word-break: break-word;
-  text-align: center;
-}
-}
+    @include m.desk {
+     display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 6px 34px;
+      font-size: 16px;
+      white-space: normal;
+      word-break: break-word;
+      text-align: center;
+      max-width: 216px;
+    }
+  }
 
-&__bottom-wrapper {
-     position: sticky;
+  &__bottom-wrapper {
+    position: sticky;
     bottom: 0;
     background-color: var(--color-base);
     padding: 16px;
@@ -221,16 +226,16 @@
     @include m.desk {
       display: none;
     }
-}
-
-&__bottom-button {
-   width: 100%;
-   padding-inline: 16px;
-   white-space: normal;
-   word-break: break-word; 
-
-  @include m.desk {
-    display: none;
   }
-}
+
+  &__bottom-button {
+    width: 100%;
+    padding-inline: 16px;
+    white-space: normal;
+    word-break: break-word;
+
+    @include m.desk {
+      display: none;
+    }
+  }
 }

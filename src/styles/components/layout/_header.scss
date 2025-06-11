@@ -52,15 +52,9 @@
   }
 
   &__list {
-    // position: absolute;
-    // clip-path: inset(100%);
-    // width: 1px;
-    // height: 1px;
-    // overflow: hidden;
-    // white-space: nowrap;
-    // padding: 0;
     padding: 16px;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     position: fixed;
     top: 92px;
@@ -81,11 +75,6 @@
     @include m.laptop {
       transform: translateX(0);
       position: static;
-      // clip-path: none;
-      // width: auto;
-      // height: auto;
-      // overflow: visible;
-      // white-space: normal;
       padding: 0;
       overflow-x: unset;
       overflow-y: unset;
@@ -94,9 +83,6 @@
       height: auto;
       width: 100%;
       flex-direction: row;
-      // gap: 9px;
-      // border: none;
-      // flex-wrap: wrap;
     }
   }
 
