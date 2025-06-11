@@ -1,12 +1,5 @@
 @use '../base/variables' as *;
 
-.visually-hidden {
-  position: absolute;
-  height: 0;
-  width: 0;
-  opacity: 0;
-}
-
 .switcher {
   padding-top: 1px;
   padding-bottom: 1px;

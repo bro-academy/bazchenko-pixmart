@@ -1,9 +1,5 @@
 @use '../base/variables' as *;
 
-.contact-form__sort-select {
-  margin-top: 6px;
-}
-
 .dropdown-wrapper {
   position: relative;
   display: inline-block;
@@ -24,18 +20,4 @@
     height: 24px;
     pointer-events: none;
   }
-}
-
-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: none;
-  width: 100%;
-  padding: 20px;
-  padding-right: 44px;
-  font-size: 14px;
-  line-height: 20px;
-  border-radius: 8px;
-  cursor: pointer;
 }

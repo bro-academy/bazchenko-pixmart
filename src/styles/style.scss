@@ -14,10 +14,11 @@
 @use './components/filter' as *;
 @use './components/input' as *;
 @use './components/textarea' as *;
-@use './components/dropdown' as *;
+@use './components/dropdown-wrapper' as *;
 @use './components/menu-button' as *;
 @use './components/burger-icon' as *;
 @use './components/js-burger' as *;
+@use './components/visually-hidden' as *;
 @use './components/burger-menu' as *;
 @use './components/catalog-card' as *;
 @use './components/article-card' as *;
@@ -51,118 +52,4 @@
 @use './components/layout/header' as *;
 @use './components/layout/footer' as *;
 
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  margin: 0 auto;
-  background-color: var(--color-base);
-  font-family: var(--font-base);
-  font-weight: 400;
-  min-width: 440px;
-}
-
-body.lock-scroll {
-  overflow: hidden;
-  touch-action: none;
-}
-
-h1, h2, h3, p, ul, ol {
-  margin: 0;
-}
-
-.wrapper {
-  padding-inline: 16px;
-  max-width: 1440px;
-  margin: 0 auto;
-
-  @include m.laptop {
-    padding-inline: 40px;
-  }
-
-  @include m.desk {
-    padding-inline: 80px;
-  }
-}
-
-.content {
-  background-color: var(--color-base);
-  margin: 0 auto;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.side-menu--active .nav {
-  transform: translateX(0);
-}
-
-.container {
-  max-width: 1728px;
-  padding-inline: 16px;
-  margin-inline: auto;
-}
-
-.element {
-  border-top-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  font-size: 20px;
-}
-
-.text-label {
-  color: var(--color-marina-600);
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-}
-
-.dot-separator {
-  padding: 0 8px;
-}
-
-.subtitle {
-  font-size: 36px;
-  line-height: 48px;
-  font-weight: 700;
-  color: var(--subtitle-color);
-  font-family: var(--font-accent);
-  letter-spacing: -0.5px;
-}
-
-.filter {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-alternative2);
-  z-index: 2;
-
-  &.is-active {
-    display: block;
-
-    @include m.desk {
-      display: none;
-    }
-  }
-}
+@use './base/global' as *;

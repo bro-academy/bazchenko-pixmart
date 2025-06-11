@@ -16,6 +16,7 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     width: 100%;
+    // padding: 1px;
 
     @include m.laptop {
       justify-content: space-between;
@@ -31,6 +32,7 @@
 
   &__link {
     font-family: var(--font-accent);
+    color: var(--color-primary);
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
@@ -38,14 +40,16 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    border-radius: 20px;
+    padding: 0; 
   }
 
-  //   &__label {
-  //   font-family: var(--font-accent);
-  //   font-size: 20px;
-  //   line-height: 28px;
-  //   font-weight: 500;
-  // }
+    &__label {
+    font-family: var(--font-accent);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+  }
 
   &__icon-wrapper {
     padding: 37px;

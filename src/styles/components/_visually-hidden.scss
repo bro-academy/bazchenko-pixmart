@@ -1,0 +1,8 @@
+@use '../base/variables' as *;
+
+.visually-hidden {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
