@@ -27,9 +27,15 @@
     margin-bottom: 0;
   }
 
-  &__subtitle-wrapper {
-    display: flex;
-    flex-direction: column;
+  // &__subtitle-wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  &__subtitle {
+    display: inline-block;
+    max-width: 340px;
+    white-space: normal;
   }
 
   &__button {

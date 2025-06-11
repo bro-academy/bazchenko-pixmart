@@ -2,45 +2,25 @@
 @use '../base/mixins' as m;
 
 .filter {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 9999;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 40px;
   background-color: var(--color-base);
   flex: 1 1 auto;
   overflow-y: auto;
 
-  &__group {
-    border: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-  &__group-wrapper {
+  &.is-active {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
 
-  &__form {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  &__body {
-    position: relative;
-    padding: 40px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    height: 824px;
+    @include m.desk {
+      display: none;
+    }
   }
 
   &__header {
@@ -60,6 +40,33 @@
     font-family: var(--font-accent);
   }
 
+  &__body {
+    position: relative;
+    padding: 40px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 824px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__group {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__group-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
   &__group-title {
     font-size: 24px;
     line-height: 32px;
@@ -77,17 +84,17 @@
     background-color: transparent;
   }
 
+  &__bottom-wrapper {
+    position: sticky;
+    bottom: 0;
+    background-color: var(--color-base);
+    padding: 16px;
+    width: 100%;
+    z-index: 1;
+  }
+
   &__bottom-button {
     width: 100%;
     padding-inline: 16px;
   }
-
-  &__bottom-wrapper {
-  position: sticky;
-  bottom: 0;
-  background-color: var(--color-base);
-  padding: 16px;
-  width: 100%;
-  z-index: 1;
-}
 }

@@ -24,11 +24,11 @@
 
   &::before {
     top: -6px;
-    transform: translateY(0) rotate(0deg);  // Начальное состояние
+    transform: translateY(0) rotate(0deg);
   }
 
   &::after {
     top: 6px;
-    transform: translateY(0) rotate(0deg);  // Начальное состояние
+    transform: translateY(0) rotate(0deg);
   }
 }

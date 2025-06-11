@@ -13,14 +13,14 @@
   }
 
   &__subtitle {
-    display: flex;
-    flex-direction: column;
     font-family: var(--font-accent);
     font-size: 52px;
     font-weight: 700;
     line-height: 62px;
     color: var(--color-primary);
     letter-spacing: -0.5px;
+    max-width: 400px;
+    white-space: normal;
   }
 
   &__description {
