@@ -13,10 +13,11 @@
     display: flex;
     gap: 16px;
     overflow-x: auto;
+    overflow-y: visible;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     width: 100%;
-    // padding: 1px;
+    padding: 2px;
 
     @include m.laptop {
       justify-content: space-between;
