@@ -1,0 +1,14 @@
+{% set title = 'Contact' %}
+{% set currentPage = 'contact' %}
+{% extends 'src/templates/layouts/base.njk' %}
+
+{% from 'src/templates/partials/ui/icon.njk' import icon %}
+
+{% block content %}
+  <section class="contact-page">
+    <div class="contact-page__wrapper wrapper">
+      {% include 'src/templates/partials/contact/contact-info.njk' %}
+      {% include 'src/templates/partials/contact/contact-form.njk' %}
+    </div>
+  </section>
+{% endblock %}

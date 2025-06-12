@@ -1,0 +1,112 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as m;
+
+.product-card {
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    aspect-ratio: 305 / 272;
+    overflow: hidden;
+  }
+
+  &__image {
+    aspect-ratio: 305 / 272;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--color-secondary2-invert);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 20px;
+    padding-inline: 16px;
+    transition:
+    opacity var(--tran-duration) ease,
+    background-color var(--tran-duration) ease,
+    color var(--tran-duration) ease,
+    border-color var(--tran-duration) ease,
+    box-shadow var(--tran-duration) ease;
+
+  }
+
+  &__overlay-button {
+    padding: 18px 78px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  &__image-wrapper:hover &__overlay {
+    opacity: 1;
+    transition-property: background-color, color, border-color, box-shadow;
+    transition-duration: var(--tran-duration);
+    transition-timing-function: ease;
+  }
+
+  .product-card__image-wrapper:hover .product-card__label {
+    opacity: 0.66;
+    transition: opacity 0.3s ease;
+      transition-duration: var(--tran-duration);
+  }
+
+  &__label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    background-color: var(--color-accent-link);
+  }
+
+  &__label-icon {
+    display: block;
+    color: var(--color-primary-invert);
+  }
+
+  &__header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+    font-family: var(--font-accent);
+  }
+
+  &__price {
+    color: var(--color-accent-link);
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-secondary2);
+  }
+}

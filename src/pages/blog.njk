@@ -1,0 +1,13 @@
+{% set title = 'Blog' %}
+{% set currentPage = 'blog' %}
+{% extends 'src/templates/layouts/base.njk' %}
+
+{% from 'src/templates/partials/ui/icon.njk' import icon %}
+
+{% block content %}
+  <article>
+    {% include 'src/templates/partials/blog/hero-article.njk' %}
+    {% include 'src/templates/partials/blog/article-content.njk' %}
+  </article>
+  {% include 'src/templates/partials/blog/releated-articles.njk' %}
+{% endblock %}

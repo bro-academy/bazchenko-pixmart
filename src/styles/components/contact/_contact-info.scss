@@ -1,0 +1,139 @@
+@use '../../base/variables' as *;
+@use '../../base/mixins' as m;
+
+.contact-info {
+  padding-top: 64px;
+  flex: 1;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  &__subtitle {
+    font-family: var(--font-accent);
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 62px;
+    color: var(--color-primary);
+    letter-spacing: -0.5px;
+    max-width: 400px;
+    white-space: normal;
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--color-secondary);
+  }
+
+  &__button {
+    padding: 18px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 48px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__item {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-primary);
+    align-items: end;
+  }
+
+  &__phone,
+  &__mail,
+  &__schedule {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+
+    &::before {
+      content: "";
+      margin-right: 8px;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__phone::before {
+    background-image: url('/src/assets/icons/phone-blue.svg?format=webp');
+  }
+
+  &__mail::before {
+    background-image: url('/src/assets/icons/mail-blue.svg?format=webp');
+  }
+
+  &__schedule::before {
+    background-image: url('/src/assets/icons/clock-blue.svg?format=webp');
+  }
+
+  // &__map-frame {
+  //   border-radius: 20px;
+  //   width: 100%;
+  //   //  pointer-events: none;
+  // }
+
+  &__label {
+    background-color: var(--color-base);
+    padding: 12px 16px;
+    width: fit-content;
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    bottom: 24px;
+    right: 16px;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  &__label-info {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &__label-address {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--color-secondary);
+    font-style: normal;
+  }
+
+  &__map-wrapper {
+    position: relative;
+    width: 100%;
+
+    @include m.laptop {
+    }
+  }
+
+  &__image {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__icon {
+    color: var(--color-accent-link);
+    align-items: center;
+  }
+}

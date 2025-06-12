@@ -1,0 +1,10 @@
+{
+  "common": {
+    "logoLink": {
+      "home": "/",
+      "blog": "index.html",
+      "contact": "index.html",
+      "catalog": "index.html"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+@use '../base/variables' as *;
+
+.switcher {
+  margin-right: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  // height: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: var(--tran-duration);
+  transition-timing-function: ease;
+}
+
+.switcher__text {
+  max-width: 168px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+// Normal state
+.switcher__label {
+  flex: 0 0 40px; 
+  width: 40px;
+  padding: 4px;
+  height: 20px;
+  background-color: var(--color-disabled);
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color var(--tran-duration) ease, box-shadow var(--tran-duration) ease;
+  outline: none;
+}
+
+.switcher__label:hover {
+  background-color: var(--color-line);
+}
+
+.switcher__label:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-base), 0 0 0 4px var(--color-focus);
+}
+
+.switcher__label:active {
+  background-color: var(--color-secondary);
+}
+
+.switcher__label:target {
+  background-color: var(--color-separator-bold);
+}
+
+.switcher__label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-base);
+  border-radius: 50%;
+  transition:
+    transform var(--tran-duration) ease,
+    background-color var(--tran-duration) ease,
+    box-shadow var(--tran-duration) ease;
+}
+
+.switcher__input:disabled + .switcher__label::after {
+  background-color: var(--color-alternative);
+}
+
+.switcher__input:active + .switcher__label::after {
+  background-color: var(--color-alternative2-invert);
+}
+
+.switcher__input:checked:active + .switcher__label::after {
+  background-color: var(--color-base);
+}
+
+.switcher__input:checked + .switcher__label {
+  background-color: var(--color-accent-link);
+}
+
+.switcher__input:checked + .switcher__label:hover {
+  background-color: var(--color-focus);
+}
+
+.switcher__input:checked + .switcher__label:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-base), 0 0 0 4px var(--color-focus);
+}
+
+.switcher__input:checked + .switcher__label:active {
+  background-color: var(--color-focus);
+}
+
+.switcher__input:checked + .switcher__label:target {
+  background-color: var(--color-separator-bold);
+}
+
+.switcher__input:checked + .switcher__label::after {
+  transform: translateX(20px);
+  transition: transform 0.3s ease;
+}

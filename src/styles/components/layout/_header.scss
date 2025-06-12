@@ -1,0 +1,170 @@
+@use '../../base/variables' as *;
+@use '../../base/mixins' as m;
+
+.header {
+  position: static;
+
+  &--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--color-base);
+  height: 92px;
+}
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 16px;
+    margin: 0 auto;
+    max-width: 1440px;
+
+    @include m.laptop {
+      padding: 24px 40px;
+    }
+
+    @include m.desk {
+      padding: 24px 80px;
+    }
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    // max-height: 32px;
+  }
+
+  &__logo-link {
+    display: inline-block;
+    line-height: 0;
+    margin-right: 16px;
+    align-items: end;
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__list {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: fixed;
+    top: 91px;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: var(--background-card-color);
+    z-index: 2;
+    flex-direction: column;
+    transform: translateX(-100%);
+
+    &.is-open {
+      transform: translateX(0);
+    }
+
+    @include m.laptop {
+      transform: translateX(0);
+      position: static;
+      padding: 0;
+      overflow-x: unset;
+      overflow-y: unset;
+      display: flex;
+      background: transparent;
+      height: auto;
+      width: 100%;
+      flex-direction: row;
+    }
+  }
+
+  &__icon {
+    color: var(--color-primary-invert);
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 0;
+
+    @include m.laptop {
+      padding: 1px 0;
+    }
+  }
+
+
+  &__search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__search-input {
+    font-size: 14px;
+    line-height: 20px;
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 9px 12px;
+    border-radius: 8px;
+    display: none;
+    width: 240px;
+
+    @include m.laptop {
+      display: block;
+    }
+  }
+
+  &__search-button {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 8px;
+    opacity: 1;
+
+    @include m.laptop {
+      display: none;
+      width: 216px;
+    }
+  }
+
+  &__list-item {
+    padding: 18px 32px;
+
+    @include m.laptop {
+      padding: 6px 12px;
+    }
+  }
+
+  &__list-link {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 600;
+
+    @include m.laptop {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+  &__button {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__search-input {
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+}

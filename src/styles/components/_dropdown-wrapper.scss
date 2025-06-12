@@ -1,0 +1,23 @@
+@use '../base/variables' as *;
+
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  transition-property: background-color, color, border-color, box-shadow;
+  transition-duration: var(--tran-duration);
+  transition-timing-function: ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: url('/src/assets/icons/chevron-down.svg?format=webp') no-repeat center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+  }
+}

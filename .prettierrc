@@ -1,0 +1,16 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "endOfLine": "lf",
+  "plugins": [
+    "@zackad/prettier-plugin-twig"
+  ],
+  "overrides": [
+    {
+      "files": "*.njk",
+      "options": {
+        "parser": "twig"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+@use '../../base/variables' as *;
+@use '../../base/mixins' as m;
+
+.pricing-plan {
+  background-color: var(--color-base);
+  text-align: center;
+  margin-bottom: 64px;
+
+  @include m.laptop {
+    margin-bottom: 120px;
+  }
+  @include m.desk {
+    margin-bottom: 116px;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    @include m.laptop {
+      margin-bottom: 104px;
+    }
+    @include m.desk {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__header-wrapper {
+    margin-bottom: 48px;
+  }
+
+  &__cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    // flex-wrap: wrap;
+
+    @include m.laptop {
+      flex-direction: row;
+    }
+  }
+}

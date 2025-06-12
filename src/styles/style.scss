@@ -1,0 +1,54 @@
+@use './base/variables' as *;
+@use './base/mixins' as m;
+@use './base/breakpoints' as *;
+
+@use './components/button' as *;
+@use './components/link' as *;
+@use './components/switcher' as *;
+@use './components/checkbox-input' as *;
+@use './components/custom-checkbox' as *;
+@use './components/checkbox-wrapper' as *;
+@use './components/radio-input' as *;
+@use './components/radio-wrapper' as *;
+@use './components/custom-radio' as *;
+@use './components/input' as *;
+@use './components/textarea' as *;
+@use './components/dropdown-wrapper' as *;
+@use './components/menu-button' as *;
+@use './components/burger-icon' as *;
+@use './components/js-burger' as *;
+@use './components/visually-hidden' as *;
+@use './components/catalog-card' as *;
+@use './components/article-card' as *;
+@use './components/pricing-card' as *;
+@use './components/custom-select' as *;
+@use './components/article-sidebar' as *;
+@use './components/article-item' as *;
+@use './components/category-card' as *;
+@use './components/product-card' as *;
+
+@use './components/index/main-banner' as *;
+@use './components/index/category-slider' as *;
+@use './components/index/pricing-plan' as *;
+@use './components/index/category-promo' as *;
+@use './components/index/popular-products' as *;
+@use './components/index/articles-block' as *;
+@use './components/index/faq' as *;
+
+@use './components/blog/hero-article' as *;
+@use './components/blog/article-content' as *;
+@use './components/blog/releated-articles' as *;
+
+@use './components/contact/contact-form' as *;
+@use './components/contact/contact-info' as *;
+@use './components/contact/contact-page' as *;
+
+@use './components/catalog/form-sidebar' as *;
+@use './components/catalog/catalog-content' as *;
+@use './components/catalog/catalog-main-content' as *;
+@use './components/catalog/catalog-hero' as *;
+
+@use './components/layout/header' as *;
+@use './components/layout/footer' as *;
+
+@use './base/global' as *;

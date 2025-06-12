@@ -1,0 +1,36 @@
+@use '../../base/variables' as *;
+@use '../../base/mixins' as m;
+
+.catalog-hero {
+  background: url('/src/assets/images/static/catalog-background.png?format=webp') no-repeat center bottom;
+  background-size: cover;
+
+  &__container {
+    padding: 64px 16px 96px 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include m.laptop {
+      padding: 64px 80px 100px 80px;
+    }
+  }
+
+  &__header {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: var(--font-accent);
+    letter-spacing: -0.5px;
+    max-width: 600px;
+    white-space: normal;
+
+    @include m.laptop {
+      font-size: 52px;
+      line-height: 62px;
+    }
+  }
+
+  &__highlight {
+    color: var(--color-accent-link);
+  }
+}

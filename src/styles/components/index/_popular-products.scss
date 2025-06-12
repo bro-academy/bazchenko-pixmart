@@ -1,0 +1,50 @@
+@use '../../base/variables' as *;
+@use '../../base/mixins' as m;
+
+.popular-products {
+  margin-bottom: 64px;
+
+  @include m.laptop {
+    margin-bottom: 120px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+
+  &__buttons-wrapper {
+    display: none;
+    gap: 12px;
+    align-items: end;
+
+    @include m.laptop {
+      display: flex;
+    }
+  }
+
+  &__button {
+    padding: 18px;
+  }
+
+  &__button-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__main {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1px;
+  }
+}

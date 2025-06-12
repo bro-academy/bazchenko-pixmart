@@ -1,0 +1,35 @@
+<section class="main-banner" role="banner">
+  <div class="main-banner__wrapper">
+    {% include 'src/templates/partials/main-banner.njk' %}
+
+    <div class="main-banner__info-wrapper">
+      <h1 class="main-banner__title">
+        Craft Your Success with Our<span class="main-banner__accent">
+          Digital
+        </span> Assets
+      </h1>
+
+      <p class="main-banner__subtitle">
+        From our inspiring illustrations to dynamic UI/UX kits, elevate your
+        projects with our premium digital design resources.
+      </p>
+
+      <div class="main-banner__buttons-wrapper">
+        <a
+          class="main-banner__button button button--primary"
+          href="shop-now.html"
+        >
+          Shop Now
+        </a>
+
+        <a
+          class="main-banner__button main-banner__button--play button button--secondary"
+          href="about-us.html"
+        >
+          {{ icon('play-blue', 'main-banner__button-icon icon') }}
+          <span class="button__text">Watch About Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

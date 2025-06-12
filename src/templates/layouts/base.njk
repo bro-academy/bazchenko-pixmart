@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="src/styles/style.scss" />
+    <title>
+      {{ title }}
+    </title>
+  </head>
+  <body>
+    {% include 'src/templates/partials/header.njk' %}
+    <main>
+      <div class="content">
+        {% block content %}
+          <button class="js-filter" type="button">Filter</button>
+          <div class="filter"></div>default content
+        {% endblock %}
+      </div>
+    </main>
+    {% include 'src/templates/partials/footer.njk' %}
+    <script>
+      document.addEventListener("DOMContentLoaded", function () { const
+      burgerOpener = document.querySelector(".js-burger"); const menu =
+      document.querySelector(".header__list"); const header =
+      document.querySelector(".header");
+
+      if (burgerOpener && menu && header) {
+      burgerOpener.addEventListener("click", function () {
+      this.classList.toggle("is-active"); menu.classList.toggle("is-open");
+      header.classList.toggle("header--fixed");
+      document.body.classList.toggle("lock-scroll"); }); }
+
+      const openBtn = document.querySelector(".js-filter"); const closeBtns =
+      document.querySelectorAll(".filter-close"); const filter =
+      document.querySelector(".form-sidebar");
+
+      if (openBtn && filter) { openBtn.addEventListener("click", () => {
+      filter.classList.add("is-active");
+      document.body.classList.add("lock-scroll"); }); }
+
+      closeBtns.forEach((btn) => { btn.addEventListener("click", () => {
+      filter.classList.remove("is-active");
+      document.body.classList.remove("lock-scroll"); }); }); });
+    </script>
+  </body>
+</html>

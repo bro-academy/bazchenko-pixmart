@@ -1,0 +1,15 @@
+{% set title = 'Home' %}
+{% set currentPage = 'home' %}
+{% extends 'src/templates/layouts/base.njk' %}
+
+{% from 'src/templates/partials/ui/icon.njk' import icon %}
+
+{% block content %}
+  {% include 'src/templates/partials/home/main-banner.njk' %}
+  {% include 'src/templates/partials/home/category-slider.njk' %}
+  {% include 'src/templates/partials/home/category-promo.njk' %}
+  {% include 'src/templates/partials/home/popular-products.njk' %}
+  {% include 'src/templates/partials/home/pricing-plan.njk' %}
+  {% include 'src/templates/partials/home/faq.njk' %}
+  {% include 'src/templates/partials/home/articles-block.njk' %}
+{% endblock %}

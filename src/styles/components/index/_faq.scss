@@ -1,0 +1,183 @@
+@use '../../base/variables' as *;
+@use '../../base/mixins' as m;
+
+.faq {
+  margin-bottom: 64px;
+  position: relative;
+  overflow-x: clip;
+  z-index: 0;
+
+  @include m.laptop {
+    margin-bottom: 120px;
+  }
+
+  &__gradient {
+    display: none;
+    overflow-x: hidden;
+
+    @include m.laptop {
+      display: block;
+      position: absolute;
+      transform: translateX(467px);
+      bottom: 42px;
+      width: 689px;
+      height: 498px;
+      background: radial-gradient(ellipse at center, var(--icon-color) 0%, transparent 70%);
+      filter: blur(200px);
+      border-radius: 50%;
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    @include m.desk {
+      transform: translateX(400px);
+      bottom: -86px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: center;
+    padding-inline: 16px;
+    z-index: 1;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include m.laptop {
+      flex-direction: row;
+      padding-inline: 80px;
+      gap: 20px;
+    }
+    @include m.desk {
+      gap: 40px;
+    }
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include m.laptop {
+      margin: auto 0;
+      width: 50%;
+      flex-shrink: 0;
+    }
+
+    @include m.desk {
+      width: 620px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    width: 100%;
+
+    @include m.laptop {
+      width: fit-content;
+    }
+  }
+
+  &__questions {
+    @include m.desk {
+       width: 620px;
+    }
+  }
+
+  &__question-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    z-index: 2;
+  }
+
+  &__details {
+    width: 100%;
+    padding: 24px;
+    border-radius: 10px;
+    background-color: var(--color-base);
+    box-shadow: 0 0 40px 0 var(--color-secondary2-invert);
+    transition: box-shadow var(--tran-duration);
+
+    @include m.desk {
+      padding: 27px 24px;
+    }
+
+    &[open] {
+    border: 2px solid var(--color-accent-link);
+      // width: 100%;
+    }
+  }
+
+  &__summary {
+    display: block;
+    width: 100%;
+    position: relative;
+    list-style: none;
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer;
+    white-space: normal;
+    word-wrap: break-word;
+    padding-right: 48px;
+
+    // @include m.desk {
+    //   width: 568px;
+    // }
+
+    &::marker {
+      display: none;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      background-size: 14px 14px;
+      border: 2px solid var(--color-separator-bold);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+     &::after {
+      content: '';
+      transform: translateY(-50%);
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      width: 16px;
+      height: 16px;
+      background: url('/src/assets/icons/chevron-down.svg?format=webp') no-repeat center;
+      background-size: 16px 16px;
+    }
+
+    details[open] &::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &__answer {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-primary);
+  }
+}

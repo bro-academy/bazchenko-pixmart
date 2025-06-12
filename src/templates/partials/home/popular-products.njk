@@ -1,0 +1,33 @@
+<section class="popular-products">
+  <div class="popular-products__wrapper">
+    <div class="popular-products__top-wrapper wrapper">
+      <div class="popular-products__top">
+        <div class="popular-products__title-wrapper">
+          <h2 class="popular-products__title text-label">TRENDING</h2>
+          <strong class="popular-products__subtitle subtitle">
+            Popular Products
+          </strong>
+        </div>
+
+        <div class="popular-products__buttons-wrapper">
+          <button
+            class="popular-products__button button button--secondary-icon"
+            type="button"
+          >
+            {{ icon('chevron-left', 'popular-products__button-icon icon') }}
+          </button>
+          <button
+            class="popular-products__button button button--secondary-icon"
+            type="button"
+          >
+            {{ icon('chevron-right', 'popular-products__button-icon icon') }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popular-products__main wrapper">
+      {% include 'src/templates/partials/popular-products-card.njk' %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+{% for category in categories %}
+  <div class="category-slider__item">
+    <a class="category-slider__link" href="category-products.html">
+      <div class="category-slider__icon-wrapper">
+        <img
+          class="category-slider__icon"
+          loading="lazy"
+          src="{{ category.image }}"
+          width="150"
+          height="150"
+          alt="{{ category.alt }}"
+        />
+      </div>
+      <span class="category-slider__label">{{ category.title }}</span>
+    </a>
+  </div>
+{% endfor %}
