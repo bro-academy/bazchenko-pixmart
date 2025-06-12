@@ -188,7 +188,7 @@
     line-height: 24px;
     padding: 19px;
     font-weight: 400;
-
+    min-width: 200px;
     @include m.desk {
       padding: 19px;
     }
