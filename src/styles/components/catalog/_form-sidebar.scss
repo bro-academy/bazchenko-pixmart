@@ -71,6 +71,9 @@
   }
 
   &__clear-button {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
     background: var(--background-card-color);
     width: 100%;
     padding: 6px 8px;
